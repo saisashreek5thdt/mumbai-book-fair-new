@@ -4,7 +4,25 @@ import Home from "./Home";
 
 export default function App() {
   useEffect(() => {
-    const scripts = [];
+    const scripts = [
+      "assets/js/jquery.js",
+      "assets/js/popper.min.js",
+      "assets/js/bootstrap.min.js",
+      "assets/js/appear.js",
+      "assets/js/parallax.min.js",
+      "assets/js/tilt.jquery.min.js",
+      "assets/js/jquery.paroller.min.js",
+      "assets/js/owl.js",
+      "assets/js/wow.js",
+      "assets/js/backtotop.js",
+      "assets/js/odometer.js",
+      "assets/js/parallax-scroll.js",
+      "assets/js/magnific-popup.min.js",
+      "assets/js/nav-tool.js",
+      "assets/js/jquery-ui.js",
+      "assets/js/color-settings.js",
+      "assets/js/script.js",
+    ];
 
     // Function to dynamically load a script
     const loadScript = (src) => {
