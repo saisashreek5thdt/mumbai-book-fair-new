@@ -1,0 +1,29 @@
+import slideImg1 from "../../assets/images/background/11.jpg";
+
+export default function SpeakerSlide() {
+  const slideBG1 = {
+    backgroundImage: `url(${slideImg1})`,
+    backgroundSize: "cover",
+  };
+
+  return (
+    <>
+      <section className="page-title" style={slideBG1}>
+        <div className="auto-container">
+          <div className="d-flex justify-content-between align-items-center flex-wrap">
+            <div className="left-box">
+              <div className="page-title_big">Speaker&apos;s Detail</div>
+              <h2 className="page-title_heading">Speaker&apos;s Detail</h2>
+            </div>
+            <ul className="bread-crumb clearfix">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>Speaker&apos;s Detail</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
