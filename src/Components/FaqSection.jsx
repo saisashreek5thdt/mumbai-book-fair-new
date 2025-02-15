@@ -1,9 +1,19 @@
+
 import priceImg1 from "../assets/images/background/pattern-4.png";
+import faqBg from "../assets/images/background/faq.jpg";
+import { useState } from "react";
 
 export default function FaqSection() {
   const pricePattern1 = {
     backgroundImage: `url(${priceImg1})`,
     backgroundSize: "cover",
+  };
+
+  // State to manage which FAQ is open
+  const [openIndex, setOpenIndex] = useState(0); // Default: First FAQ is open
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index); // Toggle open/close
   };
 
   return (
@@ -12,134 +22,149 @@ export default function FaqSection() {
         <div className="price-one_pattern" style={pricePattern1}></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <div className="sec-title_title">
-              Solutions for Your Curiosities
-            </div>
             <h2 className="sec-title_heading">FAQ</h2>
           </div>
           <section className="faq-two">
             <div className="auto-container">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <ul className="accordion-box style-two">
-                  {/* Block */}
-                  <li className="accordion block active-block">
-                    <div className="acc-btn active">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+              <div className="row clearfix">
+                {/* FAQ Section */}
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <ul className="accordion-box style-two">
+                    {/* Block 1 - Always Open by Default */}
+                    <li className="accordion block">
+                      <div className="acc-btn active">
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        Can anyone participate in festival?
                       </div>
-                      Can anyone participate in festival?
-                    </div>
-                    <div className="acc-content current">
-                      <div className="content">
-                        <p>
-                          Yes, you may participate in the festival as an author,
-                          speaker, exhibitor or as a guest.
-                        </p>
+                      <div className="acc-content current">
+                        <div className="content">
+                          <p>
+                            Yes, you may participate in the festival as an
+                            author, speaker, exhibitor or as a guest.
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  {/* Block */}
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                    {/* Block 2 */}
+                    <li className="accordion block">
+                      <div
+                        className={`acc-btn ${openIndex === 1 ? "active" : ""}`}
+                        onClick={() => toggleAccordion(1)}
+                      >
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        Can I get my book released in the festival?
                       </div>
-                      Can I get my book released in the festival?
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>Yes, one can register for their book release.</p>
+                      <div
+                        className={`acc-content ${openIndex === 1 ? "current" : ""}`}
+                      >
+                        <div className="content">
+                          <p>Yes, one can register for their book release.</p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  {/* Block */}
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                    {/* Block 3 */}
+                    <li className="accordion block">
+                      <div
+                        className={`acc-btn ${openIndex === 2 ? "active" : ""}`}
+                        onClick={() => toggleAccordion(2)}
+                      >
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        How to seek collaborations?
                       </div>
-                      How to seek collaborations?
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>One can write to collaborate as a sponsor.</p>
+                      <div
+                        className={`acc-content ${openIndex === 2 ? "current" : ""}`}
+                      >
+                        <div className="content">
+                          <p>One can write to collaborate as a sponsor.</p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  {/* Block */}
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                    {/* Block 4 */}
+                    <li className="accordion block">
+                      <div
+                        className={`acc-btn ${openIndex === 3 ? "active" : ""}`}
+                        onClick={() => toggleAccordion(3)}
+                      >
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        What are the internship opportunities?
                       </div>
-                      What are the internship opportunities?
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>
-                          One may apply for the same at. Upon selection the
-                          interns would be notified and assigned their roles.
-                        </p>
+                      <div
+                        className={`acc-content ${openIndex === 3 ? "current" : ""}`}
+                      >
+                        <div className="content">
+                          <p>
+                            One may apply for the same at. Upon selection the
+                            interns would be notified and assigned their roles.
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  {/* Block */}
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                    {/* Block 5 */}
+                    <li className="accordion block">
+                      <div
+                        className={`acc-btn ${openIndex === 4 ? "active" : ""}`}
+                        onClick={() => toggleAccordion(4)}
+                      >
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        How to reach to the venue?
                       </div>
-                      How to reach to the venue?
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>Azad Maidan Fort, Mumbai, Maharashtra</p>
+                      <div
+                        className={`acc-content ${openIndex === 4 ? "current" : ""}`}
+                      >
+                        <div className="content">
+                          <p>Azad Maidan Fort, Mumbai, Maharashtra</p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
+                  </ul>
+                </div>
 
-                  {/* Block */}
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                {/* Quick Contact Form Card */}
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <div
+                    className="quick-contact-card"
+                    style={{
+                      backgroundImage: `url(${faqBg})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
+                    <h3 className="quick-contact-title">Quick Contact</h3>
+                    <form className="quick-contact-form">
+                      <div className="form-group">
+                        <input type="text" placeholder="Name" required />
                       </div>
-                      How can anyone volunteer in the festival?
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>
-                          Volunteering is available and a training would be
-                          given to the selected volunteers for participating in
-                          the festival.
-                        </p>
+                      <div className="form-group">
+                        <input type="email" placeholder="Email" required />
                       </div>
-                    </div>
-                  </li>
-
-                  {/* Block */}
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-outer">
-                        <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                      <div className="form-group">
+                        <input type="text" placeholder="Phone Number" required />
                       </div>
-                      What is the procedure to have an allocated book stall at
-                      the festival?
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>
-                          One may apply for the same, upon selection the book
-                          stall would be allocated.
-                        </p>
+                      <div className="form-group">
+                        <textarea placeholder="Enter your Message*"></textarea>
                       </div>
-                    </div>
-                  </li>
-                </ul>
+                      <div className="form-group">
+                        <button type="submit" className="submit-btn">
+                          SUBMIT NOW
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -148,3 +173,43 @@ export default function FaqSection() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
