@@ -1,9 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import blogImg1 from "../assets/images/resource/news-1.jpg";
-import blogImg2 from "../assets/images/resource/news-2.jpg";
-import blogImg3 from "../assets/images/resource/news-3.jpg";
+import blogImg1 from "../assets/images/resource/volunteer.png";
+import blogImg2 from "../assets/images/resource/exhibitor.png";
+import blogImg3 from "../assets/images/resource/visitor.png";
+import blogImg4 from "../assets/images/resource/speaker.png";
+import blogImg5 from "../assets/images/resource/vendor.png";
+import blogImg6 from "../assets/images/resource/sponsor.png";
 
 export default function Blogs() {
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleCards = () => {
+    setShowAll(!showAll);
+  };
+
   return (
     <>
       <section className="news-one">
@@ -14,22 +24,21 @@ export default function Blogs() {
                 <div className="sec-title_title">Get Your</div>
                 <h2 className="sec-title_heading">Registration</h2>
               </div>
-              {/* <div className="button-box title-anim">
-                <a href="blog.html" className="theme-btn btn-style-one">
+              <div className="button-box title-anim">
+                <button onClick={toggleCards} className="theme-btn btn-style-one">
                   <span className="btn-wrap">
-                    <span className="text-one">View More News</span>
-                    <span className="text-two">View More News</span>
+                    <span className="text-one">{showAll ? "Less Registration" : "More Registration"}</span>
+                    <span className="text-two">{showAll ? "Less Registration" : "More Registration"}</span>
                   </span>
-                </a>
-              </div> */}
+                </button>
+              </div>
             </div>
           </div>
 
           <div className="row clearfix">
-            {/* News Block */}
+            {/* News Block - Initially Visible */}
             <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
               <div className="news-block_one-inner">
-                {/* Post Info */}
                 <div className="news-block_one-tag">Registration</div>
                 <div className="news-block_one-image">
                   <Link to="/">
@@ -38,33 +47,24 @@ export default function Blogs() {
                   <img src={blogImg1} alt="" />
                 </div>
                 <div className="news-block_one-content">
-                  {/* <div className="news-block_one-date">2 May 2024</div>
-                  <ul className="news-block_one-meta">
-                    <li>
-                      <span className="icon fa-regular fa-calendar fa-fw"></span>
-                      by Christine
-                    </li>
-                    <li>
-                      <span className="icon fa-solid fa-comments fa-fw"></span>
-                      (03) Comments
-                    </li>
-                  </ul> */}
+                  <div className="news-block_one-date">1-5 April</div>
                   <h5 className="news-block_one-title">
-                    <Link to="/">
-                      Volunteer
-                    </Link>
+                    <Link to="/">Volunteer</Link>
                   </h5>
-                  <Link className="news-block_one-more" to="/">
+                  <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Register
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* News Block */}
             <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
               <div className="news-block_one-inner">
-                {/* Post Info */}
                 <div className="news-block_one-tag">Registration</div>
                 <div className="news-block_one-image">
                   <Link to="/">
@@ -73,34 +73,25 @@ export default function Blogs() {
                   <img src={blogImg2} alt="" />
                 </div>
                 <div className="news-block_one-content">
-                  {/* <div className="news-block_one-date">2 May 2024</div>
-                  <ul className="news-block_one-meta">
-                    <li>
-                      <span className="icon fa-regular fa-calendar fa-fw"></span>
-                      by Christine
-                    </li>
-                    <li>
-                      <span className="icon fa-solid fa-comments fa-fw"></span>
-                      (03) Comments
-                    </li>
-                  </ul> */}
+                  <div className="news-block_one-date">1-5 April</div>
                   <h5 className="news-block_one-title">
-                    <Link to="/">
-                      Author
-                    </Link>
+                    <Link to="/">Exhibitor</Link>
                   </h5>
-                  <Link className="news-block_one-more" to="/">
-                    Read More
-                  </Link>
+                  <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* News Block */}
             <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
               <div className="news-block_one-inner">
-                {/* Post Info */}
-                <div className="news-block_one-tag">Event</div>
+                <div className="news-block_one-tag">Registration</div>
                 <div className="news-block_one-image">
                   <Link to="/">
                     <img src={blogImg3} alt="" />
@@ -108,28 +99,131 @@ export default function Blogs() {
                   <img src={blogImg3} alt="" />
                 </div>
                 <div className="news-block_one-content">
-                  {/* <div className="news-block_one-date">2 May 2024</div>
-                  <ul className="news-block_one-meta">
-                    <li>
-                      <span className="icon fa-regular fa-calendar fa-fw"></span>
-                      by Christine
-                    </li>
-                    <li>
-                      <span className="icon fa-solid fa-comments fa-fw"></span>
-                      (03) Comments
-                    </li>
-                  </ul> */}
+                  <div className="news-block_one-date">1-5 April</div>
                   <h5 className="news-block_one-title">
-                    <Link to="/">
-                      Sponsors
-                    </Link>
+                    <Link to="/">Visitor</Link>
                   </h5>
-                  <Link className="news-block_one-more" to="/">
-                    Read More
-                  </Link>
+                  <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfJ6YcEuTFVIB-wCflitmtfX1minVEGO4KrOPR8Fc26vPM7XA/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register
+                  </a>
                 </div>
               </div>
             </div>
+
+            {/* Hidden News Blocks (Displayed when showAll is true) */}
+            {showAll && (
+              <>
+                <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
+                  <div className="news-block_one-inner">
+                    <div className="news-block_one-tag">Registration</div>
+                    <div className="news-block_one-image">
+                  <Link to="/">
+                    <img src={blogImg4} alt="" />
+                  </Link>
+                  <img src={blogImg4} alt="" />
+                </div>
+                    <div className="news-block_one-content">
+                      <div className="news-block_one-date">1-5 April</div>
+                      <h5 className="news-block_one-title">
+                        <Link to="/">Speaker</Link>
+                      </h5>
+                      <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSehWMPA1WSMIC1u54WHSlPRifEf1aP2PF_UBQahAI-SnbqLBw/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register
+                  </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
+                  <div className="news-block_one-inner">
+                    <div className="news-block_one-tag">Registration</div>
+                    <div className="news-block_one-image">
+                  <Link to="/">
+                    <img src={blogImg5} alt="" />
+                  </Link>
+                  <img src={blogImg5} alt="" />
+                </div>
+                    <div className="news-block_one-content">
+                      <div className="news-block_one-date">1-5 April</div>
+                      <h5 className="news-block_one-title">
+                        <Link to="/">Vendor</Link>
+                      </h5>
+                      <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe_CBsGMOh5NU6IgrGabtPLCGwpRhZGZ8erNCpYAcl4Q1TVAg/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register
+                  </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
+                  <div className="news-block_one-inner">
+                    <div className="news-block_one-tag">Registration</div>
+                    <div className="news-block_one-image">
+                  <Link to="/">
+                    <img src={blogImg6} alt="" />
+                  </Link>
+                  <img src={blogImg6} alt="" />
+                </div>
+                    <div className="news-block_one-content">
+                      <div className="news-block_one-date">1-5 April</div>
+                      <h5 className="news-block_one-title">
+                        <Link to="/">Sponsor</Link>
+                      </h5>
+                      <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScIajlb9neewUiqRpH6KrDXYsVKT7QXdc1Ioif8frcyuhsm8Q/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register
+                  </a>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div className="news-block_one col-lg-4 col-md-6 col-sm-12">
+                  <div className="news-block_one-inner">
+                    <div className="news-block_one-tag">Registration</div>
+                    <div className="news-block_one-image">
+                  <Link to="/">
+                    <img src={blogImg5} alt="" />
+                  </Link>
+                  <img src={blogImg5} alt="" />
+                </div>
+                    <div className="news-block_one-content">
+                      <div className="news-block_one-date">1-5 April</div>
+                      <h5 className="news-block_one-title">
+                        <Link to="/">Vendor</Link>
+                      </h5>
+                      <a
+                    className="news-block_one-more"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe_CBsGMOh5NU6IgrGabtPLCGwpRhZGZ8erNCpYAcl4Q1TVAg/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register
+                  </a>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
