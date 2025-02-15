@@ -1,114 +1,173 @@
-import featureImg1 from "../assets/images/background/pattern-7.png";
-import featureImg2 from "../assets/images/background/pattern-8.png";
-import featureImg3 from "../assets/images/background/pattern-9.png";
+import featureImg1 from "../assets/images/icons/circle-pink.png";
+import featureImg2 from "../assets/images/icons/circle-icon-one.png";
+import featureImg3 from "../assets/images/icons/events-bg.png";
+
+import featureIcon1 from "../assets/images/icons/event-icon-1.png";
+import featureIcon2 from "../assets/images/icons/event-icon-2.png";
+import featureIcon3 from "../assets/images/icons/event-icon-3.png";
+import featureIcon4 from "../assets/images/icons/event-icon-4.png";
+import featureIcon5 from "../assets/images/icons/event-icon-5.png";
+import featureIcon6 from "../assets/images/icons/event-icon-6.png";
 
 export default function Features() {
+  const featurePattern1 = {
+    backgroundImage: `url(${featureImg1})`,
+    backgroundSize: "cover",
+  };
 
-    const featurePattern1 = {
-        backgroundImage: `url(${featureImg1})`,
-        backgroundSize: "cover"
-    }
+  const featurePattern2 = {
+    backgroundImage: `url(${featureImg2})`,
+    backgroundSize: "cover",
+  };
 
-    const featurePattern2 = {
-        backgroundImage: `url(${featureImg2})`,
-        backgroundSize: "cover"
-    }
-
-    const featurePattern3 = {
-        backgroundImage: `url(${featureImg3})`,
-        backgroundSize: "cover"
-    }
+  const featurePattern3 = {
+    backgroundImage: `url(${featureImg3})`,
+    backgroundSize: "cover",
+  };
 
   return (
     <>
-      <section className="feature-one">
-        <div
-          className="feature-one_pattern"
-          style={featurePattern1}
-        ></div>
-        <div
-          className="feature-one_pattern-two"
-          style={featurePattern2}
-        ></div>
-        <div
-          className="feature-one_pattern-three"
-          data-parallax='{"y" : 80}'
-          style={featurePattern3}
-        ></div>
+      <section className="event-feature-section">
+        {/* Icon One */}
+        <div className="circle-layer" style={featurePattern1}></div>
+        <div className="circle-layer-two" style={featurePattern2}></div>
+        <div className="circle-layer-three" style={featurePattern3}></div>
         <div className="auto-container">
-          <div className="sec-title title-anim">
-            <div className="sec-title_title">Our Features</div>
-            <h2 className="sec-title_heading">Features For Client</h2>
+          {/* Sec Title */}
+          <div className="sec-title centered">
+            <div className="sec-title_title">Features</div>
+            <h2 className="sec-title_heading">Our Features</h2>
           </div>
           <div className="row clearfix">
-            {/* Feature Block One */}
-            <div className="feature-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="feature-block_one-inner wow fadeInUp"
-                data-wow-delay="0ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="feature-block_one-icon flaticon-policy"></div>
-                <h4 className="feature-block_one-title">
-                  <a href="event-detail.html">Best Certified Speaker</a>
+            {/* Event Feature Block */}
+            <div className="event-feature-block col-lg-4 col-md-6 col-sm-12">
+              <div className="inner-box">
+                <div className="left-border"></div>
+                <div className="top-border"></div>
+                <div className="right-border"></div>
+                <div className="bottom-border"></div>
+                <div className="icon-box">
+                  <span className="icon">
+                    <img src={featureIcon1} alt="" />
+                  </span>
+                </div>
+                <h4>
+                  <a href="development.html">Meet the leaders</a>
                 </h4>
-                <a className="feature-block_one-more" href="event-detail.html">
-                  Read More
-                </a>
+                <div className="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                </div>
               </div>
             </div>
 
-            {/* Feature Block One */}
-            <div className="feature-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="feature-block_one-inner wow fadeInUp"
-                data-wow-delay="150ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="feature-block_one-icon flaticon-digital-learning"></div>
-                <h4 className="feature-block_one-title">
-                  <a href="event-detail.html">
-                    Brand Digital <br />
-                    Ideas
-                  </a>
+            {/* Event Feature Block */}
+            <div className="event-feature-block col-lg-4 col-md-6 col-sm-12">
+              <div className="inner-box">
+                <div className="left-border"></div>
+                <div className="top-border"></div>
+                <div className="right-border"></div>
+                <div className="bottom-border"></div>
+                <div className="icon-box">
+                  <span className="icon">
+                    <img src={featureIcon2} alt="" />
+                  </span>
+                </div>
+                <h4>
+                  <a href="development.html">Five Days Long</a>
                 </h4>
-                <a className="feature-block_one-more" href="event-detail.html">
-                  Read More
-                </a>
+                <div className="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                </div>
               </div>
             </div>
 
-            {/* Feature Block One */}
-            <div className="feature-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="feature-block_one-inner wow fadeInUp"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="feature-block_one-icon flaticon-conversation-1"></div>
-                <h4 className="feature-block_one-title">
-                  <a href="event-detail.html">Communicate People</a>
+            {/* Event Feature Block */}
+            <div className="event-feature-block col-lg-4 col-md-6 col-sm-12">
+              <div className="inner-box">
+                <div className="left-border"></div>
+                <div className="top-border"></div>
+                <div className="right-border"></div>
+                <div className="bottom-border"></div>
+                <div className="icon-box">
+                  <span className="icon">
+                    <img src={featureIcon3} alt="" />
+                  </span>
+                </div>
+                <h4>
+                  <a href="development.html">Product Launching</a>
                 </h4>
-                <a className="feature-block_one-more" href="event-detail.html">
-                  Read More
-                </a>
+                <div className="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                </div>
               </div>
             </div>
 
-            {/* Feature Block One */}
-            <div className="feature-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="feature-block_one-inner wow fadeInUp"
-                data-wow-delay="450ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="feature-block_one-icon flaticon-inspiration"></div>
-                <h4 className="feature-block_one-title">
-                  <a href="event-detail.html">Well Inspiring Keynotes</a>
+            {/* Event Feature Block */}
+            <div className="event-feature-block col-lg-4 col-md-6 col-sm-12">
+              <div className="inner-box">
+                <div className="left-border"></div>
+                <div className="top-border"></div>
+                <div className="right-border"></div>
+                <div className="bottom-border"></div>
+                <div className="icon-box">
+                  <span className="icon">
+                    <img src={featureIcon4} alt="" />
+                  </span>
+                </div>
+                <h4>
+                  <a href="development.html">37+ Sponsors</a>
                 </h4>
-                <a className="feature-block_one-more" href="event-detail.html">
-                  Read More
-                </a>
+                <div className="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                </div>
+              </div>
+            </div>
+
+            {/* Event Feature Block */}
+            <div className="event-feature-block col-lg-4 col-md-6 col-sm-12">
+              <div className="inner-box">
+                <div className="left-border"></div>
+                <div className="top-border"></div>
+                <div className="right-border"></div>
+                <div className="bottom-border"></div>
+                <div className="icon-box">
+                  <span className="icon">
+                    <img src={featureIcon5} alt="" />
+                  </span>
+                </div>
+                <h4>
+                  <a href="development.html">92+ Countries Attend</a>
+                </h4>
+                <div className="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                </div>
+              </div>
+            </div>
+
+            {/* Event Feature Block */}
+            <div className="event-feature-block col-lg-4 col-md-6 col-sm-12">
+              <div className="inner-box">
+                <div className="left-border"></div>
+                <div className="top-border"></div>
+                <div className="right-border"></div>
+                <div className="bottom-border"></div>
+                <div className="icon-box">
+                  <span className="icon">
+                    <img src={featureIcon6} alt="" />
+                  </span>
+                </div>
+                <h4>
+                  <a href="development.html">Ask Questions</a>
+                </h4>
+                <div className="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
+                </div>
               </div>
             </div>
           </div>

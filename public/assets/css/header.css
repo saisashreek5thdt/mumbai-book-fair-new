@@ -203,7 +203,8 @@
 	line-height:20px;
 	letter-spacing:1px;
 	color:var(--white-color);
-	font-size:var(--font-14);
+	/* font-size:var(--font-14); */
+	font-size: 20px !important;
 	text-transform: capitalize;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;

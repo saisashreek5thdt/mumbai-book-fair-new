@@ -1,4 +1,5 @@
-import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/mumbaiLogo.png";
 
 export default function Footer() {
   return (
@@ -17,25 +18,30 @@ export default function Footer() {
                         <img src={logo} alt="" title="" />
                       </a>
                     </div>
-                    <div className="footer-social_list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
                   </div>
                   <div className="footer-text">
-                    We have very good strength in innovative technology and
-                    tools with over 35 years of experience. We makes long-term
-                    investments goal in global companies in different sectors.
+                    <div className="footer-social_list">
+                      <Link
+                        to="/"
+                        className="facebook fa-brands fa-facebook-f"
+                      ></Link>
+                      <Link
+                        to="/"
+                        className="facebook fa-brands fa-instagram"
+                      ></Link>
+                      <Link
+                        to="/"
+                        className="twitter fa-brands fa-x-twitter"
+                      ></Link>
+                      <Link
+                        to="/"
+                        className="twitter fa-brands fa-linkedin-in"
+                      ></Link>
+                      <Link
+                        to="/"
+                        className="youtube fa-brands fa-youtube"
+                      ></Link>                      
+                    </div>
                   </div>
                 </div>
               </div>

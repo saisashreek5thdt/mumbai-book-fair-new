@@ -12,7 +12,8 @@ import {
   Clients,
   Blogs,
   Newsletter,
-  Footer
+  Footer,
+  FaqSection
 } from "./Components/index";
 
 export default function Home() {
@@ -31,16 +32,16 @@ export default function Home() {
           {/* Slider Section End */}
           {/* About Section Start */}
           <AboutUs />
-          {/* About Section End */}
+          {/* About Section End */}          
           {/* Counter Section Start */}
           <Counter />
           {/* Counter Section End */}
-          {/* Speakers Section Start */}
-          <Speakers />
-          {/* Speakers Section End */}
           {/* Features Start */}
           <Features />
           {/* Features End */}
+          {/* Speakers Section Start */}
+          <Speakers />
+          {/* Speakers Section End */}          
           {/* Events Section Start */}
           <Events />
           {/* Events Section End */}
@@ -56,9 +57,12 @@ export default function Home() {
           {/* Clients Start */}
           <Clients />
           {/* Clients End */}
+          {/* FAQ Section Start */}
+          <FaqSection />
+          {/* FAQ Section End */}
           {/* Blogs Start */}
           <Blogs />
-          {/* Blogs End */}
+          {/* Blogs End */}          
           {/* Newletter Start */}
           <Newsletter />
           {/* Newletter End */}
