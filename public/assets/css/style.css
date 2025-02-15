@@ -1428,7 +1428,6 @@
 	right: 0px;
 	bottom: 0px;
 	opacity: 0.80;
-	background-color: var(--color-three);
 }
 
 /* Video One Play */
@@ -10246,7 +10245,7 @@ blockquote{
 
 .event-schedule-section .download-btns-box{
 	position:relative;
-	margin-top:50px;
+	margin-top:0px;
 }
 
 .schedule-tabs .tabs-content .tab{
