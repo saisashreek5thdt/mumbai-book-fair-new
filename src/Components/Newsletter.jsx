@@ -14,7 +14,7 @@ export default function Newsletter() {
   // };
 
   const newsBG3 = {
-    backgroundImage: `url(${newsImg3})`,
+    // backgroundImage: `url(${newsImg3})`,
     backgroundSize: "cover"
   };
 
