@@ -1,0 +1,30 @@
+/* Section styling */
+.video-one {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Full-screen height */
+}
+
+/* Video background container */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+    overflow: hidden;
+}
+
+/* YouTube iframe styling */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensure the video covers the entire section */
+}
+
+
