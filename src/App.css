@@ -128,7 +128,36 @@
       padding-bottom: 0; /* Remove unnecessary padding */ /* Add space above the timer */
       align-items: flex-end; /* Center the timer horizontally */
       justify-content:flex-end;
-      margin-top:200px;
+      margin-top:280px;
+      margin-left:0px;
+      flex-direction: row;
+      gap:10px;
+      
+  }
+
+  .timer-box {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 8px 10px;
+    height: 60px;
+    width: 80px;
+  }
+
+  .time-value {
+      font-size: 24px; /* Reduce font size for numbers */
+  }
+}
+
+@media (max-width: 500px) {
+  .timer-container {
+     position: absolute; /* Remove absolute positioning */
+      transform: none; /* Reset transform */
+      display:flex;
+      padding-bottom: 0; /* Remove unnecessary padding */ /* Add space above the timer */
+      align-items: flex-end; /* Center the timer horizontally */
+      justify-content:flex-end;
+      margin-top:250px;
       margin-left:0px;
       flex-direction: row;
       gap:10px;
