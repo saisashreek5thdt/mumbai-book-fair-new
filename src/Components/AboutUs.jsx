@@ -2,6 +2,7 @@ import pattern3 from "../assets/images/background/pattern-3.png";
 import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 import AboutPattern from "../assets/images/background/about-pattern.png";
+import AboutSpeaker from "../assets/images/Speakers/event.webm";
 export default function About() {
   return (
     <>
@@ -30,9 +31,9 @@ export default function About() {
                   style={{ backgroundImage: `url(${AboutPattern})` }}
                 ></div>
                 <div className="about-one_image wow rollIn">
-                  {/* <img src="assets/images/resource/about.jpg" alt="" /> */}
+                  {/* <img src={AboutPic} alt="" /> */}
                   <video autoPlay muted loop>
-                        <source src="../assets/images/Speakers/event.webm" />
+                        <source src={AboutSpeaker} />
                     </video>
                 </div>
                 <a
