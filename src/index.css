@@ -109,17 +109,6 @@
   transition: background-color 0.3s ease;
 }
 
-/* Responsive Layout Adjustments */
-.row.clearfix {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.col-lg-6 {
-  flex: 1 1 100%; /* Full width on smaller screens */
-  min-width: 100%; /* Full width on smaller screens */
-}
 
 /* Media Queries for Larger Screens */
 @media (min-width: 768px) {
