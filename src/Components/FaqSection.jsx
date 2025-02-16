@@ -22,7 +22,7 @@ export default function FaqSection() {
         <div className="price-one_pattern" style={pricePattern1}></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <h2 className="sec-title_heading">FAQ</h2>
+            <h2 className="sec-title_heading">FAQ'S</h2>
           </div>
           <section className="faq-two">
             <div className="auto-container">

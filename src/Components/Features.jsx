@@ -101,7 +101,7 @@ export default function Features() {
       <style jsx>{`
         .event-feature-section {
           position: relative;
-          padding: 90px 0;
+          padding: 60px 0;
           overflow: hidden;
         }
 
@@ -109,16 +109,17 @@ export default function Features() {
         .circle-layer {
           position: absolute;
           right: -200px;
-          top: -180px; /* Changed from -200px to -180px */
+          top: -180px;
           width: 400px;
           height: 400px;
           background-repeat: no-repeat;
+          z-index: 1; /* Ensure it's behind the text */
         }
 
         .circle-layer-two {
           position: relative;
           left: -150px;
-          top: 170px; /* Changed from 150px to 170px */
+          top: 170px;
           width: 300px;
           height: 300px;
           background-repeat: no-repeat;
@@ -128,11 +129,16 @@ export default function Features() {
         .circle-layer-three {
           position: absolute;
           right: -150px;
-          bottom: -130px; /* Changed from -150px to -130px */
+          bottom: -130px;
           width: 300px;
           height: 300px;
           background-repeat: no-repeat;
           z-index: 1;
+        }
+
+        .sec-title {
+          position: relative;
+          z-index: 2; /* Ensure text is above the circle layer */
         }
 
         .feature-grid {
@@ -141,7 +147,7 @@ export default function Features() {
           grid-template-rows: repeat(2, auto);
           gap: 20px;
           position: relative;
-          z-index: 2;
+          z-index: 2; /* Ensure grid is above the circle layer */
         }
 
         .event-feature-block {
@@ -151,7 +157,7 @@ export default function Features() {
         .inner-box {
           position: relative;
           text-align: center;
-          padding: 40px 30px;
+          padding: 30px 20px;
           background: #ffffff;
           border-radius: 8px;
           transition: all 0.3s ease;
@@ -181,17 +187,17 @@ export default function Features() {
         .bottom-border { bottom: 0; }
 
         .icon-box {
-          margin-bottom: 20px;
+          margin-bottom: 15px;
         }
 
         .icon-box img {
-          width: 60px;
+          width: 50px;
           height: auto;
         }
 
         h4 {
-          margin-bottom: 15px;
-          font-size: 20px;
+          margin-bottom: 10px;
+          font-size: 18px;
         }
 
         .text {
@@ -199,15 +205,77 @@ export default function Features() {
           line-height: 1.6;
         }
 
+        /* Media Queries for Responsive Design */
         @media (max-width: 992px) {
           .feature-grid {
             grid-template-columns: repeat(2, 1fr);
+          }
+
+          .circle-layer {
+            right: -250px;
+            top: -200px;
+          }
+
+          .circle-layer-two {
+            left: -200px;
+            top: 200px;
+          }
+
+          .circle-layer-three {
+            right: -200px;
+            bottom: -150px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .event-feature-section {
+            padding: 40px 0;
+          }
+
+          .inner-box {
+            padding: 20px 15px;
+          }
+
+          h4 {
+            font-size: 16px;
+          }
+
+          .text {
+            font-size: 13px;
           }
         }
 
         @media (max-width: 576px) {
           .feature-grid {
             grid-template-columns: 1fr;
+          }
+
+          .circle-layer {
+            right: -300px;
+            top: -250px;
+            z-index: 0; /* Move the circle behind the text */
+          }
+
+          .circle-layer-two {
+            left: -250px;
+            top: 250px;
+          }
+
+          .circle-layer-three {
+            right: -250px;
+            bottom: -200px;
+          }
+
+          .icon-box img {
+            width: 40px;
+          }
+
+          h4 {
+            font-size: 14px;
+          }
+
+          .text {
+            font-size: 12px;
           }
         }
       `}</style>
