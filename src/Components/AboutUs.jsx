@@ -30,10 +30,10 @@ export default function About() {
                   className="about-one_pattern-four"
                   style={{ backgroundImage: `url(${AboutPattern})` }}
                 ></div>
-                <div className="about-one_image wow rollIn">
+                <div className="about-one_image wow rollIn" style={{background:"black"}}>
                   {/* <img src={AboutPic} alt="" /> */}
-                  <video autoPlay muted loop  >
-                        <source src={AboutSpeaker} style={{zoom:"100%"}} />
+                  <video autoPlay muted loop >
+                        <source src={AboutSpeaker} style={{}} />
                     </video>
                 </div>
                 <a
