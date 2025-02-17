@@ -1,13 +1,19 @@
-
 import priceImg1 from "../assets/images/background/pattern-4.png";
 import faqBg from "../assets/images/background/faq.jpg";
 import { useState } from "react";
+// import "../Faq.css";
 
 export default function FaqSection() {
   const pricePattern1 = {
     backgroundImage: `url(${priceImg1})`,
     backgroundSize: "cover",
   };
+
+  const FAQFormBG = {
+    backgroundImage: `url(${faqBg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }
 
   // State to manage which FAQ is open
   const [openIndex, setOpenIndex] = useState(0); // Default: First FAQ is open
@@ -22,7 +28,7 @@ export default function FaqSection() {
         <div className="price-one_pattern" style={pricePattern1}></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <h2 className="sec-title_heading">FAQ'S</h2>
+            <h2 className="sec-title_heading">FAQ&apos;S</h2>
           </div>
           <section className="faq-two">
             <div className="auto-container">
@@ -31,7 +37,7 @@ export default function FaqSection() {
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <ul className="accordion-box style-two">
                     {/* Block 1 - Always Open by Default */}
-                    <li className="accordion block">
+                    <li className="accordion block active-block">
                       <div className="acc-btn active">
                         <div className="icon-outer">
                           <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -60,7 +66,9 @@ export default function FaqSection() {
                         Can I get my book released in the festival?
                       </div>
                       <div
-                        className={`acc-content ${openIndex === 1 ? "current" : ""}`}
+                        className={`acc-content ${
+                          openIndex === 1 ? "current" : ""
+                        }`}
                       >
                         <div className="content">
                           <p>Yes, one can register for their book release.</p>
@@ -80,7 +88,9 @@ export default function FaqSection() {
                         How to seek collaborations?
                       </div>
                       <div
-                        className={`acc-content ${openIndex === 2 ? "current" : ""}`}
+                        className={`acc-content ${
+                          openIndex === 2 ? "current" : ""
+                        }`}
                       >
                         <div className="content">
                           <p>One can write to collaborate as a sponsor.</p>
@@ -100,7 +110,9 @@ export default function FaqSection() {
                         What are the internship opportunities?
                       </div>
                       <div
-                        className={`acc-content ${openIndex === 3 ? "current" : ""}`}
+                        className={`acc-content ${
+                          openIndex === 3 ? "current" : ""
+                        }`}
                       >
                         <div className="content">
                           <p>
@@ -123,7 +135,9 @@ export default function FaqSection() {
                         How to reach to the venue?
                       </div>
                       <div
-                        className={`acc-content ${openIndex === 4 ? "current" : ""}`}
+                        className={`acc-content ${
+                          openIndex === 4 ? "current" : ""
+                        }`}
                       >
                         <div className="content">
                           <p>Azad Maidan Fort, Mumbai, Maharashtra</p>
@@ -136,15 +150,11 @@ export default function FaqSection() {
                 {/* Quick Contact Form Card */}
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <div
-                    className="quick-contact-card"
-                    style={{
-                      backgroundImage: `url(${faqBg})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
+                    className="faq-two_form-box"
+                    style={FAQFormBG}
                   >
-                    <h3 className="quick-contact-title">Quick Contact</h3>
-                    <form className="quick-contact-form">
+                    <h3 className="faq-two_form-title">Quick Contact</h3>
+                    <form className="faq-form">
                       <div className="form-group">
                         <input type="text" placeholder="Name" required />
                       </div>
@@ -152,7 +162,11 @@ export default function FaqSection() {
                         <input type="email" placeholder="Email" required />
                       </div>
                       <div className="form-group">
-                        <input type="text" placeholder="Phone Number" required />
+                        <input
+                          type="text"
+                          placeholder="Phone Number"
+                          required
+                        />
                       </div>
                       <div className="form-group">
                         <textarea placeholder="Enter your Message*"></textarea>
@@ -173,43 +187,3 @@ export default function FaqSection() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

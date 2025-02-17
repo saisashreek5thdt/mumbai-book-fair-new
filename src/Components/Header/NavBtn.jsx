@@ -4,7 +4,6 @@ export default function NavBtn() {
   return (
     <>
       {/* Nav Btn */}
-      <div className="nav-btn navSidebar-button fa-regular fa-cart-shopping fa-fw"></div>
 
       <div className="appointmeny_button-box">
         <Link to="/" className="theme-btn btn-style-one">

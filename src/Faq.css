@@ -1,0 +1,176 @@
+.faq-two {
+  padding: 30px 0; /* Reduced padding for smaller screens */
+}
+
+.accordion-box.style-two {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion.block {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  overflow: hidden; /* Prevent content from expanding outside the card */
+}
+
+.acc-btn {
+  padding: 12px; /* Reduced padding for smaller screens */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  font-size: 14px; /* Smaller font size for smaller screens */
+}
+
+.acc-btn.active {
+  background-color: #f1f1f1;
+}
+
+.icon-outer {
+  margin-right: 10px;
+}
+
+.acc-content {
+  display: none;
+  padding: 12px; /* Reduced padding for smaller screens */
+  border-top: 1px solid #ddd;
+  font-size: 14px; /* Smaller font size for smaller screens */
+}
+
+.acc-content.current {
+  display: block;
+}
+
+/* Quick Contact Form Card Styling */
+.quick-contact-card {
+  background: linear-gradient(135deg, #e6007e, #6a00f4);
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  padding: 20px; /* Reduced padding for smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.quick-contact-title {
+  font-size: 24px; /* Reduced font size for smaller screens */
+  margin-bottom: 15px; /* Reduced margin for smaller screens */
+  color: #fff;
+  text-align: start;
+}
+
+.quick-contact-form .form-group {
+  margin-bottom: 15px; /* Reduced margin for smaller screens */
+}
+
+.quick-contact-form input,
+.quick-contact-form textarea {
+  width: 100%;
+  padding: 12px; /* Reduced padding for smaller screens */
+  border: 2px solid white;
+  border-radius: 0px;
+  font-size: 14px; /* Smaller font size for smaller screens */
+  background-color: white;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.quick-contact-form input:focus,
+.quick-contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.quick-contact-form textarea {
+  height: 120px; /* Reduced height for smaller screens */
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%; /* Full width on smaller screens */
+  padding: 12px; /* Reduced padding for smaller screens */
+  background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size for smaller screens */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .faq-two {
+    padding: 50px 0; /* Restore padding for larger screens */
+  }
+
+  .acc-btn {
+    padding: 15px; /* Restore padding for larger screens */
+    font-size: 16px; /* Restore font size for larger screens */
+  }
+
+  .acc-content {
+    padding: 15px; /* Restore padding for larger screens */
+    font-size: 16px; /* Restore font size for larger screens */
+  }
+
+  .quick-contact-card {
+    padding: 30px; /* Restore padding for larger screens */
+  }
+
+  .quick-contact-title {
+    font-size: 28px; /* Restore font size for larger screens */
+    margin-bottom: 20px; /* Restore margin for larger screens */
+  }
+
+  .quick-contact-form .form-group {
+    margin-bottom: 20px; /* Restore margin for larger screens */
+  }
+
+  .quick-contact-form input,
+  .quick-contact-form textarea {
+    padding: 16px; /* Restore padding for larger screens */
+    font-size: 16px; /* Restore font size for larger screens */
+  }
+
+  .quick-contact-form textarea {
+    height: 150px; /* Restore height for larger screens */
+  }
+
+  .submit-btn {
+    width: 40%; /* Restore width for larger screens */
+    padding: 14px; /* Restore padding for larger screens */
+    font-size: 16px; /* Restore font size for larger screens */
+  }
+
+  .col-lg-6 {
+    flex: 1 1 45%; /* Restore flex layout for larger screens */
+    min-width: 45%; /* Restore min-width for larger screens */
+  }
+}
+
+/* Footer Titles Font Size Increase */
+.footer-two_title {
+  font-size: 22px; /* Change this size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-two {
+  min-height: 500px; /* Adjust as needed */
+  padding: 0px 0;
+  gap: 10px;
+}
+
+.footer-two-widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

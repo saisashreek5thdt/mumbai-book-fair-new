@@ -14,13 +14,14 @@ export default function TeamExecutive() {
                   <span className="icon flaticon-megaphone-1"></span>
                 </div> */}
                 <div className="speaker-block">
-                                  <img src={speakerImg1} alt="" /></div>
+                  <img src={speakerImg1} alt="" />
+                </div>
                 <h4>
                   <Link to="/">Team Name</Link>
                 </h4>
                 <div className="text">
-                  The little rotter grub skive off blag ruddy say gutted mate,
-                  my lady brown bread nancy boy.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
                 </div>
                 <div className="btn-box">
                   <Link to="/" className="theme-btn btn-style-one">
@@ -43,13 +44,14 @@ export default function TeamExecutive() {
                   <span className="icon flaticon-arrows"></span>
                 </div> */}
                 <div className="speaker-block">
-                <img src={speakerImg1} alt="" /></div>
+                  <img src={speakerImg1} alt="" />
+                </div>
                 <h4>
                   <Link to="/">Team Name</Link>
                 </h4>
                 <div className="text">
-                  The little rotter grub skive off blag ruddy say gutted mate,
-                  my lady brown bread nancy boy.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
                 </div>
                 <div className="btn-box">
                   <Link to="/" className="theme-btn btn-style-one">
@@ -72,13 +74,14 @@ export default function TeamExecutive() {
                   <span className="icon flaticon-deal"></span>
                 </div> */}
                 <div className="speaker-block">
-                                  <img src={speakerImg1} alt="" /></div>
+                  <img src={speakerImg1} alt="" />
+                </div>
                 <h4>
                   <Link to="/">Team Name</Link>
                 </h4>
                 <div className="text">
-                  The little rotter grub skive off blag ruddy say gutted mate,
-                  my lady brown bread nancy boy.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
                 </div>
                 <div className="btn-box">
                   <Link to="/" className="theme-btn btn-style-one">

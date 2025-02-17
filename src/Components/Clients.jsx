@@ -1,11 +1,11 @@
-import clientImg1 from "../assets/images/clients/1.png";
-import clientImg2 from "../assets/images/clients/2.png";
-import clientImg3 from "../assets/images/clients/3.png";
-import clientImg4 from "../assets/images/clients/4.png";
-import clientImg5 from "../assets/images/clients/5.png";
-import clientImg6 from "../assets/images/clients/6.png";
-import clientImg7 from "../assets/images/clients/7.png";
-import clientImg8 from "../assets/images/clients/8.png";
+import clientImg1 from "../assets/images/clients/sponsor.png";
+import clientImg2 from "../assets/images/clients/sponsor.png";
+import clientImg3 from "../assets/images/clients/sponsor.png";
+import clientImg4 from "../assets/images/clients/sponsor.png";
+import clientImg5 from "../assets/images/clients/sponsor.png";
+import clientImg6 from "../assets/images/clients/sponsor.png";
+import clientImg7 from "../assets/images/clients/sponsor.png";
+import clientImg8 from "../assets/images/clients/sponsor.png";
 
 export default function Client() {
   return (
@@ -14,7 +14,7 @@ export default function Client() {
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title">Sponsors and Exhibitors</div>
-            <h2 className="sec-title_heading">Appreciate Our Kind Partners</h2>
+            <h2 className="sec-title_heading">Our Partners</h2>
           </div>
           <div className="row clearfix">
             {/* Client Column */}
