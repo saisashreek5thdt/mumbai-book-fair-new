@@ -170,3 +170,19 @@
     min-width: 45%; /* Restore min-width for larger screens */
   }
 }
+
+
+/* Footer Titles Font Size Increase */
+.footer-two_title {
+  font-size: 22px;  /* Change this size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.footer-two {
+  min-height: 500px; /* Adjust as needed */
+  padding: 0px 0;
+}
+
+

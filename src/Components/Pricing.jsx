@@ -13,8 +13,8 @@ export default function Pricing() {
         <div className="price-one_pattern" style={pricePattern1}></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <div className="sec-title_title">Conference Ticket Price</div>
-            <h2 className="sec-title_heading">Conference Tickets Now</h2>
+            <div className="sec-title_title">Teams</div>
+            <h2 className="sec-title_heading">Executive Members</h2>
           </div>
           <TeamExecutive />
         </div>
