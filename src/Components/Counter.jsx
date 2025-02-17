@@ -27,9 +27,9 @@ export default function CounterOne() {
   useEffect(() => {
     const counters = [
       { id: "count1", start: 50, end: 107 },
-      { id: "count2", start: 9911, end: 10000 },
+      { id: "count2", start: 189111, end: 189383 },
       { id: "count3", start: 0, end: 21 },
-      { id: "count4", start: 10, end: 56 },
+      { id: "count4", start: 205511, end: 205848 },
     ];
 
     counters.forEach(({ id, start, end }) => {
@@ -55,56 +55,56 @@ export default function CounterOne() {
 
     <div className="counter-inner">
         <div className="container">
-            <div className="row g-0" >
-                <div className="col-6 col-lg-3" >
-                    <div className="py-5 text-center text-white" >
+            <div className="row g-0"  >
+                <div className="col-6 col-lg-3"  >
+                    <div className="py-5 text-center text-white" style={{display:"flex",flexDirection:"column",gap:"20px"}}>
                         <div>
-                            <i className="bi bi-building count-icon"></i>
+                            {/* <i className="bi bi-building count-icon"></i> */}
                         </div>
                         <div className="py-2 count">
                             <span id="count1">{counts.count1}</span>
                         </div>
-                        <div>
-                            Lorem Ipsum HQs
-                        </div>
+                        <div style={{fontSize:"20px"}}>
+                            Speakers
+                        </div> 
                     </div>
                 </div>
                 <div className="col-6 col-lg-3">
-                    <div className="py-5 text-center text-white">
+                    <div className="py-5 text-center text-white"  style={{display:"flex",flexDirection:"column",gap:"20px"}}>
                         <div>
-                            <i className="bi bi-people count-icon"></i>
+                            {/* <i className="bi bi-people count-icon"></i> */}
                         </div>
                         <div className="py-2 count">
                             <span id="count2">{counts.count2}</span>+
                         </div>
-                        <div>
-                            Lorem Ipsum Peoples
+                        <div style={{fontSize:"20px"}}>
+                            Attendance
                         </div>
                     </div>
                 </div>
                 <div className="col-6 col-lg-3">
-                    <div className="py-5 text-center text-white">
+                    <div className="py-5 text-center text-white"  style={{display:"flex",flexDirection:"column",gap:"20px"}}>
                         <div>
-                            <i className="bi bi-trophy count-icon"></i>
+                            {/* <i className="bi bi-trophy count-icon"></i> */}
                         </div>
                         <div className="py-2 count">
                             <span id="count3">{counts.count3}</span>
                         </div>
-                        <div>
-                            Lorem Ipsum Awards
+                        <div style={{fontSize:"20px"}}>
+                            Workshops
                         </div>
                     </div>
                 </div>
                 <div className="col-6 col-lg-3">
-                    <div className="py-5 text-center text-white">
+                    <div className="py-5 text-center text-white"  style={{display:"flex",flexDirection:"column",gap:"20px"}}>
                         <div>
-                            <i className="bi bi-graph-up count-icon"></i>
+                            {/* <i className="bi bi-graph-up count-icon"></i> */}
                         </div>
                         <div className="py-2 count">
-                            $<span id="count4">{counts.count4}</span>m
+                            <span id="count4">{counts.count4}</span>+
                         </div>
-                        <div>
-                            Lorem Ipsum Revenue
+                        <div style={{fontSize:"20px"}}>
+                            Guests
                         </div>
                     </div>
                 </div>
