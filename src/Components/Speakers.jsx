@@ -41,9 +41,9 @@ export default function Speakers() {
         ></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-          <h2 className="sec-title_heading" style={{ marginBottom: "15px", fontSize: "36px", fontWeight: "700" }}>Speakers Experts</h2>
+          <div className="sec-title_title" style={{ textTransform: "none" }}>Speakers Experts</div>
+          <h2 className="sec-title_heading" style={{ marginBottom: "15px", fontSize: "36px", fontWeight: "700" }}>Meet Speakers For Events</h2>
 
-<div className="sec-title_title" style={{ textTransform: "none" }}>Eminent writers, speakers, authors, poets, artists, CEO’s from different vox of life will share their ideas and vision at the author’s corner and literary stage. </div>
           </div>
           <div className="row clearfix">
             {/* Speaker Block One */}
