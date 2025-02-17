@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import logo from "../assets/images/mumbaiLogo.png";
+import logo from "../assets/images/logo-footer.png";
 
 import icon1 from "../assets/images/icons/icon-5.png";
 import icon2 from "../assets/images/icons/icon-5.png";
@@ -20,23 +19,53 @@ import insta6 from "../assets/images/gallery/instagram-6.jpg";
 
 export default function Footer() {
   const handleViewLargerMap = () => {
-    window.open("https://www.google.com/maps/place/Azad+Maidan/@18.939218,72.833583,15z/data=!4m5!3m4!1s0x0:0x0!8m2!3d18.939218!4d72.833583", "_blank");
+    window.open(
+      "https://www.google.com/maps/place/Azad+Maidan/@18.939218,72.833583,15z/data=!4m5!3m4!1s0x0:0x0!8m2!3d18.939218!4d72.833583",
+      "_blank"
+    );
   };
 
   const handleGetDirections = () => {
-    window.open("https://www.google.com/maps/dir//Azad+Maidan,+Fort,+Mumbai,+Maharashtra", "_blank");
+    window.open(
+      "https://www.google.com/maps/dir//Azad+Maidan,+Fort,+Mumbai,+Maharashtra",
+      "_blank"
+    );
   };
 
   return (
     <footer className="footer-two">
-      <div className="footer-two_icon-one" style={{ backgroundImage: `url(${icon1})` }}></div>
-      <div className="footer-two_icon-two" style={{ backgroundImage: `url(${icon2})` }}></div>
-      <div className="footer-two_icon-three" style={{ backgroundImage: `url(${icon3})` }}></div>
-      <div className="footer-two_icon-four" style={{ backgroundImage: `url(${icon4})` }}></div>
-      <div className="footer-two_icon-five" style={{ backgroundImage: `url(${icon5})` }}></div>
-      <div className="footer-two_icon-six" style={{ backgroundImage: `url(${icon6})` }}></div>
-      <div className="footer-two_icon-seven" style={{ backgroundImage: `url(${icon7})` }}></div>
-      <div className="footer-two_icon-eight" style={{ backgroundImage: `url(${icon8})` }}></div>
+      <div
+        className="footer-two_icon-one"
+        style={{ backgroundImage: `url(${icon1})` }}
+      ></div>
+      <div
+        className="footer-two_icon-two"
+        style={{ backgroundImage: `url(${icon2})` }}
+      ></div>
+      <div
+        className="footer-two_icon-three"
+        style={{ backgroundImage: `url(${icon3})` }}
+      ></div>
+      <div
+        className="footer-two_icon-four"
+        style={{ backgroundImage: `url(${icon4})` }}
+      ></div>
+      <div
+        className="footer-two_icon-five"
+        style={{ backgroundImage: `url(${icon5})` }}
+      ></div>
+      <div
+        className="footer-two_icon-six"
+        style={{ backgroundImage: `url(${icon6})` }}
+      ></div>
+      <div
+        className="footer-two_icon-seven"
+        style={{ backgroundImage: `url(${icon7})` }}
+      ></div>
+      <div
+        className="footer-two_icon-eight"
+        style={{ backgroundImage: `url(${icon8})` }}
+      ></div>
 
       <div className="auto-container">
         <div className="footer-two-widgets">
@@ -51,7 +80,14 @@ export default function Footer() {
                       </Link>
                     </div>
                     <div className="footer-two_text">
-                      <div className="map-container" style={{ position: 'relative', height: '200px', marginTop: '20px' }}>
+                      <div
+                        className="map-container"
+                        style={{
+                          position: "relative",
+                          height: "200px",
+                          marginTop: "20px",
+                        }}
+                      >
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.041715007936!2d72.8313943153771!3d18.93921848715744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU2JzIxLjIiTiA3MsKwNTAnMDAuOCJF!5e0!3m2!1sen!2sin!4v1622549400000!5m2!1sen!2sin"
                           width="100%"
@@ -60,31 +96,33 @@ export default function Footer() {
                           allowFullScreen=""
                           loading="lazy"
                         ></iframe>
-                        <div style={{ 
-                          position: 'absolute', 
-                          bottom: '10px', 
-                          left: '10px', 
-                          backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                          padding: '5px 10px',
-                          borderRadius: '4px'
-                        }}>
-                          <a 
-                            onClick={handleViewLargerMap} 
-                            style={{ 
-                              color: '#007bff', 
-                              cursor: 'pointer', 
-                              textDecoration: 'underline',
-                              marginRight: '10px'
+                        <div
+                          style={{
+                            position: "absolute",
+                            bottom: "10px",
+                            left: "10px",
+                            backgroundColor: "rgba(255, 255, 255, 0.9)",
+                            padding: "5px 10px",
+                            borderRadius: "4px",
+                          }}
+                        >
+                          <a
+                            onClick={handleViewLargerMap}
+                            style={{
+                              color: "#007bff",
+                              cursor: "pointer",
+                              textDecoration: "underline",
+                              marginRight: "10px",
                             }}
                           >
                             View larger map
                           </a>
-                          <a 
-                            onClick={handleGetDirections} 
-                            style={{ 
-                              color: '#007bff', 
-                              cursor: 'pointer', 
-                              textDecoration: 'underline'
+                          <a
+                            onClick={handleGetDirections}
+                            style={{
+                              color: "#007bff",
+                              cursor: "pointer",
+                              textDecoration: "underline",
                             }}
                           >
                             Directions
@@ -99,12 +137,24 @@ export default function Footer() {
                   <div className="footer-two-widget links-widget">
                     <h4 className="footer-two_title">Links</h4>
                     <ul className="footer-two_list">
-                      <li><Link to="/">Home</Link></li>
-                      <li><Link to="/about">About</Link></li>
-                      <li><Link to="/services">Services</Link></li>
-                      <li><Link to="/projects">Projects</Link></li>
-                      {/* <li><Link to="/blogs">Blogs</Link></li> */}
-                      <li><Link to="/contact">Contact</Link></li>
+                      <li>
+                        <Link to="/">Home</Link>
+                      </li>
+                      <li>
+                        <Link to="/">About</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Schedule</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Speakers</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Team</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Publishers</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -117,21 +167,57 @@ export default function Footer() {
                   <div className="footer-widget news-widget">
                     <h4 className="footer-two_title">Contacts</h4>
                     <ul className="footer-two_contact-list">
-                      <li><span className="icon fa-solid fa-phone fa-fw"></span> 1800-NBT-1800</li>
+                      <li>
+                        <span className="icon fa-solid fa-phone fa-fw"></span>{" "}
+                        1800-NBT-1800
+                      </li>
                       <li>
                         <span className="icon fa-solid fa-envelope fa-fw"></span>
-                        <a href="mailto:example@gmail.com">example@gmail.com</a>
+                        <Link to="mailto:info@mumbaibookfest.com">
+                          info@mumbaibookfestival.com
+                        </Link>
                       </li>
-                      <li><span className="icon fa-solid fa-map-marker fa-fw"></span> Azad Maidan Fort Mumbai, Maharashtra.</li>
-                      <li><span className="icon fa-solid fa-clock fa-fw"></span> Mon - Fri 09am - 06pm</li> 
+                      <li>
+                        <span className="icon fa-solid fa-map-marker fa-fw"></span>{" "}
+                        Azad Maidan Fort Mumbai, Maharashtra.
+                      </li>
+                      <li>
+                        <span className="icon fa-solid fa-clock fa-fw"></span>{" "}
+                        Mon - Fri 09am - 06pm
+                      </li>
                     </ul>
 
                     <ul className="footer-two_socials">
-                      <li><a href="https://x.com/nbt_india?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="fa-brands fa-x-twitter"></a></li>
-                      <li><a href="https://www.facebook.com/nationalbooktrustindia" className="fa-brands fa-facebook-f"></a></li>
-                      <li><a href="https://www.instagram.com/nbtindia/?hl=en" className="fa-brands fa-instagram"></a></li>
-                      <li><a href="https://in.linkedin.com/company/nationalbooktrustindia" className="fa-brands fa-linkedin"></a></li>
-                      <li><a href="https://www.youtube.com/user/NBTIndia" className="fa-brands fa-youtube"></a></li>
+                      <li>
+                        <a
+                          href="https://x.com/nbt_india?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                          className="fa-brands fa-x-twitter"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/nationalbooktrustindia"
+                          className="fa-brands fa-facebook-f"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/nbtindia/?hl=en"
+                          className="fa-brands fa-instagram"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://in.linkedin.com/company/nationalbooktrustindia"
+                          className="fa-brands fa-linkedin"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/user/NBTIndia"
+                          className="fa-brands fa-youtube"
+                        ></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -140,12 +226,36 @@ export default function Footer() {
                   <div className="footer-widget instagram-widget">
                     <h4 className="footer-two_title">Instagram</h4>
                     <div className="images-outer clearfix">
-                      <figure className="image-box"><a className="lightbox-image" href={insta1}><img src={insta1} alt="Instagram 1" /></a></figure>
-                      <figure className="image-box"><a className="lightbox-image" href={insta2}><img src={insta2} alt="Instagram 2" /></a></figure>
-                      <figure className="image-box"><a className="lightbox-image" href={insta3}><img src={insta3} alt="Instagram 3" /></a></figure>
-                      <figure className="image-box"><a className="lightbox-image" href={insta4}><img src={insta4} alt="Instagram 4" /></a></figure>
-                      <figure className="image-box"><a className="lightbox-image" href={insta5}><img src={insta5} alt="Instagram 5" /></a></figure>
-                      <figure className="image-box"><a className="lightbox-image" href={insta6}><img src={insta6} alt="Instagram 6" /></a></figure>
+                      <figure className="image-box">
+                        <a className="lightbox-image" href={insta1}>
+                          <img src={insta1} alt="Instagram 1" />
+                        </a>
+                      </figure>
+                      <figure className="image-box">
+                        <a className="lightbox-image" href={insta2}>
+                          <img src={insta2} alt="Instagram 2" />
+                        </a>
+                      </figure>
+                      <figure className="image-box">
+                        <a className="lightbox-image" href={insta3}>
+                          <img src={insta3} alt="Instagram 3" />
+                        </a>
+                      </figure>
+                      <figure className="image-box">
+                        <a className="lightbox-image" href={insta4}>
+                          <img src={insta4} alt="Instagram 4" />
+                        </a>
+                      </figure>
+                      <figure className="image-box">
+                        <a className="lightbox-image" href={insta5}>
+                          <img src={insta5} alt="Instagram 5" />
+                        </a>
+                      </figure>
+                      <figure className="image-box">
+                        <a className="lightbox-image" href={insta6}>
+                          <img src={insta6} alt="Instagram 6" />
+                        </a>
+                      </figure>
                     </div>
                   </div>
                 </div>
@@ -158,54 +268,31 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="auto-container">
           <div className="row clearfix">
-            <div className="column col-lg-6 col-md-12 col-sm-12">
-              <div className="copyright">&copy; Copyright ©2025 5thDT_tech. All Rights Reserved</div>
+            <div className="column col-lg-12 col-md-12 col-sm-12">
+              <div className="copyright text-center">
+                &copy; Copyright ©2025{" "}
+                <Link to="https://5thdt.com/" target="_blank">
+                  5thDT
+                </Link>
+                . All Rights Reserved
+              </div>
             </div>
-            <div className="column col-lg-6 col-md-12 col-sm-12">
+            {/* <div className="column col-lg-6 col-md-12 col-sm-12">
               <ul className="footer-bottom-nav">
-                <li><a href="#">Terms and conditions</a></li>
-                <li><a href="#">Privacy policy</a></li>
+                <li>
+                  <a href="#">Terms and conditions</a>
+                </li>
+                <li>
+                  <a href="#">Privacy policy</a>
+                </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
     </footer>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // original footer
 
@@ -251,7 +338,7 @@ export default function Footer() {
 //                       <Link
 //                         to="/"
 //                         className="youtube fa-brands fa-youtube"
-//                       ></Link>                      
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -318,8 +405,3 @@ export default function Footer() {
 //     </>
 //   );
 // }
-
-
-
-
-
