@@ -1,13 +1,16 @@
 import { useState } from "react";
 import circle2 from "../assets/images/icons/circle-icon-two.png";
 import shape1 from "../assets/images/icons/shape-1.png";
+import { BiFilter } from "react-icons/bi";
+import { GiVideoConference } from "react-icons/gi";
+import { GiBackwardTime } from "react-icons/gi";
 
 import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
 import speakerImg2 from "../assets/images/Speakers/Chandraprakash_Dwivedi.png";
 import speakerImg3 from "../assets/images/Speakers/Govind_Dolakiya.png";
-// import speakerImg4 from "../assets/images/Speakers/kailash-kher-680x680.png";
+import speakerImg4 from "../assets/images/Speakers/kailash-kher-680x680.png";
 import speakerImg5 from "../assets/images/Speakers/Shiv_Khera.png";
-// import speakerImg6 from "../assets/images/Speakers/Upendra_Rai.png";
+import speakerImg6 from "../assets/images/Speakers/Upendra_Rai.png";
 import speakerImg7 from "../assets/images/Speakers/VP_Speaker.png";
 // import speakerImg8 from "../assets/images/Speakers/Ankur_Warikoo.png";
 export default function LeadershipOne() {
@@ -28,150 +31,171 @@ export default function LeadershipOne() {
     {
       time: "10:00 AM - 11:00 AM",
       name: " Vaibhav Purandare",
-      designation: "Senior Editor at The Times Of India & Author ",
+      designation: "Senior Editor at The Times Of India",
       day: "04 April",
       title: "Young Picassos: Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "04/04/2025",
       imgURL:speakerImg7,
+      place:"Conference Hall 1",
     },
     {
       time: "11:15 AM - 12:15 PM",
-      name: "Chandraprakash Dwivedi",
-      designation: "Author",
-      day: "05 April",
+      name: "Dr.Chandraprakash",
+      designation: "Indian Author",
+      day: "04 April",
       title: "Spin-a-Tale: Let's Write a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "04/04/2025",
       imgURL:speakerImg2,
+      place:"Conference Hall 2",
     },
     {
       time: "10:00 AM - 10:45 AM",
-      name: "shiv kera",
+      name: "Shiv Khera",
       designation:
-        "Indian author, motivational speaker, educator, and business consultant",
-      day: "06 April",
+        "Indian Author, Motivational Speaker, and Educator",
+      day: "04 April",
       title: "Open Mic Express",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "04/04/2025",
       imgURL:speakerImg5,
+      place:"Conference Hall 3",
     },
     {
       time: "11:00 AM - 11:45 AM",
-      name: "Govind dolakiya",
-      designation: "Indian author",
-      day: "06 April",
+      name: "Govind Dholakia",
+      designation: "Indian Author",
+      day: "04 April",
       title: "Art Attack! Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "04/04/2025",
       imgURL:speakerImg3,
+      place:"Conference Hall 4",
     },
     {
       time: "12:00 PM - 12:45 PM",
-      name: "kailash kher",
-      designation: "Indian author",
-      day: "06 April",
+      name: "Kailash Kher",
+      designation: "Indian Playback Singer and Composer",
+      day: "05 April",
       title: "Power of Words: Slogan Writing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "05/04/2025",
-      imgURL:speakerImg7,
+      imgURL:speakerImg4,
+      place:"Conference Hall 5",
     },
     {
       time: "10:00 AM - 10:45 AM",
-      name: "Ankur warikoo",
-      designation: "Indian author",
-      day: "06 April",
+      name: "Ankur Warikoo",
+      designation: "Indian Author",
+      day: "05 April",
       title: "Once Upon a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "05/04/2025",
       imgURL:speakerImg1,
+      place:"Conference Hall 6",
     },
     {
       time: "11:00 AM - 11:45 AM",
-      name: " Upendra rai",
-      designation: "Indian author",
+      name: " Upendra Rai",
+      designation: "Indian Author",
       day: "06 April",
       title: "Mini Sculptors Clay Workshop",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "27/5/2025",
-      imgURL:speakerImg2,
+      date: "06/04/2025",
+      imgURL:speakerImg6,
+      place:"Conference Hall 7",
     },
     {
       time: "12:00 PM - 12:45 PM",
+      name: "Shiv Khera",
       title: "Theatre-Improv Fusion",
-      designation: "Indian author",
+      designation: "Indian Author",
       day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "27/5/2025",
+      date: "06/04/2025",
       imgURL:speakerImg5,
+      place:"Conference Hall 8",
     },
     {
       time: "10:00 AM - 10:45 AM",
+      name: "Govind Dholakia",
       title: "कहानी का जादू: Puppets के साथ एक आकर्षक स",
-      designation: "Indian author",
-      day: "06 April",
+      designation: "Indian Author",
+      day: "07 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "28/5/2025",
+      date: "07/04/2025",
       imgURL:speakerImg3,
+      place:"Conference Hall 9",
     },
     {
       time: "11:00 AM - 11:45 AM",
+      name: "Dr.Chandraprakash",
       title: "Mastering the Art of Calligraphy",
-      designation: "Indian author",
-      day: "06 April",
+      designation: "Indian Author",
+      day: "07 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "28/5/2025",
+      date: "07/04/2025",
       imgURL:speakerImg2,
+      place:"Conference Hall 10",
     },
     {
       time: "12:00 PM - 12:45 PM",
+      name: " Vaibhav Purandare",
       title: "Fun with Science!",
-      designation: "Indian author",
-      day: "06 April",
+      designation: "Indian Author",
+      day: "07 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "28/5/2025",
+      date: "07/04/2025",
       imgURL:speakerImg7,
+      place:"Conference Hall 11",
     },
     {
       time: "10:00 AM - 10:45 AM",
+      name: "Dr.Chandraprakash",
       title: "Theatre of Tales",
-      designation: "Indian author",
-      day: "06 April",
+      designation: "Indian Author",
+      day: "08 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "29/5/2025",
+      date: "08/04/2025",
       imgURL:speakerImg2,
+      place:"Conference Hall 12",
     },
     {
       time: "11:00 AM - 11:45 AM",
       title: "Meet the Little Author",
-      designation: "Indian author",
-      day: "06 April",
+      name: "Govind Dholakia",
+      designation: "Indian Author",
+      day: "08 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "29/5/2025",
+      date: "08/04/2025",
       imgURL:speakerImg3,
+      place:"Conference Hall 13",
     },
     {
       time: "12:00 PM - 12:45 PM",
+      name: " Vaibhav Purandare",
       title: "Fearless & Ready: Self-Defence Workshop",
-      designation: "Indian author",
-      day: "06 April",
+      designation: "Indian Author",
+      day: "08 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "29/5/2025",
+      date: "08/04/2025",
       imgURL:speakerImg7,
+      place:"Conference Hall 14",
     },
   ];
 
@@ -286,7 +310,8 @@ export default function LeadershipOne() {
                     style={{ background: " #cf288f", color: "white" }}
                     className="input-group-text"
                   >
-                    <i className="fa-regular fa-calendar-days"></i>
+                  <BiFilter style={{fontSize:"25px"}} />
+                    {/* <i className="fa-regular fa-calendar-days"></i> */}
                   </span>
                   <select
                     style={{ height: "50px" }}
@@ -308,7 +333,8 @@ export default function LeadershipOne() {
                     style={{ background: " #cf288f", color: "white" }}
                     className="input-group-text"
                   >
-                    <i className="fa-regular fa-calendar-days"></i>
+                    {/* <i className="fa-regular fa-calendar-days"></i> */}
+                    <BiFilter  style={{fontSize:"25px"}}/>
                   </span>
                   {/* <select className="select form-select form-control">
                       <option value="">All Titles</option>
@@ -366,29 +392,31 @@ export default function LeadershipOne() {
                             <div className="content" style={{display:"flex",flexDirection:"column",alignItems:"start"}}>
                               <div className="author-box">
                                 <div className="box-inner">
-                                  <div className="author-image">
+                                  <div className="author-image" style={{marginBottom:"10px"}}>
                                     {/* Replace with actual image path */}
                                     <img
                                       src={item.imgURL}
                                       alt=""
                                     />
                                   </div>
-                                  <h6>{item.name}</h6>
+                                  <h6 >{item.name}</h6>
                                   <div className="designation">
                                     {item.designation}
                                   </div>
                                 </div>
                               </div>
-                              <div className="date">{item.day}</div>
+                              <div className="date" style={{color:"#cf288f", fontWeight:"bold"}}>{item.day}</div>
                               <h4>{item.title}</h4>
-                              <div className="text">{item.description}</div>
-                              <ul className="event-info">
-                                <li>
-                                  <span className="icon flaticon-maps-and-flags"></span>
-                                  Mumbai
+                              <div className="text" style={{textAlign:"left"}}>{item.description}</div>
+                              <ul className="event-info" >
+                                <li >
+                                  {/* <span className="icon flaticon-maps-and-flags"></span> */}
+                                  <span className="icon "><GiVideoConference style={{color:" #cf288f",fontSize:"20px"}}/> </span>
+                                  {/* <GiVideoConference style={{color:" #cf288f",fontSize:"20px"}}/> */}
+                                  {item.place}
                                 </li>
                                 <li>
-                                  <span className="icon flaticon-call-1"></span>
+                                  <span className="icon"><GiBackwardTime /></span>
                                   {item.time}
                                 </li>
                               </ul>

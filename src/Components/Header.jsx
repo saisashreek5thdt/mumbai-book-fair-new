@@ -14,13 +14,13 @@ export default function Header() {
             <div className="d-flex justify-content-end">
               <div className="header-top_socials">
                 <Link
-                  to="/"
+                  to="https://www.facebook.com/nationalbooktrustindia"
                   className="facebook fa-brands fa-facebook-f"
                 ></Link>
-                <Link to="/" className="twitter fa-brands fa-instagram"></Link>
-                <Link to="/" className="twitter fa-brands fa-x-twitter"></Link>
-                <Link to="/" className="twitter fa-brands fa-linkedin-in"></Link>
-                <Link to="/" className="youtube fa-brands fa-youtube"></Link>
+                <Link to="https://www.instagram.com/nbtindia/?hl=en" className="twitter fa-brands fa-instagram"></Link>
+                <Link to="https://x.com/nbt_india?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="twitter fa-brands fa-x-twitter"></Link>
+                <Link to="https://in.linkedin.com/company/nationalbooktrustindia" className="twitter fa-brands fa-linkedin-in"></Link>
+                <Link to="https://www.youtube.com/user/NBTIndia" className="youtube fa-brands fa-youtube"></Link>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function Header() {
                       className="navbar-collapse collapse clearfix"
                       id="navbarSupportedContent"
                     >
-                      <ul className="navigation clearfix">
+                      <ul className="navigation clearfix" style={{display:"flex",gap:"15px"}}>
                         <li>
                           <Link to="/">About</Link>
                         </li>

@@ -23,13 +23,15 @@ export default function CounterOne() {
     count2: 9911,
     count3: 0,
     count4: 10,
+    count5: 100
   });
   useEffect(() => {
     const counters = [
       { id: "count1", start: 50, end: 107 },
-      { id: "count2", start: 189111, end: 189383 },
+      { id: "count2", start: 120, end: 132 },
       { id: "count3", start: 0, end: 21 },
       { id: "count4", start: 205511, end: 205848 },
+      { id: "count5", start: 100, end: 145 },
     ];
 
     counters.forEach(({ id, start, end }) => {
@@ -55,7 +57,7 @@ export default function CounterOne() {
 
     <div className="counter-inner">
         <div className="container">
-            <div className="row g-0"  >
+            <div className="row g-0" style={{display:"flex", justifyContent:"space-evenly", alignContent:"center",gap:"0px"}}  >
                 <div className="col-6 col-lg-3"  >
                     <div className="py-5 text-center text-white" style={{display:"flex",flexDirection:"column",gap:"20px"}}>
                         <div>
@@ -78,7 +80,20 @@ export default function CounterOne() {
                             <span id="count2">{counts.count2}</span>+
                         </div>
                         <div style={{fontSize:"20px"}}>
-                            Attendance
+                            Publishers
+                        </div>
+                    </div>
+                </div>
+                <div className="col-6 col-lg-3">
+                    <div className="py-5 text-center text-white"  style={{display:"flex",flexDirection:"column",gap:"20px"}}>
+                        <div>
+                            {/* <i className="bi bi-people count-icon"></i> */}
+                        </div>
+                        <div className="py-2 count">
+                            <span id="count2">{counts.count5}</span>+
+                        </div>
+                        <div style={{fontSize:"20px"}}>
+                            Booths
                         </div>
                     </div>
                 </div>

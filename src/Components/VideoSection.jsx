@@ -21,7 +21,7 @@ export default function VideoOne() {
                 <div className="auto-container">
                     <div className="sec-title title-anim light centered">
                         {/* <div className="sec-title_title">LATEST VIDEO</div> */}
-                        <h2 className="sec-title_heading">CELEBRATING THE <br/> POWER OF WORDS</h2>
+                        <h2 className="sec-title_heading" style={{fontSize:"50px"}}>CELEBRATING THE POWER OF WORDS</h2>
                         
                     </div>
                 </div>

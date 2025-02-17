@@ -388,9 +388,11 @@
 	transition:all 500ms ease;
 }
 
+/*  */
+
 .slider-one_play span:hover{
 	color:var(--white-color);
-	background-color:var(--color-two);
+	background-color:#cf288f;
 }
 
 .slider-one_play .ripple,
