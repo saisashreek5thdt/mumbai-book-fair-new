@@ -173,6 +173,14 @@
 .footer-two {
   min-height: 500px; /* Adjust as needed */
   padding: 0px 0;
+  gap:10px;
 }
+
+.footer-two-widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 
 
