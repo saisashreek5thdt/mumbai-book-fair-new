@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
 
 export default function TeamExecutive() {
   return (
@@ -9,9 +10,11 @@ export default function TeamExecutive() {
             {/* Feature Block */}
             <div className="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
               <div className="inner-box">
-                <div className="icon-box">
+                {/* <div className="icon-box">
                   <span className="icon flaticon-megaphone-1"></span>
-                </div>
+                </div> */}
+                <div className="speaker-block">
+                                  <img src={speakerImg1} alt="" /></div>
                 <h4>
                   <Link to="/">Team Name</Link>
                 </h4>
@@ -36,9 +39,11 @@ export default function TeamExecutive() {
               data-wow-delay="400ms"
             >
               <div className="inner-box">
-                <div className="icon-box">
+                {/* <div className="icon-box">
                   <span className="icon flaticon-arrows"></span>
-                </div>
+                </div> */}
+                <div className="speaker-block">
+                <img src={speakerImg1} alt="" /></div>
                 <h4>
                   <Link to="/">Team Name</Link>
                 </h4>
@@ -63,9 +68,11 @@ export default function TeamExecutive() {
               data-wow-delay="800ms"
             >
               <div className="inner-box">
-                <div className="icon-box">
+                {/* <div className="icon-box">
                   <span className="icon flaticon-deal"></span>
-                </div>
+                </div> */}
+                <div className="speaker-block">
+                                  <img src={speakerImg1} alt="" /></div>
                 <h4>
                   <Link to="/">Team Name</Link>
                 </h4>

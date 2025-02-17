@@ -62,8 +62,8 @@ export default function LeadershipOne() {
     {
       time: "11:00 AM - 11:45 AM",
       name: "Govind dolakiya",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       title: "Art Attack! Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
@@ -73,8 +73,8 @@ export default function LeadershipOne() {
     {
       time: "12:00 PM - 12:45 PM",
       name: "kailash kher",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       title: "Power of Words: Slogan Writing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
@@ -84,8 +84,8 @@ export default function LeadershipOne() {
     {
       time: "10:00 AM - 10:45 AM",
       name: "Ankur warikoo",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       title: "Once Upon a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
@@ -95,76 +95,83 @@ export default function LeadershipOne() {
     {
       time: "11:00 AM - 11:45 AM",
       name: " Upendra rai",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       title: "Mini Sculptors Clay Workshop",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "27/5/2025",
-      imgUrl:""
+      imgURL:speakerImg2,
     },
     {
       time: "12:00 PM - 12:45 PM",
       title: "Theatre-Improv Fusion",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
       date: "27/5/2025",
+      imgURL:speakerImg5,
     },
     {
       time: "10:00 AM - 10:45 AM",
       title: "कहानी का जादू: Puppets के साथ एक आकर्षक स",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
       date: "28/5/2025",
+      imgURL:speakerImg3,
     },
     {
       time: "11:00 AM - 11:45 AM",
       title: "Mastering the Art of Calligraphy",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
       date: "28/5/2025",
+      imgURL:speakerImg2,
     },
     {
       time: "12:00 PM - 12:45 PM",
       title: "Fun with Science!",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
       date: "28/5/2025",
+      imgURL:speakerImg7,
     },
     {
       time: "10:00 AM - 10:45 AM",
       title: "Theatre of Tales",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
       date: "29/5/2025",
+      imgURL:speakerImg2,
     },
     {
       time: "11:00 AM - 11:45 AM",
       title: "Meet the Little Author",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
       date: "29/5/2025",
+      imgURL:speakerImg3,
     },
     {
       time: "12:00 PM - 12:45 PM",
       title: "Fearless & Ready: Self-Defence Workshop",
-      designation: "",
-      day: "",
+      designation: "Indian author",
+      day: "06 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
       date: "29/5/2025",
+      imgURL:speakerImg7,
     },
   ];
 

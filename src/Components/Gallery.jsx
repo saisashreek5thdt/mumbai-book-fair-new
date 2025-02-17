@@ -1,11 +1,11 @@
-import galleryImg1 from "../assets/images/gallery/1.jpg";
-import galleryImg2 from "../assets/images/gallery/2.jpg";
-import galleryImg3 from "../assets/images/gallery/3.jpg";
-import galleryImg4 from "../assets/images/gallery/4.jpg";
-import galleryImg5 from "../assets/images/gallery/5.jpg";
-import galleryImg6 from "../assets/images/gallery/6.jpg";
-import galleryImg7 from "../assets/images/gallery/7.jpg";
-import galleryImg8 from "../assets/images/gallery/8.jpg";
+import galleryImg1 from "../assets/images/gallery/fest1.jpg";
+import galleryImg2 from "../assets/images/gallery/fest2.jpg";
+import galleryImg3 from "../assets/images/gallery/fest3.jpg";
+import galleryImg4 from "../assets/images/gallery/fest4.jpg";
+import galleryImg5 from "../assets/images/gallery/fest5.jpg";
+import galleryImg6 from "../assets/images/gallery/fest6.jpg";
+import galleryImg7 from "../assets/images/gallery/fest1.jpg";
+import galleryImg8 from "../assets/images/gallery/fest5.jpg";
 
 export default function Gallery() {
   return (
