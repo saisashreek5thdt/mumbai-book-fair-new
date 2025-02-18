@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import slideImg1 from "../../assets/images/background/11.jpg";
 
 export default function SpeakerSlide() {
@@ -17,7 +18,7 @@ export default function SpeakerSlide() {
             </div>
             <ul className="bread-crumb clearfix">
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>Speaker&apos;s Detail</li>
             </ul>
