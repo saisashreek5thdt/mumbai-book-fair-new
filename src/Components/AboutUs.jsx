@@ -2,8 +2,8 @@ import pattern3 from "../assets/images/background/pattern-3.png";
 import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 import AboutPattern from "../assets/images/background/about-pattern.png";
-import AboutSpeaker from "../assets/images/Speakers/event.mp4";
-const backgroundColor={background:"black"};
+import AboutSpeaker from "../assets/images/Speakers/circle.mp4";
+const backgroundColor={background:"black", width:"570px", height:"550px"};
 export default function About() {
   return (
     <>

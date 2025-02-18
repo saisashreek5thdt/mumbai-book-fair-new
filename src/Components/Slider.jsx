@@ -94,7 +94,7 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>04</span> April 2025 <br />
+                    <span>18</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -134,7 +134,7 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>05</span> April 2025 <br />
+                    <span>19</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -174,7 +174,7 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>06</span> April 2025 <br />
+                    <span>20</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -214,7 +214,7 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>07</span> April 2025 <br />
+                    <span>21</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -254,7 +254,7 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>08</span> April 2025 <br />
+                    <span>22</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}

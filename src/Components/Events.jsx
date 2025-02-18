@@ -48,11 +48,11 @@ export default function LeadershipOne() {
       time: "10:00 AM - 11:00 AM",
       name: " Vaibhav Purandare",
       designation: "Senior Editor at The Times Of India",
-      day: "04 April",
+      day: "18 April",
       title: "Young Picassos: Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
+      date: "18/04/2025",
       imgURL: speakerImg7,
       place: "Conference Hall 1",
     },
@@ -60,11 +60,11 @@ export default function LeadershipOne() {
       time: "11:15 AM - 12:15 PM",
       name: "Dr.Chandraprakash",
       designation: "Indian Author",
-      day: "04 April",
+      day: "18 April",
       title: "Spin-a-Tale: Let's Write a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
+      date: "18/04/2025",
       imgURL: speakerImg2,
       place: "Conference Hall 2",
     },
@@ -72,11 +72,11 @@ export default function LeadershipOne() {
       time: "10:00 AM - 10:45 AM",
       name: "Shiv Khera",
       designation: "Indian Author, Motivational Speaker, and Educator",
-      day: "04 April",
+      day: "18 April",
       title: "Open Mic Express",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
+      date: "18/04/2025",
       imgURL: speakerImg5,
       place: "Conference Hall 3",
     },
@@ -84,11 +84,11 @@ export default function LeadershipOne() {
       time: "11:00 AM - 11:45 AM",
       name: "Govind Dholakia",
       designation: "Indian Author",
-      day: "04 April",
+      day: "18 April",
       title: "Art Attack! Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
+      date: "18/04/2025",
       imgURL: speakerImg3,
       place: "Conference Hall 4",
     },
@@ -96,11 +96,11 @@ export default function LeadershipOne() {
       time: "12:00 PM - 12:45 PM",
       name: "Kailash Kher",
       designation: "Indian Playback Singer and Composer",
-      day: "05 April",
+      day: "19 April",
       title: "Power of Words: Slogan Writing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "05/04/2025",
+      date: "19/04/2025",
       imgURL: speakerImg4,
       place: "Conference Hall 5",
     },
@@ -108,11 +108,11 @@ export default function LeadershipOne() {
       time: "10:00 AM - 10:45 AM",
       name: "Ankur Warikoo",
       designation: "Indian Author",
-      day: "05 April",
+      day: "19 April",
       title: "Once Upon a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "05/04/2025",
+      date: "19/04/2025",
       imgURL: speakerImg1,
       place: "Conference Hall 6",
     },
@@ -120,11 +120,11 @@ export default function LeadershipOne() {
       time: "11:00 AM - 11:45 AM",
       name: " Upendra Rai",
       designation: "Indian Author",
-      day: "06 April",
+      day: "20 April",
       title: "Mini Sculptors Clay Workshop",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "06/04/2025",
+      date: "20/04/2025",
       imgURL: speakerImg6,
       place: "Conference Hall 7",
     },
@@ -133,10 +133,10 @@ export default function LeadershipOne() {
       name: "Shiv Khera",
       title: "Theatre-Improv Fusion",
       designation: "Indian Author",
-      day: "06 April",
+      day: "20 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "06/04/2025",
+      date: "20/04/2025",
       imgURL: speakerImg5,
       place: "Conference Hall 8",
     },
@@ -145,10 +145,10 @@ export default function LeadershipOne() {
       name: "Govind Dholakia",
       title: "कहानी का जादू: Puppets के साथ एक आकर्षक स",
       designation: "Indian Author",
-      day: "07 April",
+      day: "21 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "07/04/2025",
+      date: "21/04/2025",
       imgURL: speakerImg3,
       place: "Conference Hall 9",
     },
@@ -157,10 +157,10 @@ export default function LeadershipOne() {
       name: "Dr.Chandraprakash",
       title: "Mastering the Art of Calligraphy",
       designation: "Indian Author",
-      day: "07 April",
+      day: "21 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "07/04/2025",
+      date: "21/04/2025",
       imgURL: speakerImg2,
       place: "Conference Hall 10",
     },
@@ -169,10 +169,10 @@ export default function LeadershipOne() {
       name: " Vaibhav Purandare",
       title: "Fun with Science!",
       designation: "Indian Author",
-      day: "07 April",
+      day: "21 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "07/04/2025",
+      date: "21/04/2025",
       imgURL: speakerImg7,
       place: "Conference Hall 11",
     },
@@ -181,10 +181,10 @@ export default function LeadershipOne() {
       name: "Dr.Chandraprakash",
       title: "Theatre of Tales",
       designation: "Indian Author",
-      day: "08 April",
+      day: "22 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "08/04/2025",
+      date: "22/04/2025",
       imgURL: speakerImg2,
       place: "Conference Hall 12",
     },
@@ -193,10 +193,10 @@ export default function LeadershipOne() {
       title: "Meet the Little Author",
       name: "Govind Dholakia",
       designation: "Indian Author",
-      day: "08 April",
+      day: "22 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "08/04/2025",
+      date: "22/04/2025",
       imgURL: speakerImg3,
       place: "Conference Hall 13",
     },
@@ -205,10 +205,10 @@ export default function LeadershipOne() {
       name: " Vaibhav Purandare",
       title: "Fearless & Ready: Self-Defence Workshop",
       designation: "Indian Author",
-      day: "08 April",
+      day: "22 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "08/04/2025",
+      date: "22/04/2025",
       imgURL: speakerImg7,
       place: "Conference Hall 14",
     },
@@ -358,11 +358,16 @@ export default function LeadershipOne() {
                     className="select form-select form-control"
                   >
                     <option value="All">All Titles</option>
-                    {scheduleData.map((item, index) => (
+                    {/* {scheduleData.map((item, index) => (
                       <option key={index} value={item.title}>
                         {item.title}
                       </option>
-                    ))}
+                    ))} */}
+                    <option value="Children Activities">Children Activities</option>
+                    <option value="Authors Corner">Authors Corner</option>
+                    <option value="Cultural Activities">Cultural Activities</option>
+                    <option value="Film Festival">Film Festival</option>
+                    <option value="Exhibition">Exhibition</option>
                   </select>
                 </div>
               </div>
