@@ -42,22 +42,22 @@ export default function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li>
-                        <a to="/">About</a>
+                        <a to="/" target="_parent">About</a>
                       </li>
                       <li>
-                        <Link to="/">Schedule</Link>
+                        <Link to="/" target="_parent">Schedule</Link>
                       </li>
                       <li>
-                        <Link to="/">Speakers</Link>
+                        <Link to="#speakers" target="_parent">Speakers</Link>
                       </li>
                       <li>
-                        <Link to="/">Team</Link>
+                        <Link to="#team" target="_parent">Team</Link>
                       </li>
                       <li>
-                        <Link to="/">Publishers</Link>
+                        <Link to="/publishers" target="_parent">Publishers</Link>
                       </li>
                       <li>
-                        <Link to="/">FAQ</Link>
+                        <Link to="#faq" target="_parent">FAQ</Link>
                       </li>
                     </ul>
                   </div>
