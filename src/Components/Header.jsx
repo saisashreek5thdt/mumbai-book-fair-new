@@ -42,22 +42,59 @@ export default function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li>
-                        <Link to="#about" target="_parent">About</Link>
+                        <Link to="#about" target="_parent">
+                          About
+                        </Link>
                       </li>
                       <li>
-                        <Link to="#event" target="_parent">Schedule</Link>
+                        <Link to="#event" target="_parent">
+                          Schedule
+                        </Link>
                       </li>
                       <li>
-                        <Link to="#speakers" target="_parent">Speakers</Link>
+                        <Link to="#speakers" target="_parent">
+                          Speakers
+                        </Link>
                       </li>
                       <li>
-                        <Link to="#team" target="_parent">Team</Link>
+                        <Link to="#team" target="_parent">
+                          Team
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/publishers" target="_parent">Publishers</Link>
+                        <Link to="/publishers" target="_parent">
+                          Publishers
+                        </Link>
                       </li>
                       <li>
-                        <Link to="#faq" target="_parent">FAQ</Link>
+                        <Link to="#faq" target="_parent">
+                          FAQ
+                        </Link>
+                      </li>
+                      <li className="dropdown language-icon">
+                        {/* <img src={language} alt="" /> */}
+                        <span>
+                          <i
+                            className="fa fa-language fa-2xl"
+                            style={{
+                              width: "30px",
+                              height: "30px",
+                              color: "gold",
+                            }}
+                          ></i>
+                          {/* <LiaLanguageSolid style={{width:"30px",height:"30px", color:"white"}}/> */}
+                        </span>
+                        <ul>
+                          <li>
+                            <a href="">English</a>
+                          </li>
+                          <li>
+                            <a href="">Hindi</a>
+                          </li>
+                          <li>
+                            <a href="">Marathi</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
