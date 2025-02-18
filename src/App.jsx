@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-import {
-  BrowserRouter,
-  //createBrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 //import Speakers from "./Speakers";
 import PublishersPage from "./PublishersPage";
@@ -69,28 +64,8 @@ export default function App() {
     };
   }, []);
 
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <Home />,
-  //   },
-  //   {
-  //     path: "/speaker/01",
-  //     element: <Speakers />,
-  //   },
-  //   {
-  //     path: "/speakers",
-  //     element: <SpeakersPage />,
-  //   },
-  //   {
-  //     path: "/publishers",
-  //     element: <PublishersPage />,
-  //   },
-  // ]);
-
   return (
     <>
-      {/* <RouterProvider router={router} /> */}
       <BrowserRouter
         future={{
           v7_relativeSplatPath: true,

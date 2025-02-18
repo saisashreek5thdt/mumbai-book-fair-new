@@ -17,7 +17,7 @@ export default function Slider() {
 
   useEffect(() => {
     // Set the event date (April 4, 2025)
-    const eventDate = new Date("2025-04-04T00:00:00").getTime();
+    const eventDate = new Date("2025-04-18T00:00:00").getTime();
 
     // Function to update the countdown
     const updateCountdown = () => {
