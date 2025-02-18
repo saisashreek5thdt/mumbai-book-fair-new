@@ -73,7 +73,7 @@ export default function Slider() {
           className="slider-one_pattern-two"
           style={{ backgroundImage: `url(${pattern2})` }}
         ></div>
-        <div className="main-slider-carousel owl-carousel owl-theme">
+        <div className="main-slider-carousel owl-carousel">
           {/* <!-- Slide 01 --> */}
           <div className="slider-one_slide">
             <div
