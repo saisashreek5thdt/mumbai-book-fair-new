@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import Speakers from "./Speakers";
+import PublishersPage from "./PublishersPage";
+import SpeakersPage from "./SpeakersPage";
 
 export default function App() {
   useEffect(() => {
@@ -70,6 +72,14 @@ export default function App() {
     {
       path: "/speaker/01",
       element: <Speakers />
+    },
+    {
+      path: "/speakers",
+      element: <SpeakersPage />
+    },
+    {
+      path: "/publishers",
+      element: <PublishersPage />
     }
   ]);
 
