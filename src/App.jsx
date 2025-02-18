@@ -1,7 +1,12 @@
 import { useEffect } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  BrowserRouter,
+  //createBrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Home from "./Home";
-import Speakers from "./Speakers";
+//import Speakers from "./Speakers";
 import PublishersPage from "./PublishersPage";
 import SpeakersPage from "./SpeakersPage";
 
@@ -64,28 +69,35 @@ export default function App() {
     };
   }, []);
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/speaker/01",
-      element: <Speakers />
-    },
-    {
-      path: "/speakers",
-      element: <SpeakersPage />
-    },
-    {
-      path: "/publishers",
-      element: <PublishersPage />
-    }
-  ]);
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <Home />,
+  //   },
+  //   {
+  //     path: "/speaker/01",
+  //     element: <Speakers />,
+  //   },
+  //   {
+  //     path: "/speakers",
+  //     element: <SpeakersPage />,
+  //   },
+  //   {
+  //     path: "/publishers",
+  //     element: <PublishersPage />,
+  //   },
+  // ]);
 
   return (
     <>
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/speakers" element={<SpeakersPage />} />
+          <Route path="/publishers" element={<PublishersPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
