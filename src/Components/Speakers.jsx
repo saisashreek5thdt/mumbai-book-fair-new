@@ -1,5 +1,5 @@
-import speakersPatternImg1 from "../assets/images/background/pattern-4.png";
-import speakersPatternImg2 from "../assets/images/background/pattern-5.png";
+//import speakersPatternImg1 from "../assets/images/background/pattern-4.png";
+//import speakersPatternImg2 from "../assets/images/background/pattern-5.png";
 import speakersPatternImg3 from "../assets/images/background/pattern-6.png";
 
 import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
@@ -13,15 +13,15 @@ import speakerImg8 from "../assets/images/Speakers/Ankur_Warikoo.png";
 import { Link } from "react-router-dom";
 
 export default function Speakers() {
-  const speakersPattern1 = {
-    backgroundImage: `url(${speakersPatternImg1})`,
-    backgroundSize: "cover",
-  };
+  // const speakersPattern1 = {
+  //   backgroundImage: `url(${speakersPatternImg1})`,
+  //   backgroundSize: "cover",
+  // };
 
-  const speakersPattern2 = {
-    backgroundImage: `url(${speakersPatternImg2})`,
-    backgroundSize: "cover",
-  };
+  // const speakersPattern2 = {
+  //   backgroundImage: `url(${speakersPatternImg2})`,
+  //   backgroundSize: "cover",
+  // };
 
   const speakersPattern3 = {
     backgroundImage: `url(${speakersPatternImg3})`,
@@ -31,7 +31,7 @@ export default function Speakers() {
   return (
     <>
       <section className="speakers-one" id="speakers">
-        <div className="speakers-one_pattern" style={speakersPattern1}></div>
+        {/* <div className="speakers-one_pattern" style={speakersPattern1}></div> */}
         <div
           className="speakers-one_pattern-two"
           style={speakersPattern3}
@@ -62,10 +62,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg1} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -105,10 +105,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg2} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -147,10 +147,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg3} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -189,10 +189,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg4} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -231,10 +231,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg5} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -273,10 +273,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg6} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -315,10 +315,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg7} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">
@@ -357,10 +357,10 @@ export default function Speakers() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg8} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                   {/* <div className="speaker-block_one-social">
                     <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
                     <div className="speaker-block_one-social-list">

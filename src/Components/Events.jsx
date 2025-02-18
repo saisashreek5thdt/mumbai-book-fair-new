@@ -288,31 +288,31 @@ export default function LeadershipOne() {
               <ul className="tab-buttons clearfix">
                 <li className="tab-btn active-btn" data-tab="#tab-1">
                   <span className="day">Day 01</span>
-                  <span className="date">04</span>
+                  <span className="date">18</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-2">
                   <span className="day">Day 02</span>
-                  <span className="date">05</span>
+                  <span className="date">19</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-3">
                   <span className="day">Day 03</span>
-                  <span className="date">06</span>
+                  <span className="date">20</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-4">
                   <span className="day">Day 04</span>
-                  <span className="date">07</span>
+                  <span className="date">21</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-5">
                   <span className="day">Day 05</span>
-                  <span className="date">08</span>
+                  <span className="date">22</span>
                   <span className="month">April</span> 2025
                 </li>
               </ul>

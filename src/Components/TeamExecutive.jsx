@@ -24,17 +24,17 @@ export default function TeamExecutive() {
                 <Link to="/">Acharya Pawan Tripathi</Link>
               </h4>
               <div className="text">
-                Is an author, columnist, social worker and trustee of Sri Sidhi
-                Vinayak temple trust, SSVT.
+                Author, Columnist, Social Worker and Trustee of Sri Sidhi
+                Vinayak Temple Trust, SSVT.
               </div>
-              <div className="btn-box">
+              {/* <div className="btn-box">
                 <Link to="/" className="theme-btn btn-style-one">
                   <span className="btn-wrap">
                     <span className="text-one">Read More</span>
                     <span className="text-two">Read More</span>
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -54,17 +54,17 @@ export default function TeamExecutive() {
                 <Link to="/">Sri Mohit Kamboj Bhartiya</Link>
               </h4>
               <div className="text">
-                Is a social worker, entrepreneur and champion of har hath ek
-                kitab.
+                Social Worker, Entrepreneur and Champion of{" "}
+                <strong>har hath ek kitab</strong>.
               </div>
-              <div className="btn-box">
+              {/* <div className="btn-box">
                 <Link to="/" className="theme-btn btn-style-one">
                   <span className="btn-wrap">
                     <span className="text-one">Read More</span>
                     <span className="text-two">Read More</span>
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -84,17 +84,17 @@ export default function TeamExecutive() {
                 <Link to="/">Acharya Pawan Tripathi</Link>
               </h4>
               <div className="text">
-              Is an author, columnist, social worker and trustee of Sri Sidhi
-              Vinayak temple trust, SSVT.
+                Author, Columnist, Social Worker and Trustee of Sri Sidhi
+                Vinayak Temple Trust, SSVT.
               </div>
-              <div className="btn-box">
+              {/* <div className="btn-box">
                 <Link to="/" className="theme-btn btn-style-one">
                   <span className="btn-wrap">
                     <span className="text-one">Read More</span>
                     <span className="text-two">Read More</span>
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
