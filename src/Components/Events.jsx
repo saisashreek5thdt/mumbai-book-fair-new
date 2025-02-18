@@ -243,7 +243,7 @@ export default function LeadershipOne() {
 
   return (
     <>
-      <section className="event-schedule-section">
+      <section className="event-schedule-section" id="event">
         <div
           className="circle-layer"
           style={{ backgroundImage: `url(${circle2})` }}

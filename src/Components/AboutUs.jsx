@@ -6,7 +6,7 @@ import AboutSpeaker from "../assets/images/Speakers/event.mp4";
 export default function About() {
   return (
     <>
-      <section className="about-one">
+      <section className="about-one" id="about">
         <div
           className="about-one_pattern-one"
           data-parallax='{"y" : 80}'

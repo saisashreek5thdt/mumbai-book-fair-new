@@ -42,10 +42,10 @@ export default function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li>
-                        <a to="/" target="_parent">About</a>
+                        <Link to="#about" target="_parent">About</Link>
                       </li>
                       <li>
-                        <Link to="/" target="_parent">Schedule</Link>
+                        <Link to="#event" target="_parent">Schedule</Link>
                       </li>
                       <li>
                         <Link to="#speakers" target="_parent">Speakers</Link>
