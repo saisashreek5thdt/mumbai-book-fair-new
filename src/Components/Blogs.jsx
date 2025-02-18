@@ -12,7 +12,7 @@ import blogImg6 from "../assets/images/resource/sponsor.png";
 export default function Blogs() {
   return (
     <>
-      <section className="news-one">
+      <section className="news-one" id="register">
         <div className="auto-container">
           <div className="sec-title">
             <div className="d-flex justify-content-between align-items-end flex-wrap">

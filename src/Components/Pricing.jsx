@@ -9,7 +9,7 @@ export default function Pricing() {
 
   return (
     <>
-      <section className="price-one">
+      <section className="price-one" id="team">
         <div className="price-one_pattern" style={pricePattern1}></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
