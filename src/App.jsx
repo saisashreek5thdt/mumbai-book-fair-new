@@ -91,7 +91,13 @@ export default function App() {
   return (
     <>
       {/* <RouterProvider router={router} /> */}
-      <BrowserRouter>
+      <BrowserRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+          v7_fetcherPersist: true,
+        }}
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/speakers" element={<SpeakersPage />} />
