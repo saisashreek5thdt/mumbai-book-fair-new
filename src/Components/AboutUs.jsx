@@ -7,7 +7,7 @@ const backgroundColor={background:"black"};
 export default function About() {
   return (
     <>
-      <section className="about-one">
+      <section className="about-one" id="about">
         <div
           className="about-one_pattern-one"
           data-parallax='{"y" : 80}'

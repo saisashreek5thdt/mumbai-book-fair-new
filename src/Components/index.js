@@ -19,3 +19,8 @@ export { default as Footer } from "./Footer";
 export { default as SpeakerSlide } from "./Speaker/SpeakerSlide";
 export { default as SpeakerInfo } from "./Speaker/SpeakerInfo";
 export { default as SpeakerSchedule } from "./Speaker/SpeakerSchedule";
+export { default as SpeakersList } from "./Speaker/SpeakersList";
+
+// Publishers Page Imports
+export { default as PublishersSlide } from "./Publishers/PublishersSlide";
+export { default as PublishersInfo } from "./Publishers/PublishersInfo";

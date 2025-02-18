@@ -1,18 +1,18 @@
-import speakersPatternImg1 from "../assets/images/background/pattern-4.png";
-import speakersPatternImg2 from "../assets/images/background/pattern-5.png";
-import speakersPatternImg3 from "../assets/images/background/pattern-6.png";
+import speakersPatternImg1 from "../../assets/images/background/pattern-4.png";
+import speakersPatternImg2 from "../../assets/images/background/pattern-5.png";
+import speakersPatternImg3 from "../../assets/images/background/pattern-6.png";
 
-import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
-import speakerImg2 from "../assets/images/Speakers/Chandraprakash_Dwivedi.png";
-import speakerImg3 from "../assets/images/Speakers/Govind_Dolakiya.png";
-import speakerImg4 from "../assets/images/Speakers/kailash-kher-680x680.png";
-import speakerImg5 from "../assets/images/Speakers/Shiv_Khera.png";
-import speakerImg6 from "../assets/images/Speakers/Upendra_Rai.png";
-import speakerImg7 from "../assets/images/Speakers/VP_Speaker.png";
-import speakerImg8 from "../assets/images/Speakers/Ankur_Warikoo.png";
+import speakerImg1 from "../../assets/images/Speakers/Ankur_Warikoo.png";
+import speakerImg2 from "../../assets/images/Speakers/Chandraprakash_Dwivedi.png";
+import speakerImg3 from "../../assets/images/Speakers/Govind_Dolakiya.png";
+import speakerImg4 from "../../assets/images/Speakers/kailash-kher-680x680.png";
+import speakerImg5 from "../../assets/images/Speakers/Shiv_Khera.png";
+import speakerImg6 from "../../assets/images/Speakers/Upendra_Rai.png";
+import speakerImg7 from "../../assets/images/Speakers/VP_Speaker.png";
+import speakerImg8 from "../../assets/images/Speakers/Ankur_Warikoo.png";
 import { Link } from "react-router-dom";
 
-export default function Speakers() {
+export default function SpeakersList() {
   const speakersPattern1 = {
     backgroundImage: `url(${speakersPatternImg1})`,
     backgroundSize: "cover",
@@ -28,9 +28,19 @@ export default function Speakers() {
     backgroundSize: "cover",
   };
 
+  const textNone = {
+    textTransform: "none",
+  };
+
+  const titleHeading = {
+    marginBottom: "15px",
+    fontSize: "36px",
+    fontWeight: "700",
+  };
+
   return (
     <>
-      <section className="speakers-one" id="speakers">
+      <section className="speakers-one">
         <div className="speakers-one_pattern" style={speakersPattern1}></div>
         <div
           className="speakers-one_pattern-two"
@@ -38,19 +48,44 @@ export default function Speakers() {
         ></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <div className="sec-title_title" style={{ textTransform: "none" }}>
+            <div className="sec-title_title" style={textNone}>
               Speakers Experts
             </div>
-            <h2
-              className="sec-title_heading"
-              style={{
-                marginBottom: "15px",
-                fontSize: "36px",
-                fontWeight: "700",
-              }}
-            >
+            <h2 className="sec-title_heading" style={titleHeading}>
               Meet Speakers For Events
             </h2>
+          </div>
+          <div className="row clearfix m-3">
+            <div className="col">
+              <div className="about-one_button">
+                <Link to="/speakers" className="theme-btn btn-style-one">
+                  <span className="btn-wrap">
+                    <span className="text-one">2023</span>
+                    <span className="text-two">2023</span>
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="about-one_button">
+                <Link to="/speakers" className="theme-btn btn-style-one">
+                  <span className="btn-wrap">
+                    <span className="text-one">2024</span>
+                    <span className="text-two">2024</span>
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="about-one_button">
+                <Link to="/speakers" className="theme-btn btn-style-one">
+                  <span className="btn-wrap">
+                    <span className="text-one">2025</span>
+                    <span className="text-two">2025</span>
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="row clearfix">
             {/* Speaker Block One */}
@@ -66,23 +101,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div>} */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -109,23 +127,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -151,23 +152,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -193,23 +177,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -235,23 +202,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -277,23 +227,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -319,23 +252,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -361,23 +277,6 @@ export default function Speakers() {
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
                   ></div>
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -389,22 +288,30 @@ export default function Speakers() {
                 </div>
               </div>
             </div>
-
-            <div className="col-lg-12 col-md-12 col-sm-12 text-center">
-              <div className="about-one_button">
-                <Link
-                  to="/speakers"
-                  className="theme-btn btn-style-one"
-                  target="_parent"
-                >
-                  <span className="btn-wrap">
-                    <span className="text-one">More Speakers</span>
-                    <span className="text-two">More Speakers</span>
-                  </span>
-                </Link>
-              </div>
-            </div>
           </div>
+          <ul className="styled-pagination text-center">
+            <li className="next">
+              <a href="#">
+                <span className="fa fa-angle-double-left"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" className="active">
+                1
+              </a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li className="next">
+              <a href="#">
+                <span className="fa fa-angle-double-right"></span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </>

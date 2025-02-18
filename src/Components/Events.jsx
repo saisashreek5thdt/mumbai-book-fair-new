@@ -258,7 +258,7 @@ export default function LeadershipOne() {
 
   return (
     <>
-      <section className="event-schedule-section">
+      <section className="event-schedule-section" id="event">
         <div
           className="circle-layer"
           style={{ backgroundImage: `url(${circle2})` }}
@@ -370,7 +370,7 @@ export default function LeadershipOne() {
               <div className="col-lg-4">
                 <div className="download-btns-box text-center ">
                   <a
-                    href=""
+                    href="speaker-detail.html"
                     className="theme-btn btn-style-two"
                     style={height50}
                   >
