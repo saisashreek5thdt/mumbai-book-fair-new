@@ -7,6 +7,8 @@ import imageUrl5 from  '../assets/images/main-slider/Img2.jpg';
 import pattern1 from '../assets/images/main-slider/pattern-1.png';
 import pattern2 from '../assets/images/main-slider/pattern-2.png';
 import "../App.css"
+
+const textTransform={textTransform:"UpperCase"};
 export default function Slider() {
     const [countdown, setCountdown] = useState({
         days: '0',
@@ -61,13 +63,12 @@ export default function Slider() {
         return () => clearInterval(interval);
     }, []);
 
-
     return (
         <>
             {/* <!-- Slider One --> */}
             <section className="slider-one">
                 <div className="slider-one_pattern-two" style={{ backgroundImage: `url(${pattern2})` }}></div>
-                <div className="main-slider-carousel owl-carousel owl-theme">
+                <div className="main-slider-carousel owl-carousel ">
 
                     {/* <!-- Slide 01 --> */}
                     <div className="slider-one_slide">
@@ -80,9 +81,9 @@ export default function Slider() {
                                     <div className="slider-one_title">National Book Trust, India</div>
                                     <div className="slider-one_date"><span>04</span> April 2025 <br />AZAD MAIDAN, MUMBAI, INDIA</div>
                                     {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                                    <h1 className="slider-one_heading"> CELEBRATING THE <br/> POWER OF WORDS</h1>
+                                    <h1 className="slider-one_heading">CELEBRATING THE <br/> POWER OF WORDS</h1>
                                     <div className="slider-one_buttons">
-                                        <a href="register.html" className="theme-btn btn-style-one">
+                                        <a href="#register" className="theme-btn btn-style-one">
                                             <span className="btn-wrap">
                                                 <span className="text-one">Register now</span>
                                                 <span className="text-two">Register now</span>
@@ -108,9 +109,9 @@ export default function Slider() {
                                     <div className="slider-one_title">National Book Trust, India</div>
                                     <div className="slider-one_date"><span>05</span> April 2025 <br />AZAD MAIDAN, MUMBAI, INDIA</div>
                                     {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                                    <h1 className="slider-one_heading"> CELEBRATING THE <br/> POWER OF WORDS</h1>
+                                    <h1 className="slider-one_heading" style={textTransform}> Spin-a-Tale: <br/> Let&apos;s Write a Story</h1>
                                     <div className="slider-one_buttons">
-                                        <a href="register.html" className="theme-btn btn-style-one">
+                                        <a href="#register" className="theme-btn btn-style-one">
                                             <span className="btn-wrap">
                                                 <span className="text-one">Register now</span>
                                                 <span className="text-two">Register now</span>
@@ -135,9 +136,9 @@ export default function Slider() {
                                 <div className="slider-one_title">National Book Trust, India</div>
                                     <div className="slider-one_date"><span>06</span> April 2025 <br />AZAD MAIDAN, MUMBAI, INDIA</div>
                                     {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                                    <h1 className="slider-one_heading"> CELEBRATING THE <br/> POWER OF WORDS</h1>
+                                    <h1 className="slider-one_heading" style={textTransform}> Once Upon a Story</h1>
                                     <div className="slider-one_buttons">
-                                        <a href="register.html" className="theme-btn btn-style-one">
+                                        <a href="#register" className="theme-btn btn-style-one">
                                             <span className="btn-wrap">
                                                 <span className="text-one">Register now</span>
                                                 <span className="text-two">Register now</span>
@@ -163,9 +164,9 @@ export default function Slider() {
                                 <div className="slider-one_title">National Book Trust, India</div>
                                     <div className="slider-one_date"><span>07</span> April 2025 <br />AZAD MAIDAN, MUMBAI, INDIA</div>
                                     {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                                    <h1 className="slider-one_heading"> CELEBRATING THE <br/> POWER OF WORDS</h1>
+                                    <h1 className="slider-one_heading" style={textTransform}> Mini Sculptors <br/> Clay Workshop</h1>
                                     <div className="slider-one_buttons">
-                                        <a href="register.html" className="theme-btn btn-style-one">
+                                        <a href="#register" className="theme-btn btn-style-one">
                                             <span className="btn-wrap">
                                                 <span className="text-one">Register now</span>
                                                 <span className="text-two">Register now</span>
@@ -190,9 +191,9 @@ export default function Slider() {
                                 <div className="slider-one_title">National Book Trust, India</div>
                                     <div className="slider-one_date"><span>08</span> April 2025 <br />AZAD MAIDAN, MUMBAI, INDIA</div>
                                     {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                                    <h1 className="slider-one_heading"> CELEBRATING THE <br/> POWER OF WORDS</h1>
+                                    <h1 className="slider-one_heading" style={textTransform}>Meet the <br/> Little Author </h1>
                                     <div className="slider-one_buttons">
-                                        <a href="register.html" className="theme-btn btn-style-one">
+                                        <a href="#register" className="theme-btn btn-style-one">
                                             <span className="btn-wrap">
                                                 <span className="text-one">Register now</span>
                                                 <span className="text-two">Register now</span>
