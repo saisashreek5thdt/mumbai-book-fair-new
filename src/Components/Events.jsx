@@ -1,5 +1,5 @@
 import { useState } from "react";
-import circle2 from "../assets/images/icons/circle-icon-two.png";
+import circle2 from "../assets/images/icons/circle-icon-two.jpg";
 import shape1 from "../assets/images/icons/shape-1.png";
 import { BiFilter } from "react-icons/bi";
 import { GiVideoConference } from "react-icons/gi";
