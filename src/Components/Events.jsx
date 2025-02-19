@@ -41,7 +41,7 @@ export default function LeadershipOne() {
   const iconPlace = { color: " #cf288f", fontSize: "20px" };
   const marginBtn50 = { margin: "50px" };
   const marginTop10 = { marginTop: "10px" };
-
+  const agendaBtn={height:"50px",backgroundColor: " #cf288f"}
   // New schedule data
   const scheduleData = [
     {
@@ -377,7 +377,7 @@ export default function LeadershipOne() {
                   <a
                     href=""
                     className="theme-btn btn-style-two"
-                    style={height50}
+                    style={agendaBtn}
                   >
                     <span className="btn-wrap">
                       <span className="text-one">Download Agenda</span>
