@@ -13,8 +13,8 @@ export default function PublishersInfo() {
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
                   <div className="testimonial-block_one-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Website Link
+                    Booth Number
                   </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa-brands fa-x-twitter"></span>
@@ -47,7 +47,7 @@ export default function PublishersInfo() {
                     <img src={authorImg1} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Designation
+                  Publisings
                 </div>
               </div>
             </div>
@@ -57,8 +57,8 @@ export default function PublishersInfo() {
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
                   <div className="testimonial-block_one-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Website Link
+                  Booth Number
                   </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
@@ -74,7 +74,7 @@ export default function PublishersInfo() {
                     <img src={authorImg2} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Designation
+                  Publisings
                 </div>
               </div>
             </div>
@@ -84,8 +84,8 @@ export default function PublishersInfo() {
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
                   <div className="testimonial-block_one-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Website Link
+                  Booth Number
                   </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
@@ -101,7 +101,7 @@ export default function PublishersInfo() {
                     <img src={authorImg1} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Designation
+                  Publisings
                 </div>
               </div>
             </div>
@@ -111,8 +111,8 @@ export default function PublishersInfo() {
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
                   <div className="testimonial-block_one-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Website Link
+                  Booth Number
                   </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
@@ -128,7 +128,7 @@ export default function PublishersInfo() {
                     <img src={authorImg2} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Designation
+                  Publisings
                 </div>
               </div>
             </div>
@@ -138,8 +138,8 @@ export default function PublishersInfo() {
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
                   <div className="testimonial-block_one-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Website Link
+                  Booth Number
                   </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
@@ -155,7 +155,7 @@ export default function PublishersInfo() {
                     <img src={authorImg1} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Designation
+                  Publisings
                 </div>
               </div>
             </div>
@@ -165,8 +165,8 @@ export default function PublishersInfo() {
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
                   <div className="testimonial-block_one-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Website Link
+                  Booth Number
                   </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
@@ -182,7 +182,7 @@ export default function PublishersInfo() {
                     <img src={authorImg2} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Designation
+                  Publisings
                 </div>
               </div>
             </div>
