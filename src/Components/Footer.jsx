@@ -18,20 +18,6 @@ import insta5 from "../assets/images/gallery/instagram-5.jpg";
 import insta6 from "../assets/images/gallery/instagram-6.jpg";
 
 export default function Footer() {
-  const handleViewLargerMap = () => {
-    window.open(
-      "https://www.google.com/maps/place/Azad+Maidan/@18.939218,72.833583,15z/data=!4m5!3m4!1s0x0:0x0!8m2!3d18.939218!4d72.833583",
-      "_blank"
-    );
-  };
-
-  const handleGetDirections = () => {
-    window.open(
-      "https://www.google.com/maps/dir//Azad+Maidan,+Fort,+Mumbai,+Maharashtra",
-      "_blank"
-    );
-  };
-
   return (
     <footer className="footer-two">
       <div
@@ -80,60 +66,20 @@ export default function Footer() {
                       </Link>
                     </div>
                     <div className="footer-two_text">
-                      <div
-                        className="map-container"
-                        style={{
-                          position: "relative",
-                          height: "200px",
-                          marginTop: "20px",
-                        }}
-                      >
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.041715007936!2d72.8313943153771!3d18.93921848715744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU2JzIxLjIiTiA3MsKwNTAnMDAuOCJF!5e0!3m2!1sen!2sin!4v1622549400000!5m2!1sen!2sin"
-                          width="100%"
-                          height="100%"
-                          style={{ border: 0 }}
-                          allowFullScreen=""
-                          loading="lazy"
-                        ></iframe>
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: "10px",
-                            left: "10px",
-                            backgroundColor: "rgba(255, 255, 255, 0.9)",
-                            padding: "5px 10px",
-                            borderRadius: "4px",
-                          }}
-                        >
-                          <a
-                            onClick={handleViewLargerMap}
-                            style={{
-                              color: "#007bff",
-                              cursor: "pointer",
-                              textDecoration: "underline",
-                              marginRight: "10px",
-                            }}
-                          >
-                            View larger map
-                          </a>
-                          <a
-                            onClick={handleGetDirections}
-                            style={{
-                              color: "#007bff",
-                              cursor: "pointer",
-                              textDecoration: "underline",
-                            }}
-                          >
-                            Directions
-                          </a>
-                        </div>
-                      </div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.143530967342!2d72.82690714060489!3d18.937973027078225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1de97217edb%3A0x252e1ef8cba95a82!2sAzad%20Maidan%2C%20Fort%2C%20Mumbai%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1734977102940!5m2!1sen!2sin"
+                        width="100%"
+                        height="250px"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div className="footer-two_column col-lg-5 col-md-6 col-sm-12">
+                {/* <div className="footer-two_column col-lg-5 col-md-6 col-sm-12">
                   <div className="footer-two-widget links-widget">
                     <h4 className="footer-two_title">Links</h4>
                     <ul className="footer-two_list">
@@ -157,7 +103,7 @@ export default function Footer() {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -181,10 +127,10 @@ export default function Footer() {
                         <span className="icon fa-solid fa-map-marker fa-fw"></span>{" "}
                         Azad Maidan Fort Mumbai, Maharashtra.
                       </li>
-                      <li>
+                      {/* <li>
                         <span className="icon fa-solid fa-clock fa-fw"></span>{" "}
                         Mon - Fri 09am - 06pm
-                      </li>
+                      </li> */}
                     </ul>
 
                     <ul className="footer-two_socials">
