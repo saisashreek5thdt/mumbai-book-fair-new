@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo/logo.png";
 
 export default function Header() {
   return (
@@ -71,6 +71,11 @@ export default function Header() {
                           FAQ
                         </Link>
                       </li>
+                      <li>
+                        <Link to="#faq" target="_parent">
+                          Social
+                        </Link>
+                      </li>
                       <li className="dropdown language-icon">
                         {/* <img src={language} alt="" /> */}
                         <span>
@@ -89,10 +94,10 @@ export default function Header() {
                             <a href="">English</a>
                           </li>
                           <li>
-                            <a href="">Hindi</a>
+                            <a href="">हिंदी</a>
                           </li>
                           <li>
-                            <a href="">Marathi</a>
+                            <a href="">मराठी</a>
                           </li>
                         </ul>
                       </li>

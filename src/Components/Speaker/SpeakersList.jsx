@@ -55,8 +55,8 @@ export default function SpeakersList() {
               Meet Speakers For Events
             </h2>
           </div>
-          <div className="row clearfix m-3">
-            <div className="col">
+          <div className="row clearfix m-3 g-0 d-flex justify-content-center" style={{ gap: "5px" }}>
+            <div className="col m-0 p-0">
               <div className="about-one_button">
                 <Link to="/speakers" className="theme-btn btn-style-one">
                   <span className="btn-wrap">
@@ -66,7 +66,7 @@ export default function SpeakersList() {
                 </Link>
               </div>
             </div>
-            <div className="col">
+            <div className="col m-0 p-0" >
               <div className="about-one_button">
                 <Link to="/speakers" className="theme-btn btn-style-one">
                   <span className="btn-wrap">
@@ -76,7 +76,7 @@ export default function SpeakersList() {
                 </Link>
               </div>
             </div>
-            <div className="col">
+            <div className="col m-0 p-0">
               <div className="about-one_button">
                 <Link to="/speakers" className="theme-btn btn-style-one">
                   <span className="btn-wrap">
@@ -97,10 +97,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg1} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -123,10 +123,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg2} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -148,10 +148,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg3} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -173,10 +173,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg4} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -198,10 +198,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg5} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -223,10 +223,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg6} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -248,10 +248,10 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg7} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
@@ -273,10 +273,210 @@ export default function SpeakersList() {
               >
                 <div className="speaker-block_one-image">
                   <img src={speakerImg8} alt="" />
-                  <div
+                  {/* <div
                     className="speaker-block_one-pattern"
                     style={speakersPattern2}
-                  ></div>
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Ankur Warikoo</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Entrepreneur, Author, and Public Speaker
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInLeft"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg1} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Ankur Warikoo</a>
+                  </h4>
+
+                  <div className="speaker-one_detail">
+                    Entrepreneur, Author, and Public Speaker
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInLeft"
+                data-wow-delay="150ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg2} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Dr.Chandraprakash Dwivedi</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Indian Film Director and Screenwriter
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInLeft"
+                data-wow-delay="300ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg3} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Govind Dholakia</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Founder and Chairman of Shree Ramkrishna Exports Pvt. Ltd
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInLeft"
+                data-wow-delay="450ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg4} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Kailash Kher</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Indian Playback Singer and Music Composer
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInRight"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg5} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Shiv Khera</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Author, Professional Speaker, and Motivational Trainer
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInRight"
+                data-wow-delay="150ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg6} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Upendra Rai</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Senior Journalist and Author
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInRight"
+                data-wow-delay="300ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg7} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
+                </div>
+                <div className="speaker-block_one-content">
+                  <h4 className="speaker-one_title">
+                    <a href="speaker-detail.html">Vaibhav Purandare</a>
+                  </h4>
+                  <div className="speaker-one_detail">
+                    Author and Journalist
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Speaker Block One */}
+            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="speaker-block_one-inner wow fadeInRight"
+                data-wow-delay="450ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="speaker-block_one-image">
+                  <img src={speakerImg8} alt="" />
+                  {/* <div
+                    className="speaker-block_one-pattern"
+                    style={speakersPattern2}
+                  ></div> */}
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
