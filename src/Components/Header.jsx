@@ -40,7 +40,7 @@ export default function Header() {
                     className="navbar-collapse collapse clearfix"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navigation clearfix">
+                    <ul className="navigation clearfix" style={{display:"flex", gap:"10px", marginTop:"15px"}}>
                       <li>
                         <Link to="#about" target="_parent">
                           About

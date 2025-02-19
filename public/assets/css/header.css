@@ -204,7 +204,7 @@
 	letter-spacing:1px;
 	color:var(--white-color);
 	/* font-size:var(--font-14); */
-	font-size: 20px !important;
+	font-size: 17px !important;
 	text-transform: capitalize;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;

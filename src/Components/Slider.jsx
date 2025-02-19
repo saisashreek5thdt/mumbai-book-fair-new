@@ -75,12 +75,12 @@ export default function Slider() {
           className="slider-one_pattern-two"
           style={{ backgroundImage: `url(${pattern2})` }}
         ></div>
-        <div className="main-slider-carousel owl-carousel ">
+        <div className="main-slider-carousel owl-carousel" style={{}}>
           {/* <!-- Slide 01 --> */}
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl1})` }}
+              style={{ backgroundImage: `url(${imageUrl1})`,filter: "blur(10px) brightness(60%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -119,7 +119,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl2})` }}
+              style={{ backgroundImage: `url(${imageUrl2})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -160,7 +160,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl3})` }}
+              style={{ backgroundImage: `url(${imageUrl3})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -200,7 +200,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl4})` }}
+              style={{ backgroundImage: `url(${imageUrl4})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -240,7 +240,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl5})` }}
+              style={{ backgroundImage: `url(${imageUrl5})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
