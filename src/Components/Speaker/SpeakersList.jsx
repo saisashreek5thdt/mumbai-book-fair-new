@@ -1,5 +1,5 @@
 import speakersPatternImg1 from "../../assets/images/background/pattern-4.png";
-import speakersPatternImg2 from "../../assets/images/background/pattern-5.png";
+//import speakersPatternImg2 from "../../assets/images/background/pattern-5.png";
 import speakersPatternImg3 from "../../assets/images/background/pattern-6.png";
 
 import speakerImg1 from "../../assets/images/Speakers/Ankur_Warikoo.png";
@@ -18,10 +18,10 @@ export default function SpeakersList() {
     backgroundSize: "cover",
   };
 
-  const speakersPattern2 = {
-    backgroundImage: `url(${speakersPatternImg2})`,
-    backgroundSize: "cover",
-  };
+  // const speakersPattern2 = {
+  //   backgroundImage: `url(${speakersPatternImg2})`,
+  //   backgroundSize: "cover",
+  // };
 
   const speakersPattern3 = {
     backgroundImage: `url(${speakersPatternImg3})`,
