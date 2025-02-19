@@ -22,6 +22,9 @@ export default function CounterOne() {
     count3: 0,
     count4: 10,
     count5: 100,
+    count6: 100,
+    count7: 100,
+    count8: 100,
   });
   useEffect(() => {
     const counters = [
@@ -30,6 +33,9 @@ export default function CounterOne() {
       { id: "count3", start: 0, end: 21 },
       { id: "count4", start: 205511, end: 205848 },
       { id: "count5", start: 100, end: 145 },
+      { id: "count6", start: 210981, end: 225511 },
+      { id: "count7", start: 1, end: 6 },
+      { id: "count8", start: 10, end: 40 },
     ];
 
     counters.forEach(({ id, start, end }) => {
@@ -125,6 +131,42 @@ export default function CounterOne() {
                   <span id="count4">{counts.count4}</span>+
                 </div>
                 <div style={{ fontSize: "20px" }}>Guests</div>
+              </div>
+            </div>
+            <div className="col-6 col-lg-3">
+              <div
+                className="py-5 text-center text-white"
+                style={wholeContainers}
+              >
+                <div>{/* <i className="bi bi-graph-up count-icon"></i> */}</div>
+                <div className="py-2 count">
+                  <span id="count6">{counts.count6}</span>+
+                </div>
+                <div style={{ fontSize: "20px" }}>Books Showcased</div>
+              </div>
+            </div>
+            <div className="col-6 col-lg-3">
+              <div
+                className="py-5 text-center text-white"
+                style={wholeContainers}
+              >
+                <div>{/* <i className="bi bi-graph-up count-icon"></i> */}</div>
+                <div className="py-2 count">
+                  <span id="count7">{counts.count7}</span>+
+                </div>
+                <div style={{ fontSize: "20px" }}>Events</div>
+              </div>
+            </div>
+            <div className="col-6 col-lg-3">
+              <div
+                className="py-5 text-center text-white"
+                style={wholeContainers}
+              >
+                <div>{/* <i className="bi bi-graph-up count-icon"></i> */}</div>
+                <div className="py-2 count">
+                  <span id="count8">{counts.count8}</span>+
+                </div>
+                <div style={{ fontSize: "20px" }}>Sponsors</div>
               </div>
             </div>
           </div>
