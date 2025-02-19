@@ -4938,12 +4938,15 @@
 .news-block_three-content{
 	position:relative;
 	z-index:2;
-	margin-top:-100px;
-	padding:25px 30px 25px;
+	margin-top:-60px;
+	padding:5px 30px 25px;
 	margin-left:var(--margin-left-20);
 	margin-right:var(--margin-right-20);
-	background-color:var(--white-color);
+	background-color:#4c35a9;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	opacity:80%;
+	text-align:center;
+	color:white;
 }
 
 .news-block_three-meta{
@@ -4956,7 +4959,8 @@
 	font-size:var(--font-14);
 	padding-left:var(--padding-left-25);
 	margin-right:var(--margin-right-20);
-	color:rgba(var(--black-color-rgb), 0.80);
+	/* color:rgba(var(--black-color-rgb), 0.80); */
+	color:white;
 }
 
 .news-block_three-meta li .icon{
@@ -4991,7 +4995,7 @@
 	letter-spacing: 1px;
 	display:inline-block;
     font-size: var(--font-14);
-    color: var(--black-color);
+    color: white;
 	text-transform: uppercase;
 	margin-top:var(--margin-top-15);
     padding-right: var(--padding-right-25);

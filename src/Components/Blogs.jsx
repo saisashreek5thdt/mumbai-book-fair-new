@@ -110,7 +110,7 @@ export default function Blogs() {
                     </div>
                     <div className="news-block_three-content">
                       <h5 className="news-block_three-heading"><a>{event.title}</a></h5>
-                      <Link to={event.link} className="news-block_three-more" target="_blank" rel="noopener noreferrer" href="blog-detail.html">Register</Link>
+                      <Link to={event.link} className="news-block_three-more" target="_blank" rel="noopener noreferrer" >Register</Link>
                     </div>
                   </div>
                 </div>
