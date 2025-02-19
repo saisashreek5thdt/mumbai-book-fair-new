@@ -7,6 +7,8 @@ import imageUrl5 from "../assets/images/main-slider/Img2.jpg";
 import pattern1 from "../assets/images/main-slider/pattern-1.png";
 import pattern2 from "../assets/images/main-slider/pattern-2.png";
 import "../App.css";
+
+const textTransform = { textTransform: "UpperCase" };
 export default function Slider() {
   const [countdown, setCountdown] = useState({
     days: "0",
@@ -17,7 +19,7 @@ export default function Slider() {
 
   useEffect(() => {
     // Set the event date (April 4, 2025)
-    const eventDate = new Date("2025-04-04T00:00:00").getTime();
+    const eventDate = new Date("2025-04-18T00:00:00").getTime();
 
     // Function to update the countdown
     const updateCountdown = () => {
@@ -73,12 +75,12 @@ export default function Slider() {
           className="slider-one_pattern-two"
           style={{ backgroundImage: `url(${pattern2})` }}
         ></div>
-        <div className="main-slider-carousel owl-carousel">
+        <div className="main-slider-carousel owl-carousel" style={{}}>
           {/* <!-- Slide 01 --> */}
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl1})` }}
+              style={{ backgroundImage: `url(${imageUrl1})`,filter: "blur(10px) brightness(60%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -92,12 +94,11 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>04</span> April 2025 <br />
+                    <span>18</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
                   <h1 className="slider-one_heading">
-                    {" "}
                     CELEBRATING THE <br /> POWER OF WORDS
                   </h1>
                   <div className="slider-one_buttons">
@@ -118,7 +119,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl2})` }}
+              style={{ backgroundImage: `url(${imageUrl2})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -133,13 +134,13 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>05</span> April 2025 <br />
+                    <span>19</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                  <h1 className="slider-one_heading">
+                  <h1 className="slider-one_heading" style={textTransform}>
                     {" "}
-                    CELEBRATING THE <br /> POWER OF WORDS
+                    Spin-a-Tale: <br /> Let&apos;s Write a Story
                   </h1>
                   <div className="slider-one_buttons">
                     <a href="#register" className="theme-btn btn-style-one">
@@ -159,7 +160,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl3})` }}
+              style={{ backgroundImage: `url(${imageUrl3})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -173,13 +174,13 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>06</span> April 2025 <br />
+                    <span>20</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                  <h1 className="slider-one_heading">
+                  <h1 className="slider-one_heading" style={textTransform}>
                     {" "}
-                    CELEBRATING THE <br /> POWER OF WORDS
+                    Once Upon a Story
                   </h1>
                   <div className="slider-one_buttons">
                     <a href="#register" className="theme-btn btn-style-one">
@@ -199,7 +200,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl4})` }}
+              style={{ backgroundImage: `url(${imageUrl4})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -213,13 +214,13 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>07</span> April 2025 <br />
+                    <span>21</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                  <h1 className="slider-one_heading">
+                  <h1 className="slider-one_heading" style={textTransform}>
                     {" "}
-                    CELEBRATING THE <br /> POWER OF WORDS
+                    Mini Sculptors <br /> Clay Workshop
                   </h1>
                   <div className="slider-one_buttons">
                     <a href="#register" className="theme-btn btn-style-one">
@@ -239,7 +240,7 @@ export default function Slider() {
           <div className="slider-one_slide">
             <div
               className="slider-one_image-layer"
-              style={{ backgroundImage: `url(${imageUrl5})` }}
+              style={{ backgroundImage: `url(${imageUrl5})`,filter: "blur(10px) brightness(70%)" }}
             ></div>
             <div
               className="slider-one_pattern"
@@ -253,13 +254,12 @@ export default function Slider() {
                     National Book Trust, India
                   </div>
                   <div className="slider-one_date">
-                    <span>08</span> April 2025 <br />
+                    <span>22</span> April 2025 <br />
                     AZAD MAIDAN, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
-                  <h1 className="slider-one_heading">
-                    {" "}
-                    CELEBRATING THE <br /> POWER OF WORDS
+                  <h1 className="slider-one_heading" style={textTransform}>
+                    Meet the <br /> Little Author{" "}
                   </h1>
                   <div className="slider-one_buttons">
                     <a href="#register" className="theme-btn btn-style-one">

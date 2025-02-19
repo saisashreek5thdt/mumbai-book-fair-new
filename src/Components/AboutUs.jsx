@@ -1,8 +1,9 @@
 import pattern3 from "../assets/images/background/pattern-3.png";
 import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
-import AboutPattern from "../assets/images/background/about-pattern.png";
-import AboutSpeaker from "../assets/images/Speakers/event.mp4";
+// import AboutPattern from "../assets/images/background/about-pattern.png";
+import AboutSpeaker from "../assets/images/Speakers/circle.mp4";
+const backgroundColor={background:"black", width:"570px", height:"550px"};
 export default function About() {
   return (
     <>
@@ -28,22 +29,22 @@ export default function About() {
               <div className="about-one_image-inner">
                 <div
                   className="about-one_pattern-four"
-                  style={{ backgroundImage: `url(${AboutPattern})` }}
+                  // style={{ backgroundImage: `url(${AboutPattern})` }}
                 ></div>
-                <div className="about-one_image wow rollIn" style={{background:"black"}}>
+                <div className="about-one_image wow rollIn" style={backgroundColor}>
                   {/* <img src={AboutPic} alt="" /> */}
                   <video autoPlay muted loop >
-                        <source src={AboutSpeaker} style={{}} />
+                        <source src={AboutSpeaker} />
                     </video>
                 </div>
-                <a
+                {/* <a
                   className="lightbox-video slider-one_play"
                 >
                   <span className="fa fa-play">    
                     <i className="ripple"></i>
                   </span>
-                  {/*  */}
-                </a>
+                  
+                </a> */}
               </div>
             </div>
             {/* <!-- Content Column --> */}
@@ -90,7 +91,7 @@ export default function About() {
                     <div className="about-one_block-inner">
                       <span className="about-one_block-icon flaticon-calendar-2"></span>
                       <strong>Date</strong>
-                      April 1 to 5, 2025
+                      April 18 to 22, 2025
                     </div>
                   </div>
                 </div>

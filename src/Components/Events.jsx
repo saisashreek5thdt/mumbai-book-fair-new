@@ -26,176 +26,191 @@ export default function LeadershipOne() {
     setSelectedTitleFilter(event.target.value);
   };
 
+  const filterMain = { display: "flex" };
+  const iconFilterSection = { background: " #cf288f", color: "white" };
+  const height50 = { height: "50px" };
+  const biFilterFont = { fontSize: "25px" };
+  const blockContentSection = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "start",
+  };
+  const marginB10 = { marginBottom: "10px" };
+  const dayStyle = { color: "#cf288f", fontWeight: "bold" };
+  const textAlignLeft = { textAlign: "left" };
+  const iconPlace = { color: " #cf288f", fontSize: "20px" };
+  const marginBtn50 = { margin: "50px" };
+  const marginTop10 = { marginTop: "10px" };
+
   // New schedule data
   const scheduleData = [
     {
       time: "10:00 AM - 11:00 AM",
       name: " Vaibhav Purandare",
       designation: "Senior Editor at The Times Of India",
-      day: "04 April",
+      day: "18 April",
       title: "Young Picassos: Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
-      imgURL:speakerImg7,
-      place:"Conference Hall 1",
+      date: "18/04/2025",
+      imgURL: speakerImg7,
+      place: "Conference Hall 1",
     },
     {
       time: "11:15 AM - 12:15 PM",
       name: "Dr.Chandraprakash",
       designation: "Indian Author",
-      day: "04 April",
+      day: "18 April",
       title: "Spin-a-Tale: Let's Write a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
-      imgURL:speakerImg2,
-      place:"Conference Hall 2",
+      date: "18/04/2025",
+      imgURL: speakerImg2,
+      place: "Conference Hall 2",
     },
     {
       time: "10:00 AM - 10:45 AM",
       name: "Shiv Khera",
-      designation:
-        "Indian Author, Motivational Speaker, and Educator",
-      day: "04 April",
+      designation: "Indian Author, Motivational Speaker, and Educator",
+      day: "18 April",
       title: "Open Mic Express",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
-      imgURL:speakerImg5,
-      place:"Conference Hall 3",
+      date: "18/04/2025",
+      imgURL: speakerImg5,
+      place: "Conference Hall 3",
     },
     {
       time: "11:00 AM - 11:45 AM",
       name: "Govind Dholakia",
       designation: "Indian Author",
-      day: "04 April",
+      day: "18 April",
       title: "Art Attack! Drawing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "04/04/2025",
-      imgURL:speakerImg3,
-      place:"Conference Hall 4",
+      date: "18/04/2025",
+      imgURL: speakerImg3,
+      place: "Conference Hall 4",
     },
     {
       time: "12:00 PM - 12:45 PM",
       name: "Kailash Kher",
       designation: "Indian Playback Singer and Composer",
-      day: "05 April",
+      day: "19 April",
       title: "Power of Words: Slogan Writing Competition",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "05/04/2025",
-      imgURL:speakerImg4,
-      place:"Conference Hall 5",
+      date: "19/04/2025",
+      imgURL: speakerImg4,
+      place: "Conference Hall 5",
     },
     {
       time: "10:00 AM - 10:45 AM",
       name: "Ankur Warikoo",
       designation: "Indian Author",
-      day: "05 April",
+      day: "19 April",
       title: "Once Upon a Story",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "05/04/2025",
-      imgURL:speakerImg1,
-      place:"Conference Hall 6",
+      date: "19/04/2025",
+      imgURL: speakerImg1,
+      place: "Conference Hall 6",
     },
     {
       time: "11:00 AM - 11:45 AM",
       name: " Upendra Rai",
       designation: "Indian Author",
-      day: "06 April",
+      day: "20 April",
       title: "Mini Sculptors Clay Workshop",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "06/04/2025",
-      imgURL:speakerImg6,
-      place:"Conference Hall 7",
+      date: "20/04/2025",
+      imgURL: speakerImg6,
+      place: "Conference Hall 7",
     },
     {
       time: "12:00 PM - 12:45 PM",
       name: "Shiv Khera",
       title: "Theatre-Improv Fusion",
       designation: "Indian Author",
-      day: "06 April",
+      day: "20 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "06/04/2025",
-      imgURL:speakerImg5,
-      place:"Conference Hall 8",
+      date: "20/04/2025",
+      imgURL: speakerImg5,
+      place: "Conference Hall 8",
     },
     {
       time: "10:00 AM - 10:45 AM",
       name: "Govind Dholakia",
       title: "कहानी का जादू: Puppets के साथ एक आकर्षक स",
       designation: "Indian Author",
-      day: "07 April",
+      day: "21 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "07/04/2025",
-      imgURL:speakerImg3,
-      place:"Conference Hall 9",
+      date: "21/04/2025",
+      imgURL: speakerImg3,
+      place: "Conference Hall 9",
     },
     {
       time: "11:00 AM - 11:45 AM",
       name: "Dr.Chandraprakash",
       title: "Mastering the Art of Calligraphy",
       designation: "Indian Author",
-      day: "07 April",
+      day: "21 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "07/04/2025",
-      imgURL:speakerImg2,
-      place:"Conference Hall 10",
+      date: "21/04/2025",
+      imgURL: speakerImg2,
+      place: "Conference Hall 10",
     },
     {
       time: "12:00 PM - 12:45 PM",
       name: " Vaibhav Purandare",
       title: "Fun with Science!",
       designation: "Indian Author",
-      day: "07 April",
+      day: "21 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "07/04/2025",
-      imgURL:speakerImg7,
-      place:"Conference Hall 11",
+      date: "21/04/2025",
+      imgURL: speakerImg7,
+      place: "Conference Hall 11",
     },
     {
       time: "10:00 AM - 10:45 AM",
       name: "Dr.Chandraprakash",
       title: "Theatre of Tales",
       designation: "Indian Author",
-      day: "08 April",
+      day: "22 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "08/04/2025",
-      imgURL:speakerImg2,
-      place:"Conference Hall 12",
+      date: "22/04/2025",
+      imgURL: speakerImg2,
+      place: "Conference Hall 12",
     },
     {
       time: "11:00 AM - 11:45 AM",
       title: "Meet the Little Author",
       name: "Govind Dholakia",
       designation: "Indian Author",
-      day: "08 April",
+      day: "22 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "08/04/2025",
-      imgURL:speakerImg3,
-      place:"Conference Hall 13",
+      date: "22/04/2025",
+      imgURL: speakerImg3,
+      place: "Conference Hall 13",
     },
     {
       time: "12:00 PM - 12:45 PM",
       name: " Vaibhav Purandare",
       title: "Fearless & Ready: Self-Defence Workshop",
       designation: "Indian Author",
-      day: "08 April",
+      day: "22 April",
       description:
         "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "08/04/2025",
-      imgURL:speakerImg7,
-      place:"Conference Hall 14",
+      date: "22/04/2025",
+      imgURL: speakerImg7,
+      place: "Conference Hall 14",
     },
   ];
 
@@ -273,48 +288,45 @@ export default function LeadershipOne() {
               <ul className="tab-buttons clearfix">
                 <li className="tab-btn active-btn" data-tab="#tab-1">
                   <span className="day">Day 01</span>
-                  <span className="date">04</span>
+                  <span className="date">18</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-2">
                   <span className="day">Day 02</span>
-                  <span className="date">05</span>
+                  <span className="date">19</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-3">
                   <span className="day">Day 03</span>
-                  <span className="date">06</span>
+                  <span className="date">20</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-4">
                   <span className="day">Day 04</span>
-                  <span className="date">07</span>
+                  <span className="date">21</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li className="tab-btn" data-tab="#tab-5">
                   <span className="day">Day 05</span>
-                  <span className="date">08</span>
+                  <span className="date">22</span>
                   <span className="month">April</span> 2025
                 </li>
               </ul>
             </div>
 
-            <div className="row m-4" style={{ display: "flex" }}>
+            <div className="row m-4" style={filterMain}>
               <div className="col-lg-4">
-                <div className="input-group" style={{ height: "50px" }}>
-                  <span
-                    style={{ background: " #cf288f", color: "white" }}
-                    className="input-group-text"
-                  >
-                  <BiFilter style={{fontSize:"25px"}} />
+                <div className="input-group" style={height50}>
+                  <span style={iconFilterSection} className="input-group-text">
+                    <BiFilter style={biFilterFont} />
                     {/* <i className="fa-regular fa-calendar-days"></i> */}
                   </span>
                   <select
-                    style={{ height: "50px" }}
+                    style={height50}
                     className="select form-select form-control"
                     value={selectedFilter}
                     onChange={handleFilterChange}
@@ -328,13 +340,10 @@ export default function LeadershipOne() {
               </div>
 
               <div className="col-lg-4">
-                <div className="input-group" style={{ height: "50px" }}>
-                  <span
-                    style={{ background: " #cf288f", color: "white" }}
-                    className="input-group-text"
-                  >
+                <div className="input-group" style={height50}>
+                  <span style={iconFilterSection} className="input-group-text">
                     {/* <i className="fa-regular fa-calendar-days"></i> */}
-                    <BiFilter  style={{fontSize:"25px"}}/>
+                    <BiFilter style={biFilterFont} />
                   </span>
                   {/* <select className="select form-select form-control">
                       <option value="">All Titles</option>
@@ -343,17 +352,22 @@ export default function LeadershipOne() {
                       <option value="3">Title 3</option>
                     </select> */}
                   <select
-                    style={{ height: "50px" }}
+                    style={height50}
                     value={selectedTitleFilter}
                     onChange={handleTitleFilterChange}
                     className="select form-select form-control"
                   >
                     <option value="All">All Titles</option>
-                    {scheduleData.map((item, index) => (
+                    {/* {scheduleData.map((item, index) => (
                       <option key={index} value={item.title}>
                         {item.title}
                       </option>
-                    ))}
+                    ))} */}
+                    <option value="Children Activities">Children Activities</option>
+                    <option value="Authors Corner">Authors Corner</option>
+                    <option value="Cultural Activities">Cultural Activities</option>
+                    <option value="Film Festival">Film Festival</option>
+                    <option value="Exhibition">Exhibition</option>
                   </select>
                 </div>
               </div>
@@ -361,9 +375,9 @@ export default function LeadershipOne() {
               <div className="col-lg-4">
                 <div className="download-btns-box text-center ">
                   <a
-                    href="#event"
+                    href=""
                     className="theme-btn btn-style-two"
-                    style={{ height: "50px" }}
+                    style={height50}
                   >
                     <span className="btn-wrap">
                       <span className="text-one">Download Agenda</span>
@@ -389,42 +403,52 @@ export default function LeadershipOne() {
                       .map((item, idx) => (
                         <div key={idx} className="schedule-block">
                           <div className="inner-box">
-                            <div className="content" style={{display:"flex",flexDirection:"column",alignItems:"start"}}>
+                            <div
+                              className="content"
+                              style={blockContentSection}
+                            >
                               <div className="author-box">
                                 <div className="box-inner">
-                                  <div className="author-image" style={{marginBottom:"10px"}}>
+                                  <div
+                                    className="author-image"
+                                    style={marginB10}
+                                  >
                                     {/* Replace with actual image path */}
-                                    <img
-                                      src={item.imgURL}
-                                      alt=""
-                                    />
+                                    <img src={item.imgURL} alt="" />
                                   </div>
-                                  <h6 >{item.name}</h6>
+                                  <h6>{item.name}</h6>
                                   <div className="designation">
                                     {item.designation}
                                   </div>
                                 </div>
                               </div>
-                              <div className="date" style={{color:"#cf288f", fontWeight:"bold"}}>{item.day}</div>
+                              <div className="date" style={dayStyle}>
+                                {item.day}
+                              </div>
                               <h4>{item.title}</h4>
-                              <div className="text" style={{textAlign:"left"}}>{item.description}</div>
-                              <ul className="event-info" >
-                                <li >
+                              <div className="text" style={textAlignLeft}>
+                                {item.description}
+                              </div>
+                              <ul className="event-info">
+                                <li>
                                   {/* <span className="icon flaticon-maps-and-flags"></span> */}
-                                  <span className="icon "><GiVideoConference style={{color:" #cf288f",fontSize:"20px"}}/> </span>
+                                  <span className="icon ">
+                                    <GiVideoConference style={iconPlace} />{" "}
+                                  </span>
                                   {/* <GiVideoConference style={{color:" #cf288f",fontSize:"20px"}}/> */}
                                   {item.place}
                                 </li>
                                 <li>
-                                  <span className="icon"><GiBackwardTime /></span>
+                                  <span className="icon">
+                                    <GiBackwardTime />
+                                  </span>
                                   {item.time}
                                 </li>
                               </ul>
-                              <div className="btns-box"  style={{margin:"50px"}}>
+                              <div className="btns-box" style={marginBtn50}>
                                 <a
                                   href="speaker-detail.html"
                                   // className="theme-btn btn-style-one"
-                                 
                                 >
                                   {/* <span className="btn-wrap">
                                     <span className="text-one">
@@ -451,14 +475,28 @@ export default function LeadershipOne() {
                       ))}
                     {/* More Schedules button */}
                     {filteredScheduleData[date].length > 3 && (
-                    <div className="download-btns-box text-center" style={{marginTop:"10px"}}>
-                      <a  className="theme-btn btn-style-two" onClick={() => toggleExpandedDate(date)}>
-                       <span className="btn-wrap">
-                          <span className="text-one">{expandedDates[date] ? "Show Less" : "More Schedules"}</span>
-                          <span className="text-two">{expandedDates[date] ? "Show Less" : "More Schedules"}</span>
-                       </span>
-                      </a>
-                    </div>
+                      <div
+                        className="download-btns-box text-center"
+                        style={marginTop10}
+                      >
+                        <a
+                          className="theme-btn btn-style-two"
+                          onClick={() => toggleExpandedDate(date)}
+                        >
+                          <span className="btn-wrap">
+                            <span className="text-one">
+                              {expandedDates[date]
+                                ? "Show Less"
+                                : "More Schedules"}
+                            </span>
+                            <span className="text-two">
+                              {expandedDates[date]
+                                ? "Show Less"
+                                : "More Schedules"}
+                            </span>
+                          </span>
+                        </a>
+                      </div>
                     )}
                   </div>
                 </div>
