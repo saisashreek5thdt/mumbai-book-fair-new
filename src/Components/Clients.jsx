@@ -43,7 +43,7 @@ export default function Client() {
 
   return (
     <>
-      <section className="clients-one">
+      <section className="clients-two">
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title">Sponsors and Exhibitors</div>
