@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo-footer.png";
+import logo from "../assets/images/logo/logo-footer.png";
 
 import icon1 from "../assets/images/icons/icon-5.png";
 import icon2 from "../assets/images/icons/icon-5.png";
@@ -65,45 +65,49 @@ export default function Footer() {
                         <img src={logo} alt="Mumbai Book Fair Logo" />
                       </Link>
                     </div>
-                    <div className="footer-two_text">
-                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.143530967342!2d72.82690714060489!3d18.937973027078225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1de97217edb%3A0x252e1ef8cba95a82!2sAzad%20Maidan%2C%20Fort%2C%20Mumbai%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1734977102940!5m2!1sen!2sin"
-                        width="100%"
-                        height="250px"
-                        style={{ border: 0 }}
-                        allowFullScreen=""
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                      />
+                    <div className="footer-two_text" style={{ textAlign: "justify" }}>
+                      The Mumbai Book Festival, organized by the National Book Trust, India (under the Ministry of Education, Government of India), is making its debut this April at the centrally located Azad Maidan, Mumbai.
                     </div>
                   </div>
                 </div>
 
-                {/* <div className="footer-two_column col-lg-5 col-md-6 col-sm-12">
+                <div className="footer-two_column col-lg-5 col-md-6 col-sm-12">
                   <div className="footer-two-widget links-widget">
-                    <h4 className="footer-two_title">Links</h4>
-                    <ul className="footer-two_list">
-                      <li>
-                        <Link to="/">Home</Link>
+                    <h4 className="footer-two_title">Social</h4>
+                    <ul className="footer-two_socials" style={{ display: 'flex', flexDirection: 'column', gap: '0px' }}>
+                      <li style={{ display: 'block' }}>
+                        <a
+                          href="https://x.com/nbt_india?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                          className="fa-brands fa-x-twitter"
+                        ></a>
                       </li>
-                      <li>
-                        <Link to="/">About</Link>
+                      <li style={{ display: 'block' }}>
+                        <a
+                          href="https://www.facebook.com/nationalbooktrustindia"
+                          className="fa-brands fa-facebook-f"
+                        ></a>
                       </li>
-                      <li>
-                        <Link to="/">Schedule</Link>
+                      <li style={{ display: 'block' }}>
+                        <a
+                          href="https://www.instagram.com/nbtindia/?hl=en"
+                          className="fa-brands fa-instagram"
+                        ></a>
                       </li>
-                      <li>
-                        <Link to="/">Speakers</Link>
+                      <li style={{ display: 'block' }}>
+                        <a
+                          href="https://in.linkedin.com/company/nationalbooktrustindia"
+                          className="fa-brands fa-linkedin"
+                        ></a>
                       </li>
-                      <li>
-                        <Link to="/">Team</Link>
-                      </li>
-                      <li>
-                        <Link to="/">Publishers</Link>
+                      <li style={{ display: 'block' }}>
+                        <a
+                          href="https://www.youtube.com/user/NBTIndia"
+                          className="fa-brands fa-youtube"
+                        ></a>
                       </li>
                     </ul>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -126,43 +130,6 @@ export default function Footer() {
                       <li>
                         <span className="icon fa-solid fa-map-marker fa-fw"></span>{" "}
                         Azad Maidan Fort Mumbai, Maharashtra.
-                      </li>
-                      {/* <li>
-                        <span className="icon fa-solid fa-clock fa-fw"></span>{" "}
-                        Mon - Fri 09am - 06pm
-                      </li> */}
-                    </ul>
-
-                    <ul className="footer-two_socials">
-                      <li>
-                        <a
-                          href="https://x.com/nbt_india?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                          className="fa-brands fa-x-twitter"
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/nationalbooktrustindia"
-                          className="fa-brands fa-facebook-f"
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/nbtindia/?hl=en"
-                          className="fa-brands fa-instagram"
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://in.linkedin.com/company/nationalbooktrustindia"
-                          className="fa-brands fa-linkedin"
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/user/NBTIndia"
-                          className="fa-brands fa-youtube"
-                        ></a>
                       </li>
                     </ul>
                   </div>
@@ -223,22 +190,18 @@ export default function Footer() {
                 . All Rights Reserved
               </div>
             </div>
-            {/* <div className="column col-lg-6 col-md-12 col-sm-12">
-              <ul className="footer-bottom-nav">
-                <li>
-                  <a href="#">Terms and conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
+
+
+
+
+
 
 // original footer
 
