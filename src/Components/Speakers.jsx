@@ -1,4 +1,4 @@
-//import speakersPatternImg1 from "../assets/images/background/pattern-4.png";
+import speakersPatternImg1 from "../assets/images/background/pattern-4.png";
 //import speakersPatternImg2 from "../assets/images/background/pattern-5.png";
 import speakersPatternImg3 from "../assets/images/background/pattern-6.png";
 
@@ -13,10 +13,10 @@ import speakerImg8 from "../assets/images/Speakers/Ankur_Warikoo.png";
 import { Link } from "react-router-dom";
 
 export default function Speakers() {
-  // const speakersPattern1 = {
-  //   backgroundImage: `url(${speakersPatternImg1})`,
-  //   backgroundSize: "cover",
-  // };
+   const speakersPattern1 = {
+     backgroundImage: `url(${speakersPatternImg1})`,
+     backgroundSize: "cover",
+   };
 
   // const speakersPattern2 = {
   //   backgroundImage: `url(${speakersPatternImg2})`,
@@ -31,7 +31,7 @@ export default function Speakers() {
   return (
     <>
       <section className="speakers-one" id="speakers">
-        {/* <div className="speakers-one_pattern" style={speakersPattern1}></div> */}
+        <div className="speakers-one_pattern" style={speakersPattern1}></div> 
         <div
           className="speakers-one_pattern-two"
           style={speakersPattern3}
