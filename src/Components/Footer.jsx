@@ -18,8 +18,19 @@ import insta5 from "../assets/images/gallery/instagram-5.jpg";
 import insta6 from "../assets/images/gallery/instagram-6.jpg";
 
 export default function Footer() {
+  // Common style for section gaps
+  const sectionStyle = {
+    marginBottom: '20px'
+  };
+
+  // Common style for title gaps
+  const titleStyle = {
+    marginBottom: '15px'
+  };
+
   return (
     <footer className="footer-two">
+      {/* Background icons remain unchanged */}
       <div
         className="footer-two_icon-one"
         style={{ backgroundImage: `url(${icon1})` }}
@@ -59,8 +70,8 @@ export default function Footer() {
             <div className="big-column col-lg-6 col-md-12 col-sm-12">
               <div className="row clearfix">
                 <div className="footer-two_column col-lg-7 col-md-6 col-sm-12">
-                  <div className="footer-two-widget logo-widget">
-                    <div className="footer-two_logo">
+                  <div className="footer-two-widget logo-widget" style={sectionStyle}>
+                    <div className="footer-two_logo" style={titleStyle}>
                       <Link to="/">
                         <img src={logo} alt="Mumbai Book Fair Logo" />
                       </Link>
@@ -71,41 +82,38 @@ export default function Footer() {
                   </div>
                 </div>
 
+                {/* Updated Social Section */}
                 <div className="footer-two_column col-lg-5 col-md-6 col-sm-12">
-                  <div className="footer-two-widget links-widget">
-                    <h4 className="footer-two_title">Social</h4>
-                    <ul className="footer-two_socials" style={{ display: 'flex', flexDirection: 'column', gap: '0px' }}>
-                      <li style={{ display: 'block' }}>
-                        <a
-                          href="https://x.com/nbt_india?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                          className="fa-brands fa-x-twitter"
-                        ></a>
-                      </li>
-                      <li style={{ display: 'block' }}>
-                        <a
-                          href="https://www.facebook.com/nationalbooktrustindia"
-                          className="fa-brands fa-facebook-f"
-                        ></a>
-                      </li>
-                      <li style={{ display: 'block' }}>
-                        <a
-                          href="https://www.instagram.com/nbtindia/?hl=en"
-                          className="fa-brands fa-instagram"
-                        ></a>
-                      </li>
-                      <li style={{ display: 'block' }}>
-                        <a
-                          href="https://in.linkedin.com/company/nationalbooktrustindia"
-                          className="fa-brands fa-linkedin"
-                        ></a>
-                      </li>
-                      <li style={{ display: 'block' }}>
-                        <a
-                          href="https://www.youtube.com/user/NBTIndia"
-                          className="fa-brands fa-youtube"
-                        ></a>
-                      </li>
-                    </ul>
+                  <div className="footer-two-widget links-widget" style={{ ...sectionStyle, paddingLeft: '50px' }}>
+                    <h4 className="footer-two_title" style={titleStyle}>Social</h4>
+                    <div className="d-flex align-items-start" style={{ gap: '20px' }}>
+                      {/* First Column - 3 icons */}
+                      <ul className="footer-two_socials" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                        <li>
+                          <a href="https://x.com/nbt_india" className="fa-brands fa-x-twitter"></a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/nationalbooktrustindia" className="fa-brands fa-facebook-f"></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/nbtindia/" className="fa-brands fa-instagram"></a>
+                        </li>
+                      </ul>
+
+                      {/* Second Column - 2 icons */}
+                      <ul className="footer-two_socials" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                        <li>
+                          <a href="https://in.linkedin.com/company/nationalbooktrustindia" className="fa-brands fa-linkedin"></a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/user/NBTIndia" className="fa-brands fa-youtube"></a>
+                        </li>
+                        {/* Empty <li> to maintain alignment with the first column */}
+                        <li style={{ visibility: 'hidden' }}>
+                          <a href="#" className="fa-brands fa-placeholder"></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -114,9 +122,9 @@ export default function Footer() {
             <div className="big-column col-lg-6 col-md-12 col-sm-12">
               <div className="row clearfix">
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget news-widget">
-                    <h4 className="footer-two_title">Contacts</h4>
-                    <ul className="footer-two_contact-list">
+                  <div className="footer-widget news-widget" style={sectionStyle}>
+                    <h4 className="footer-two_title" style={titleStyle}>Contacts</h4>
+                    <ul className="footer-two_contact-list" style={{ gap: '8px', display: 'flex', flexDirection: 'column' }}>
                       <li>
                         <span className="icon fa-solid fa-phone fa-fw"></span>{" "}
                         1800-NBT-1800
@@ -136,8 +144,8 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget instagram-widget">
-                    <h4 className="footer-two_title">Instagram</h4>
+                  <div className="footer-widget instagram-widget" style={sectionStyle}>
+                    <h4 className="footer-two_title" style={titleStyle}>Instagram</h4>
                     <div className="images-outer clearfix">
                       <figure className="image-box">
                         <a className="lightbox-image" href={insta1}>
@@ -196,10 +204,6 @@ export default function Footer() {
     </footer>
   );
 }
-
-
-
-
 
 
 
