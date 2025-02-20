@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
-
+// import { useState } from "react";
 export default function Header() {
+  // const [isColor, setIsColor]=useState(true);
   return (
     <>
       <header className="main-header">
@@ -43,7 +44,7 @@ export default function Header() {
                     <ul className="navigation clearfix" style={{display:"flex", gap:"10px", marginTop:"15px"}}>
                       <li>
                         <Link to="#about" target="_parent">
-                          About
+                          About    
                         </Link>
                       </li>
                       <li>
@@ -84,7 +85,8 @@ export default function Header() {
                             style={{
                               width: "30px",
                               height: "30px",
-                              color: "gold",
+                              // color: isColor ? "white" : "black",
+                              color:"blue"
                             }}
                           ></i>
                           {/* <LiaLanguageSolid style={{width:"30px",height:"30px", color:"white"}}/> */}

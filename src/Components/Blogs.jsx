@@ -74,8 +74,8 @@ export default function Blogs() {
           <div className="sec-title">
             <div className="d-flex justify-content-between align-items-end flex-wrap">
               <div className="title-box title-anim">
-                <div className="sec-title_title">Get Your</div>
-                <h2 className="sec-title_heading">Registration</h2>
+                <div className="sec-title_title">Registration</div>
+                <h2 className="sec-title_heading">Get Your</h2>
               </div>
             </div>
           </div>
