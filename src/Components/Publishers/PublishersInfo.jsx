@@ -7,7 +7,7 @@ export default function PublishersInfo() {
     <>
       <section className="testimonial-two">
         <div className="auto-container ">
-          <div className="column clearfix ">
+          <div className="row clearfix ">
             {/* Testimonial Block One */}
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
@@ -16,7 +16,7 @@ export default function PublishersInfo() {
                               onClick={() => window.open("", "_blank")}
                               style={{ cursor: "pointer" }}
                                   >
-                                    Website Link
+                                    Website Link<br/>
                                     Booth Number
                                       </div>
                   <div className="testimonial-block_one-rating">
@@ -68,7 +68,7 @@ export default function PublishersInfo() {
                               onClick={() => window.open("", "_blank")}
                               style={{ cursor: "pointer" }}
                                   >
-                                    Website Link
+                                    Website Link<br/>
                                     Booth Number
                                       </div>
 
@@ -104,7 +104,7 @@ export default function PublishersInfo() {
                               onClick={() => window.open("", "_blank")}
                               style={{ cursor: "pointer" }}
                                   >
-                                    Website Link
+                                    Website Link<br/>
                                     Booth Number
                                       </div>
                   <div className="testimonial-block_one-rating">
@@ -139,7 +139,7 @@ export default function PublishersInfo() {
                               onClick={() => window.open("", "_blank")}
                               style={{ cursor: "pointer" }}
                                   >
-                                    Website Link
+                                    Website Link<br/>
                                     Booth Number
                                       </div>
                   <div className="testimonial-block_one-rating">
@@ -174,7 +174,7 @@ export default function PublishersInfo() {
                               onClick={() => window.open("", "_blank")}
                               style={{ cursor: "pointer" }}
                                   >
-                                    Website Link
+                                    Website Link<br/>
                                     Booth Number
                                       </div>
                   <div className="testimonial-block_one-rating">
@@ -209,7 +209,7 @@ export default function PublishersInfo() {
                               onClick={() => window.open("", "_blank")}
                               style={{ cursor: "pointer" }}
                                   >
-                                    Website Link
+                                    Website Link<br/>
                                     Booth Number
                                       </div>
                   <div className="testimonial-block_one-rating">
