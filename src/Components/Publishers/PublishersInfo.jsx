@@ -6,16 +6,19 @@ export default function PublishersInfo() {
   return (
     <>
       <section className="testimonial-two">
-        <div className="auto-container">
-          <div className="row clearfix">
+        <div className="auto-container ">
+          <div className="column clearfix ">
             {/* Testimonial Block One */}
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
-                  <div className="testimonial-block_one-text">
-                    Website Link
-                    Booth Number
-                  </div>
+                <div className="testimonial-block_one-text" 
+                              onClick={() => window.open("", "_blank")}
+                              style={{ cursor: "pointer" }}
+                                  >
+                                    Website Link
+                                    Booth Number
+                                      </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa-brands fa-x-twitter"></span>
                     <span className="fa-brands fa-facebook-f"></span>
@@ -47,7 +50,12 @@ export default function PublishersInfo() {
                     <img src={authorImg1} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Publisings
+                  <span 
+                        onClick={() => window.open("", "_blank")} 
+                            style={{ cursor: "pointer" }}
+                          >
+                  Publishings
+                  </span>
                 </div>
               </div>
             </div>
@@ -56,10 +64,14 @@ export default function PublishersInfo() {
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
-                  <div className="testimonial-block_one-text">
-                  Website Link
-                  Booth Number
-                  </div>
+                        <div className="testimonial-block_one-text" 
+                              onClick={() => window.open("", "_blank")}
+                              style={{ cursor: "pointer" }}
+                                  >
+                                    Website Link
+                                    Booth Number
+                                      </div>
+
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
                     <span className="fa fa-star"></span>
@@ -74,7 +86,12 @@ export default function PublishersInfo() {
                     <img src={authorImg2} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Publisings
+                  <span 
+                        onClick={() => window.open("", "_blank")} 
+                            style={{ cursor: "pointer" }}
+                          >
+                  Publishings
+                  </span>
                 </div>
               </div>
             </div>
@@ -83,10 +100,13 @@ export default function PublishersInfo() {
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
-                  <div className="testimonial-block_one-text">
-                  Website Link
-                  Booth Number
-                  </div>
+                <div className="testimonial-block_one-text" 
+                              onClick={() => window.open("", "_blank")}
+                              style={{ cursor: "pointer" }}
+                                  >
+                                    Website Link
+                                    Booth Number
+                                      </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
                     <span className="fa fa-star"></span>
@@ -101,7 +121,12 @@ export default function PublishersInfo() {
                     <img src={authorImg1} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Publisings
+                  <span 
+                        onClick={() => window.open("", "_blank")} 
+                            style={{ cursor: "pointer" }}
+                          >
+                  Publishings
+                  </span>
                 </div>
               </div>
             </div>
@@ -110,10 +135,13 @@ export default function PublishersInfo() {
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
-                  <div className="testimonial-block_one-text">
-                  Website Link
-                  Booth Number
-                  </div>
+                <div className="testimonial-block_one-text" 
+                              onClick={() => window.open("", "_blank")}
+                              style={{ cursor: "pointer" }}
+                                  >
+                                    Website Link
+                                    Booth Number
+                                      </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
                     <span className="fa fa-star"></span>
@@ -128,7 +156,12 @@ export default function PublishersInfo() {
                     <img src={authorImg2} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Publisings
+                  <span 
+                        onClick={() => window.open("", "_blank")} 
+                            style={{ cursor: "pointer" }}
+                          >
+                  Publishings
+                  </span>
                 </div>
               </div>
             </div>
@@ -137,10 +170,13 @@ export default function PublishersInfo() {
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
-                  <div className="testimonial-block_one-text">
-                  Website Link
-                  Booth Number
-                  </div>
+                <div className="testimonial-block_one-text" 
+                              onClick={() => window.open("", "_blank")}
+                              style={{ cursor: "pointer" }}
+                                  >
+                                    Website Link
+                                    Booth Number
+                                      </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
                     <span className="fa fa-star"></span>
@@ -155,7 +191,12 @@ export default function PublishersInfo() {
                     <img src={authorImg1} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Publisings
+                  <span 
+                        onClick={() => window.open("", "_blank")} 
+                            style={{ cursor: "pointer" }}
+                          >
+                  Publishings
+                  </span>
                 </div>
               </div>
             </div>
@@ -164,10 +205,13 @@ export default function PublishersInfo() {
             <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
               <div className="testimonial-block_one-inner">
                 <div className="testimonial-block_one-content">
-                  <div className="testimonial-block_one-text">
-                  Website Link
-                  Booth Number
-                  </div>
+                <div className="testimonial-block_one-text" 
+                              onClick={() => window.open("", "_blank")}
+                              style={{ cursor: "pointer" }}
+                                  >
+                                    Website Link
+                                    Booth Number
+                                      </div>
                   <div className="testimonial-block_one-rating">
                     {/* <span className="fa fa-star"></span>
                     <span className="fa fa-star"></span>
@@ -182,7 +226,12 @@ export default function PublishersInfo() {
                     <img src={authorImg2} alt="" />
                   </div>
                   <strong>Name</strong>
-                  Publisings
+                  <span 
+                        onClick={() => window.open("", "_blank")} 
+                            style={{ cursor: "pointer" }}
+                          >
+                  Publishings
+                  </span>
                 </div>
               </div>
             </div>
