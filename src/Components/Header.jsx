@@ -37,10 +37,18 @@ export default function Header() {
                   </div>
 
                   <div
-                    className="navbar-collapse collapse clearfix"
+                    className="navbar-collapse collapse clearfix d-none d-md-flex"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navigation clearfix" style={{display:"flex", gap:"10px", marginTop:"15px"}}>
+                    <ul
+                      className="navigation clearfix"
+                      style={{
+                        display: "flex",
+                        flexDirection: "row", // Default horizontal for desktop
+                        gap: "10px",
+                        marginTop: "15px",
+                      }}
+                    >
                       <li>
                         <Link to="#about" target="_parent">
                           About
@@ -77,7 +85,6 @@ export default function Header() {
                         </Link>
                       </li>
                       <li className="dropdown language-icon">
-                        {/* <img src={language} alt="" /> */}
                         <span>
                           <i
                             className="fa fa-language fa-2xl"
@@ -87,7 +94,6 @@ export default function Header() {
                               color: "gold",
                             }}
                           ></i>
-                          {/* <LiaLanguageSolid style={{width:"30px",height:"30px", color:"white"}}/> */}
                         </span>
                         <ul>
                           <li>
@@ -101,7 +107,6 @@ export default function Header() {
                           </li>
                         </ul>
                       </li>
-                      
                     </ul>
                   </div>
                 </nav>
@@ -120,7 +125,7 @@ export default function Header() {
 
         <div className="sticky-header">
           <div className="auto-container">
-            <div className="inner-container d-flex justify-content-between align-items-center flex-wrap">
+            <div className="inner-container d-flex justify-content-between align-items-center flex-wrap ">
               {/* Logo */}
               <div className="logo">
                 <Link to="/" title="">
@@ -149,6 +154,7 @@ export default function Header() {
           {/* End Sticky Menu */}
         </div>
 
+        {/* Mobile Menu */}
         <div className="mobile-menu">
           <div className="menu-backdrop"></div>
           <div className="close-btn">
@@ -162,7 +168,51 @@ export default function Header() {
               </Link>
             </div>
             <div className="menu-outer">
-              {/* Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
+              <ul
+                className="mobile-navigation"
+                style={{
+                  display: "flex",
+                  flexDirection: "column", // Forces vertical stacking for mobile
+                  alignItems: "center",
+                  gap: "15px",
+                }}
+              >
+                <li>
+                  <Link to="#about" target="_parent"style={{ color: "black" }}>
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#event" target="_parent"style={{ color: "black" }}>
+                    Schedule
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#speakers" target="_parent"style={{ color: "black" }}>
+                    Speakers
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#team" target="_parent"style={{ color: "black" }}>
+                    Team
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/publishers" target="_parent"style={{ color: "black" }}>
+                    Publishers
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#faq" target="_parent"style={{ color: "black" }}>
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#faq" target="_parent"style={{ color: "black" }}>
+                    Social
+                  </Link>
+                </li>
+              </ul>
             </div>
           </nav>
         </div>
