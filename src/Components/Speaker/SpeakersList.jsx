@@ -55,38 +55,40 @@ export default function SpeakersList() {
               Meet Speakers For Events
             </h2>
           </div>
-          <div className="row clearfix m-3 g-0 d-flex justify-content-center" style={{ gap: "5px" }}>
-            <div className="col m-0 p-0">
-              <div className="about-one_button">
-                <Link to="/speakers" className="theme-btn btn-style-one">
-                  <span className="btn-wrap">
-                    <span className="text-one">2023</span>
-                    <span className="text-two">2023</span>
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="col m-0 p-0" >
-              <div className="about-one_button">
-                <Link to="/speakers" className="theme-btn btn-style-one">
-                  <span className="btn-wrap">
-                    <span className="text-one">2024</span>
-                    <span className="text-two">2024</span>
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="col m-0 p-0">
-              <div className="about-one_button">
-                <Link to="/speakers" className="theme-btn btn-style-one">
-                  <span className="btn-wrap">
-                    <span className="text-one">2025</span>
-                    <span className="text-two">2025</span>
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
+          <div className="row d-flex justify-content-center align-items-center gap-0"
+              style={{ gap: "5px", flexWrap: "nowrap" }}>
+                      <div className="col-auto m-0 p-0">
+                          <div className="about-one_button">
+                            <Link to="/speakers" className="theme-btn btn-style-one">
+                              <span className="btn-wrap">
+                                <span className="text-one">2023</span>
+                                  <span className="text-two">2023</span>
+                                    </span>
+                                      </Link>
+                                          </div>
+                                            </div>
+                                            <div className="col-auto m-0 p-0">
+                                            <div className="about-one_button">
+                                            <Link to="/speakers" className="theme-btn btn-style-one">
+                                            <span className="btn-wrap">
+                                            <span className="text-one">2024</span>
+                                              <span className="text-two">2024</span>
+                                            </span>
+                                            </Link>
+                                            </div>
+                                            </div>
+                                            <div className="col-auto m-0 p-0">
+                                            <div className="about-one_button">
+                                            <Link to="/speakers" className="theme-btn btn-style-one">
+                                            <span className="btn-wrap">
+                                            <span className="text-one">2025</span>
+                                            <span className="text-two">2025</span>
+                                            </span>
+                                            </Link>
+                                      </div>
+                                  </div>
+                              </div>
+
           <div className="row clearfix">
             {/* Speaker Block One */}
             <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
