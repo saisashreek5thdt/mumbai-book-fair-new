@@ -5,6 +5,8 @@ import { BiFilter } from "react-icons/bi";
 import { GiVideoConference } from "react-icons/gi";
 import { GiBackwardTime } from "react-icons/gi";
 
+import { jsPDF } from "jspdf";
+// import html2canvas from "html2canvas";
 import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
 import speakerImg2 from "../assets/images/Speakers/Chandraprakash_Dwivedi.png";
 import speakerImg3 from "../assets/images/Speakers/Govind_Dolakiya.png";
@@ -17,6 +19,7 @@ export default function LeadershipOne() {
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [selectedTitleFilter, setSelectedTitleFilter] = useState("All");
   const [expandedDates, setExpandedDates] = useState({});
+  const [selectedDate, setSelectedDate] = useState(null);
 
   const handleFilterChange = (event) => {
     setSelectedFilter(event.target.value);
@@ -55,6 +58,7 @@ export default function LeadershipOne() {
       date: "18/04/2025",
       imgURL: speakerImg7,
       place: "Conference Hall 1",
+      filterTitle:"Children Activities"
     },
     {
       time: "11:15 AM - 12:15 PM",
@@ -67,6 +71,7 @@ export default function LeadershipOne() {
       date: "18/04/2025",
       imgURL: speakerImg2,
       place: "Conference Hall 2",
+      filterTitle:"Authors Corner"
     },
     {
       time: "10:00 AM - 10:45 AM",
@@ -79,6 +84,7 @@ export default function LeadershipOne() {
       date: "18/04/2025",
       imgURL: speakerImg5,
       place: "Conference Hall 3",
+      filterTitle:"Cultural Activities"
     },
     {
       time: "11:00 AM - 11:45 AM",
@@ -91,6 +97,7 @@ export default function LeadershipOne() {
       date: "18/04/2025",
       imgURL: speakerImg3,
       place: "Conference Hall 4",
+      filterTitle:"Film Festival"
     },
     {
       time: "12:00 PM - 12:45 PM",
@@ -103,6 +110,7 @@ export default function LeadershipOne() {
       date: "19/04/2025",
       imgURL: speakerImg4,
       place: "Conference Hall 5",
+      filterTitle:"Exhibition"
     },
     {
       time: "10:00 AM - 10:45 AM",
@@ -115,6 +123,7 @@ export default function LeadershipOne() {
       date: "19/04/2025",
       imgURL: speakerImg1,
       place: "Conference Hall 6",
+      filterTitle:"Children Activities"
     },
     {
       time: "11:00 AM - 11:45 AM",
@@ -127,6 +136,7 @@ export default function LeadershipOne() {
       date: "20/04/2025",
       imgURL: speakerImg6,
       place: "Conference Hall 7",
+      filterTitle:"Authors Corner"
     },
     {
       time: "12:00 PM - 12:45 PM",
@@ -139,6 +149,7 @@ export default function LeadershipOne() {
       date: "20/04/2025",
       imgURL: speakerImg5,
       place: "Conference Hall 8",
+      filterTitle:"Cultural Activities"
     },
     {
       time: "10:00 AM - 10:45 AM",
@@ -151,6 +162,7 @@ export default function LeadershipOne() {
       date: "21/04/2025",
       imgURL: speakerImg3,
       place: "Conference Hall 9",
+      filterTitle:"Film Festival"
     },
     {
       time: "11:00 AM - 11:45 AM",
@@ -163,6 +175,7 @@ export default function LeadershipOne() {
       date: "21/04/2025",
       imgURL: speakerImg2,
       place: "Conference Hall 10",
+      filterTitle:"Exhibition"
     },
     {
       time: "12:00 PM - 12:45 PM",
@@ -175,6 +188,7 @@ export default function LeadershipOne() {
       date: "21/04/2025",
       imgURL: speakerImg7,
       place: "Conference Hall 11",
+      filterTitle:"Children Activities"
     },
     {
       time: "10:00 AM - 10:45 AM",
@@ -187,6 +201,7 @@ export default function LeadershipOne() {
       date: "22/04/2025",
       imgURL: speakerImg2,
       place: "Conference Hall 12",
+      filterTitle:"Authors Corner"
     },
     {
       time: "11:00 AM - 11:45 AM",
@@ -199,6 +214,7 @@ export default function LeadershipOne() {
       date: "22/04/2025",
       imgURL: speakerImg3,
       place: "Conference Hall 13",
+      filterTitle:"Cultural Activities"
     },
     {
       time: "12:00 PM - 12:45 PM",
@@ -211,6 +227,7 @@ export default function LeadershipOne() {
       date: "22/04/2025",
       imgURL: speakerImg7,
       place: "Conference Hall 14",
+      filterTitle:"Film Festival"
     },
   ];
 
@@ -256,6 +273,66 @@ export default function LeadershipOne() {
     }));
   };
 
+
+  // Function to generate and download PDF
+  const downloadAgenda = (event) => {
+    event.preventDefault();
+    const doc = new jsPDF();
+
+    // Title of the PDF
+    doc.setFontSize(18);
+    doc.text("Event Schedule", 10, 10);
+
+    let yOffset = 20; // Vertical position for content
+
+    // Determine which data to include in the PDF
+    const dataToInclude =
+      selectedDate !== null
+        ? { [selectedDate]: filteredScheduleData[selectedDate] } // Only selected date
+        : filteredScheduleData; // All dates
+         
+    // Loop through filteredScheduleData to add content to the PDF
+    Object.keys(dataToInclude).forEach((date) => {
+      // Add date header
+      doc.setFontSize(14);
+      doc.setTextColor("#cf288f");
+      doc.text(`Date: ${date}`, 10, yOffset);
+      yOffset += 10;
+
+      // Add schedule items for the date
+      dataToInclude[date].forEach((item) => {
+        doc.setFontSize(12);
+        doc.setTextColor("#000000");
+
+        doc.text(`Time: ${item.time}`, 10, yOffset);
+        yOffset += 5;
+        doc.text(`Name: ${item.name}`, 10, yOffset);
+        yOffset += 5;
+        doc.text(`Title: ${item.title}`, 10, yOffset);
+        yOffset += 5;
+        doc.text(`Place: ${item.place}`, 10, yOffset);
+        yOffset += 10;
+
+        // Check if the date is expanded to include the description
+        if (expandedDates[date]) {
+          doc.text(`Description: ${item.description}`, 10, yOffset);
+          yOffset += 10;
+        }
+
+        // Ensure content doesn't overflow the page
+        if (yOffset >= 280) {
+          doc.addPage();
+          yOffset = 20;
+        }
+      });
+       // Add spacing between dates
+       yOffset += 10;
+      });
+  
+      // Save the PDF
+      doc.save("Event_Schedule.pdf");
+  };
+
   return (
     <>
       <section className="event-schedule-section" id="event">
@@ -286,31 +363,31 @@ export default function LeadershipOne() {
             <div className="btns-box">
               {/* <!--Tabs Box--> */}
               <ul className="tab-buttons clearfix">
-                <li className="tab-btn active-btn" data-tab="#tab-1">
+                <li className="tab-btn active-btn" data-tab="#tab-1" onClick={() => setSelectedDate("18/04/2025")}>
                   <span className="day">Day 01</span>
                   <span className="date">18</span>
                   <span className="month">April</span> 2025
                 </li>
 
-                <li className="tab-btn" data-tab="#tab-2">
+                <li className="tab-btn" data-tab="#tab-2"  onClick={() => setSelectedDate("19/04/2025")}>
                   <span className="day">Day 02</span>
                   <span className="date">19</span>
                   <span className="month">April</span> 2025
                 </li>
 
-                <li className="tab-btn" data-tab="#tab-3">
+                <li className="tab-btn" data-tab="#tab-3"  onClick={() => setSelectedDate("20/04/2025")}>
                   <span className="day">Day 03</span>
                   <span className="date">20</span>
                   <span className="month">April</span> 2025
                 </li>
 
-                <li className="tab-btn" data-tab="#tab-4">
+                <li className="tab-btn" data-tab="#tab-4"  onClick={() => setSelectedDate("21/04/2025")}>
                   <span className="day">Day 04</span>
                   <span className="date">21</span>
                   <span className="month">April</span> 2025
                 </li>
 
-                <li className="tab-btn" data-tab="#tab-5">
+                <li className="tab-btn" data-tab="#tab-5"  onClick={() => setSelectedDate("22/04/2025")}>
                   <span className="day">Day 05</span>
                   <span className="date">22</span>
                   <span className="month">April</span> 2025
@@ -359,8 +436,8 @@ export default function LeadershipOne() {
                   >
                     <option value="All">All Titles</option>
                     {/* {scheduleData.map((item, index) => (
-                      <option key={index} value={item.title}>
-                        {item.title}
+                      <option key={index} value={item.filterTitle}>
+                        {item.filterTitle}
                       </option>
                     ))} */}
                     <option value="Children Activities">Children Activities</option>
@@ -375,20 +452,20 @@ export default function LeadershipOne() {
               <div className="col-lg-4">
                 <div className="download-btns-box text-center ">
                   <a
-                    href=""
                     className="theme-btn btn-style-two"
                     style={agendaBtn}
+                    onClick={downloadAgenda}
                   >
-                    <span className="btn-wrap">
-                      <span className="text-one">Download Agenda</span>
-                      <span className="text-two">Download Agenda</span>
+                    <span className="btn-wrap" >
+                      <span className="text-one" >Download Agenda</span>
+                      <span className="text-two" >Download Agenda</span>
                     </span>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="tabs-content">
+            <div className="tabs-content" id="schedule-container">
               {/* Render tabs dynamically */}
               {Object.keys(filteredScheduleData).map((date, index) => (
                 <div
@@ -396,7 +473,8 @@ export default function LeadershipOne() {
                   className={`tab ${index === 0 ? "active-tab" : ""}`}
                   id={`tab-${index + 1}`}
                 >
-                  <div className="schedule-timeline">
+                 {console.log(date)};
+                  <div className="schedule-timeline" >
                     {/* Render schedule blocks */}
                     {filteredScheduleData[date]
                       .slice(0, expandedDates[date] ? undefined : 3) // Show all or first 3 items
