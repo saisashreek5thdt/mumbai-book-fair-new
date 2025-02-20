@@ -181,7 +181,7 @@ export default function FaqSection() {
                         <div className="icon-outer">
                           <span className="icon fa-solid fa-angle-down fa-fw"></span>
                         </div>
-                        What is the procedure to have an allocated book stall at
+                        Can I have an allocated book stall at
                         the festival?
                       </div>
                       <div
