@@ -10,7 +10,7 @@ export default function Header() {
             <div className="d-flex justify-content-between align-items-center flex-wrap">
               <div className="logo-box">
                 <div className="logo">
-                  <Link to="/">
+                  <Link to="/" target="_parent">
                     <img src={logo} alt="" title="" />
                   </Link>
                 </div>
