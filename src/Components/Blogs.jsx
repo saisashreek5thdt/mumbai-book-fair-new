@@ -21,105 +21,131 @@ export default function Blogs() {
       title: "Volunteer",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform",
       // imgURL: blogImg1,
-      imgURL:news4
+      imgURL: news4,
     },
     {
       id: 2,
       title: "Exhibitor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform",
       // imgURL: blogImg2,
-      imgURL:news5
+      imgURL: news5,
     },
     {
       id: 3,
       title: "Visitor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSfJ6YcEuTFVIB-wCflitmtfX1minVEGO4KrOPR8Fc26vPM7XA/viewform",
       // imgURL: blogImg3,
-      imgURL:news6
+      imgURL: news6,
     },
     {
       id: 4,
       title: "Speaker",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSehWMPA1WSMIC1u54WHSlPRifEf1aP2PF_UBQahAI-SnbqLBw/viewform",
       // imgURL: blogImg4,
-      imgURL:news4
+      imgURL: news4,
     },
     {
       id: 5,
       title: "Vendor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSe_CBsGMOh5NU6IgrGabtPLCGwpRhZGZ8erNCpYAcl4Q1TVAg/viewform",
       // imgURL: blogImg5,
-      imgURL:news5
+      imgURL: news5,
     },
     {
       id: 6,
       title: "Sponsor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLScIajlb9neewUiqRpH6KrDXYsVKT7QXdc1Ioif8frcyuhsm8Q/viewform",
       // imgURL: blogImg6,
-      imgURL:news6
+      imgURL: news6,
     },
     {
       id: 7,
       title: "Author",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSehWMPA1WSMIC1u54WHSlPRifEf1aP2PF_UBQahAI-SnbqLBw/viewform",
       // imgURL: blogImg7,
-      imgURL:news4
+      imgURL: news4,
     },
   ];
 
   return (
     <>
-      <section className="news-three" id="register">
+      <section className="event-feature-section" id="register">
         <div className="auto-container">
-          <div className="sec-title">
-            <div className="d-flex justify-content-between align-items-end flex-wrap">
+          <div className="sec-title title-anim centered">
+            <div className="sec-title_title" style={{ textTransform: "none" }}>
+              Registration
+            </div>
+            <h2
+              className="sec-title_heading"
+              style={{
+                marginBottom: "15px",
+                fontSize: "36px",
+                fontWeight: "700",
+              }}
+            >
+              Get Your
+            </h2>
+            {/* <div className="d-flex justify-content-between align-items-end flex-wrap">
               <div className="title-box title-anim">
-                <div className="sec-title_title">Registration</div>
+                <div className="sec-title_title"></div>
                 <h2 className="sec-title_heading">Get Your</h2>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="row clearfix">
-          <Swiper
-            className="swiper"
-            slidesPerView={1}
-            spaceBetween={1}
-            loop={true}
-            autoplay={{
-              delay: 3000, // Adjust delay time (3 seconds here)
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay, Pagination]}
-            breakpoints={{
-              320: { slidesPerView: 1 }, // Mobile view shows 1 slide
-              768: { slidesPerView: 2 }, // Tablet view shows 2 slides
-              1024: { slidesPerView: 3 }, // Desktop view shows 3 slides
-            }}
-          >
-            {registerInfo.map((event, index) => (
-              <SwiperSlide key={index}>
-              
-                {/* <!-- News Block --> */}
-                <div className="news-block_three col-lg-12 col-md-8 col-sm-4">
-                  <div className="news-block_three-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    {/* <!-- Post Info --> */}
-                    <div className="news-block_three-image">
-                      <a href="blog-detail.html"><img src={event.imgURL} alt={event.title} /></a>
-                      <img src={event.imgURL} alt="" />
-                    </div>
-                    <div className="news-block_three-content">
-                      <h5 className="news-block_three-heading"><a>{event.title}</a></h5>
-                      <Link to={event.link} className="news-block_three-more" target="_blank" rel="noopener noreferrer" >Register</Link>
+            <Swiper
+              className="swiper"
+              slidesPerView={1}
+              spaceBetween={1}
+              loop={true}
+              autoplay={{
+                delay: 3000, // Adjust delay time (3 seconds here)
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, Pagination]}
+              breakpoints={{
+                320: { slidesPerView: 1 }, // Mobile view shows 1 slide
+                768: { slidesPerView: 2 }, // Tablet view shows 2 slides
+                1024: { slidesPerView: 3 }, // Desktop view shows 3 slides
+              }}
+            >
+              {registerInfo.map((event, index) => (
+                <SwiperSlide key={index}>
+                  {/* <!-- News Block --> */}
+                  <div className="news-block_three col-lg-12 col-md-8 col-sm-4">
+                    <div
+                      className="news-block_three-inner wow fadeInUp"
+                      data-wow-delay="0ms"
+                      data-wow-duration="1500ms"
+                    >
+                      {/* <!-- Post Info --> */}
+                      <div className="news-block_three-image">
+                        <a href="blog-detail.html">
+                          <img src={event.imgURL} alt={event.title} />
+                        </a>
+                        <img src={event.imgURL} alt="" />
+                      </div>
+                      <div className="news-block_three-content">
+                        <h5 className="news-block_three-heading">
+                          <a>{event.title}</a>
+                        </h5>
+                        <Link
+                          to={event.link}
+                          className="news-block_three-more"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Register
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          {/* <!-- News Block --> */}
-          {/* <div className="news-block_three col-lg-4 col-md-6 col-sm-12">
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* <!-- News Block --> */}
+            {/* <div className="news-block_three col-lg-4 col-md-6 col-sm-12">
                   <div className="news-block_three-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div className="news-block_three-image">
                       <a href="blog-detail.html"><img src={news4} alt="" /></a>
@@ -132,8 +158,8 @@ export default function Blogs() {
                   </div>
           </div> */}
 
-          {/* <!-- News Block --> */}
-          {/* <div className="news-block_three col-lg-4 col-md-6 col-sm-12">
+            {/* <!-- News Block --> */}
+            {/* <div className="news-block_three col-lg-4 col-md-6 col-sm-12">
                   <div className="news-block_three-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div className="news-block_three-image">
                       <a href="blog-detail.html"><img src={news6} alt="" /></a>
@@ -145,7 +171,6 @@ export default function Blogs() {
                     </div>
                   </div>
           </div> */}
-
           </div>
         </div>
       </section>
@@ -153,9 +178,8 @@ export default function Blogs() {
   );
 }
 
-
-
-{/* <section className="news-one" id="register">
+{
+  /* <section className="news-one" id="register">
   <div className="auto-container">
     <div className="sec-title">
       <div className="d-flex justify-content-between align-items-end flex-wrap">
@@ -213,12 +237,15 @@ export default function Blogs() {
                     rel="noopener noreferrer"
                   >
                     Register
-                  </a> */}
-              {/* </div>
+                  </a> */
+}
+{
+  /* </div>
             </div>
           </div>
         </SwiperSlide>
       ))}
     </Swiper>
   </div>
-</section>  */}
+</section>  */
+}

@@ -10,23 +10,20 @@ import icon6 from "../assets/images/icons/icon-8.png";
 import icon7 from "../assets/images/icons/icon-9.png";
 import icon8 from "../assets/images/icons/icon-10.png";
 
-import insta1 from "../assets/images/gallery/instagram-1.jpg";
-import insta2 from "../assets/images/gallery/instagram-2.jpg";
-import insta3 from "../assets/images/gallery/instagram-3.jpg";
-import insta4 from "../assets/images/gallery/instagram-4.jpg";
-import insta5 from "../assets/images/gallery/instagram-5.jpg";
-import insta6 from "../assets/images/gallery/instagram-6.jpg";
+import insta1 from "../assets/images/mapImage.png";
 
 export default function Footer() {
   // Common style for section gaps
   const sectionStyle = {
-    marginBottom: '20px'
+    marginBottom: "20px",
   };
 
   // Common style for title gaps
   const titleStyle = {
-    marginBottom: '15px'
+    marginBottom: "15px",
   };
+
+  let currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer-two">
@@ -69,48 +66,78 @@ export default function Footer() {
           <div className="row clearfix">
             <div className="big-column col-lg-6 col-md-12 col-sm-12">
               <div className="row clearfix">
-                <div className="footer-two_column col-lg-7 col-md-6 col-sm-12">
-                  <div className="footer-two-widget logo-widget" style={sectionStyle}>
+                <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
+                  <div
+                    className="footer-two-widget logo-widget"
+                    style={sectionStyle}
+                  >
                     <div className="footer-two_logo" style={titleStyle}>
                       <Link to="/">
                         <img src={logo} alt="Mumbai Book Fair Logo" />
                       </Link>
                     </div>
-                    <div className="footer-two_text" style={{ textAlign: "justify" }}>
-                      The Mumbai Book Festival, organized by the National Book Trust, India (under the Ministry of Education, Government of India), is making its debut this April at the centrally located Azad Maidan, Mumbai.
+                    <div
+                      className="footer-two_text"
+                      style={{ textAlign: "justify" }}
+                    >
+                      The Mumbai Book Festival, organized by the National Book
+                      Trust, India (under the Ministry of Education, Government
+                      of India), is making its debut this April at the centrally
+                      located Azad Maidan, Mumbai.
                     </div>
                   </div>
                 </div>
 
                 {/* Updated Social Section */}
-                <div className="footer-two_column col-lg-5 col-md-6 col-sm-12">
-                  <div className="footer-two-widget links-widget" style={{ ...sectionStyle, paddingLeft: '50px' }}>
-                    <h4 className="footer-two_title" style={titleStyle}>Social</h4>
-                    <div className="d-flex align-items-start" style={{ gap: '20px' }}>
+                <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
+                  <div
+                    className="footer-two-widget links-widget"
+                    style={{ ...sectionStyle, paddingLeft: "50px" }}
+                  >
+                    <h4 className="footer-two_title" style={titleStyle}>
+                      Social
+                    </h4>
+                    <div
+                      className="d-flex align-items-start"
+                      style={{ gap: "20px" }}
+                    >
                       {/* First Column - 3 icons */}
-                      <ul className="footer-two_socials" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                      <ul
+                        className="footer-two_socials"
+                        style={{
+                          display: "flex",
+                          gap: "6px",
+                        }}
+                      >
                         <li>
-                          <a href="https://x.com/nbt_india" className="fa-brands fa-x-twitter"></a>
+                          <a
+                            href="https://x.com/nbt_india"
+                            className="fa-brands fa-x-twitter"
+                          ></a>
                         </li>
                         <li>
-                          <a href="https://www.facebook.com/nationalbooktrustindia" className="fa-brands fa-facebook-f"></a>
+                          <a
+                            href="https://www.facebook.com/nationalbooktrustindia"
+                            className="fa-brands fa-facebook-f"
+                          ></a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com/nbtindia/" className="fa-brands fa-instagram"></a>
-                        </li>
-                      </ul>
-
-                      {/* Second Column - 2 icons */}
-                      <ul className="footer-two_socials" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                        <li>
-                          <a href="https://in.linkedin.com/company/nationalbooktrustindia" className="fa-brands fa-linkedin"></a>
+                          <a
+                            href="https://www.instagram.com/nbtindia/"
+                            className="fa-brands fa-instagram"
+                          ></a>
                         </li>
                         <li>
-                          <a href="https://www.youtube.com/user/NBTIndia" className="fa-brands fa-youtube"></a>
+                          <a
+                            href="https://in.linkedin.com/company/nationalbooktrustindia"
+                            className="fa-brands fa-linkedin"
+                          ></a>
                         </li>
-                        {/* Empty <li> to maintain alignment with the first column */}
-                        <li style={{ visibility: 'hidden' }}>
-                          <a href="#" className="fa-brands fa-placeholder"></a>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/user/NBTIndia"
+                            className="fa-brands fa-youtube"
+                          ></a>
                         </li>
                       </ul>
                     </div>
@@ -122,9 +149,21 @@ export default function Footer() {
             <div className="big-column col-lg-6 col-md-12 col-sm-12">
               <div className="row clearfix">
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget news-widget" style={sectionStyle}>
-                    <h4 className="footer-two_title" style={titleStyle}>Contacts</h4>
-                    <ul className="footer-two_contact-list" style={{ gap: '8px', display: 'flex', flexDirection: 'column' }}>
+                  <div
+                    className="footer-widget news-widget"
+                    style={sectionStyle}
+                  >
+                    <h4 className="footer-two_title" style={titleStyle}>
+                      Contacts
+                    </h4>
+                    <ul
+                      className="footer-two_contact-list"
+                      style={{
+                        gap: "8px",
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
                       <li>
                         <span className="icon fa-solid fa-phone fa-fw"></span>{" "}
                         1800-NBT-1800
@@ -144,39 +183,17 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget instagram-widget" style={sectionStyle}>
-                    <h4 className="footer-two_title" style={titleStyle}>Instagram</h4>
+                  <div
+                    className="footer-widget instagram-widget"
+                    style={sectionStyle}
+                  >
+                    <h4 className="footer-two_title" style={titleStyle}>
+                      Directions
+                    </h4>
                     <div className="images-outer clearfix">
-                      <figure className="image-box">
-                        <a className="lightbox-image" href={insta1}>
-                          <img src={insta1} alt="Instagram 1" />
-                        </a>
-                      </figure>
-                      <figure className="image-box">
-                        <a className="lightbox-image" href={insta2}>
-                          <img src={insta2} alt="Instagram 2" />
-                        </a>
-                      </figure>
-                      <figure className="image-box">
-                        <a className="lightbox-image" href={insta3}>
-                          <img src={insta3} alt="Instagram 3" />
-                        </a>
-                      </figure>
-                      <figure className="image-box">
-                        <a className="lightbox-image" href={insta4}>
-                          <img src={insta4} alt="Instagram 4" />
-                        </a>
-                      </figure>
-                      <figure className="image-box">
-                        <a className="lightbox-image" href={insta5}>
-                          <img src={insta5} alt="Instagram 5" />
-                        </a>
-                      </figure>
-                      <figure className="image-box">
-                        <a className="lightbox-image" href={insta6}>
-                          <img src={insta6} alt="Instagram 6" />
-                        </a>
-                      </figure>
+                      <Link to="https://maps.app.goo.gl/gPdTDs534rdT1aoP8" target="_blank">
+                        <img src={insta1} alt="Instagram 1" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -191,7 +208,7 @@ export default function Footer() {
           <div className="row clearfix">
             <div className="column col-lg-12 col-md-12 col-sm-12">
               <div className="copyright text-center">
-                &copy; Copyright ©2025{" "}
+                &copy; Copyright {currentYear}{" "}
                 <Link to="https://5thdt.com/" target="_blank">
                   5thDT
                 </Link>
@@ -204,8 +221,6 @@ export default function Footer() {
     </footer>
   );
 }
-
-
 
 // original footer
 

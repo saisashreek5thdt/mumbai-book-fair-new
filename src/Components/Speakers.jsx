@@ -86,11 +86,11 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Ankur Warikoo</a>
+                    <a href="/">Ankur Warikoo</a>
                   </h4>
 
                   <div className="speaker-one_detail">
-                    Entrepreneur, Author, and Public Speaker
+                    Entrepreneur, Author and Public Speaker
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Dr.Chandraprakash Dwivedi</a>
+                    <a href="/">Dr.Chandraprakash Dwivedi</a>
                   </h4>
                   <div className="speaker-one_detail">
                     Indian Film Director and Screenwriter
@@ -171,10 +171,10 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Govind Dholakia</a>
+                    <a href="/">Govind Dholakia</a>
                   </h4>
                   <div className="speaker-one_detail">
-                    Founder and Chairman of Shree Ramkrishna Exports Pvt. Ltd
+                    Member of Parliment
                   </div>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Kailash Kher</a>
+                    <a href="/">Kailash Kher</a>
                   </h4>
                   <div className="speaker-one_detail">
                     Indian Playback Singer and Music Composer
@@ -255,10 +255,10 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Shiv Khera</a>
+                    <a href="/">Shiv Khera</a>
                   </h4>
                   <div className="speaker-one_detail">
-                    Author, Professional Speaker, and Motivational Trainer
+                    Author, Professional Speaker and Motivational Trainer
                   </div>
                 </div>
               </div>
@@ -297,7 +297,7 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Upendra Rai</a>
+                    <a href="/">Upendra Rai</a>
                   </h4>
                   <div className="speaker-one_detail">
                     Senior Journalist and Author
@@ -339,7 +339,7 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Vaibhav Purandare</a>
+                    <a href="/">Vaibhav Purandare</a>
                   </h4>
                   <div className="speaker-one_detail">
                     Author and Journalist
@@ -381,7 +381,7 @@ export default function Speakers() {
                 </div>
                 <div className="speaker-block_one-content">
                   <h4 className="speaker-one_title">
-                    <a href="speaker-detail.html">Ankur Warikoo</a>
+                    <a href="/">Ankur Warikoo</a>
                   </h4>
                   <div className="speaker-one_detail">
                     Entrepreneur, Author, and Public Speaker

@@ -55,7 +55,7 @@ export default function TeamExecutive() {
               </h4>
               <div className="text">
                 Social Worker, Entrepreneur and Champion of{" "}
-                <strong>har hath ek kitab</strong>.
+                <strong>&quot;<em>Har Hath Ek Kitab</em>&quot;</strong>.
               </div>
               {/* <div className="btn-box">
                 <Link to="/" className="theme-btn btn-style-one">
