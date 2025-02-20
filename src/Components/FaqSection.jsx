@@ -1,6 +1,7 @@
 import priceImg1 from "../assets/images/background/pattern-4.png";
 import faqBg from "../assets/images/background/faq.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import "../Faq.css";
 
 export default function FaqSection() {
@@ -13,7 +14,7 @@ export default function FaqSection() {
     backgroundImage: `url(${faqBg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-  }
+  };
 
   // State to manage which FAQ is open
   const [openIndex, setOpenIndex] = useState(0); // Default: First FAQ is open
@@ -34,7 +35,7 @@ export default function FaqSection() {
             <div className="auto-container">
               <div className="row clearfix">
                 {/* FAQ Section */}
-                <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="col-lg-7 col-md-12 col-sm-12">
                   <ul className="accordion-box style-two">
                     {/* Block 1 - Always Open by Default */}
                     <li className="accordion block active-block">
@@ -144,15 +145,64 @@ export default function FaqSection() {
                         </div>
                       </div>
                     </li>
+
+                    {/* Block 6 */}
+                    <li className="accordion block">
+                      <div
+                        className={`acc-btn ${openIndex === 5 ? "active" : ""}`}
+                        onClick={() => toggleAccordion(5)}
+                      >
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        How can anyone volunteer in the festival?
+                      </div>
+                      <div
+                        className={`acc-content ${
+                          openIndex === 5 ? "current" : ""
+                        }`}
+                      >
+                        <div className="content">
+                          <p>
+                            Volunteering is available and a training would be
+                            given to the selected volunteers for participating
+                            in the festival.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+
+                    {/* Block 7 */}
+                    <li className="accordion block">
+                      <div
+                        className={`acc-btn ${openIndex === 6 ? "active" : ""}`}
+                        onClick={() => toggleAccordion(6)}
+                      >
+                        <div className="icon-outer">
+                          <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                        </div>
+                        What is the procedure to have an allocated book stall at
+                        the festival?
+                      </div>
+                      <div
+                        className={`acc-content ${
+                          openIndex === 6 ? "current" : ""
+                        }`}
+                      >
+                        <div className="content">
+                          <p>
+                            One may apply for the same, upon selection the book
+                            stall would be allocated.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
 
                 {/* Quick Contact Form Card */}
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                  <div
-                    className="faq-two_form-box"
-                    style={FAQFormBG}
-                  >
+                <div className="col-lg-5 col-md-12 col-sm-12">
+                  <div className="faq-two_form-box" style={FAQFormBG}>
                     <h3 className="faq-two_form-title">Quick Contact</h3>
                     <form className="faq-form">
                       <div className="form-group">
@@ -172,9 +222,18 @@ export default function FaqSection() {
                         <textarea placeholder="Enter your Message*"></textarea>
                       </div>
                       <div className="form-group">
-                        <button type="submit" className="submit-btn">
+                        {/* <button type="submit" className="submit-btn">
                           SUBMIT NOW
-                        </button>
+                        </button> */}
+                        <Link
+                          to="mailto:mumbaibookfair@gmail.com"
+                          className="theme-btn btn-style-one"
+                        >
+                          <span className="btn-wrap">
+                            <span className="text-one">Submit Now</span>
+                            <span className="text-two">Submit Now</span>
+                          </span>
+                        </Link>
                       </div>
                     </form>
                   </div>
