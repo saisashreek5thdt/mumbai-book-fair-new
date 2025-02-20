@@ -18,7 +18,7 @@ export default function SpeakerSlide() {
             </div>
             <ul className="bread-crumb clearfix">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" target="_parent">Home</Link>
               </li>
               <li>Speaker&apos;s Detail</li>
             </ul>
