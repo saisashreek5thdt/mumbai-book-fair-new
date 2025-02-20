@@ -1,240 +1,117 @@
-//import { Link } from "react-router-dom";
-import authorImg1 from "../../assets/images/resource/author-1.jpg";
-import authorImg2 from "../../assets/images/resource/author-2.jpg";
+import authorImg1 from "../../assets/images/publishers/publisher.png";
 
 export default function PublishersInfo() {
+  const publications = [
+    {
+      boothNumber: 1,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 2,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 3,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 4,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 5,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 6,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 7,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 8,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 9,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 10,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 11,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+    {
+      boothNumber: 12,
+      imgURL: authorImg1,
+      name: "Publihser Name",
+      link: "/publishers",
+    },
+  ];
+
   return (
     <>
       <section className="testimonial-two">
-        <div className="auto-container ">
-          <div className="row clearfix ">
-            {/* Testimonial Block One */}
-            <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
-              <div className="testimonial-block_one-inner">
-                <div className="testimonial-block_one-content">
-                <div className="testimonial-block_one-text" 
-                              onClick={() => window.open("", "_blank")}
-                              style={{ cursor: "pointer" }}
-                                  >
-                                    Website Link<br/>
-                                    Booth Number
-                                      </div>
-                  <div className="testimonial-block_one-rating">
-                    {/* <span className="fa-brands fa-x-twitter"></span>
-                    <span className="fa-brands fa-facebook-f"></span>
-                    <span className="fa-brands fa-instagram"></span>
-                    <span className="fa-brands fa-linkedin"></span>
-                    <span className="fa-regular fa-globe"></span> */}
+        <div className="auto-container">
+          <div className="row clearfix">
+            {publications.map((publish, index) => (
+              <div
+                key={index}
+                className="news-block_two col-lg-3 col-md-6 col-sm-12"
+              >
+                <div
+                  className="news-block_two-inner wow fadeInLeft"
+                  data-wow-delay="0ms"
+                  data-wow-duration="1500ms"
+                >
+                  {/* Post Info */}
+                  <div className="news-block_two-date">
+                    Booth Number: {publish.boothNumber}
                   </div>
-                  {/* <ul className="footer-two_socials">
-                    <li>
-                        <Link to="/" className="fa-brands fa-x-twitter"></Link>
-                    </li>
-                    <li>
-                        <Link to="/" className="fa-brands fa-facebook-f"></Link>
-                    </li>
-                    <li>
-                        <Link to="/" className="fa-brands fa-instagram"></Link>
-                    </li>
-                    <li>
-                        <Link to="/" className="fa-brands fa-linkedin"></Link>
-                    </li>
-                    <li>
-                        <Link to="/" className="fa-solid fa-globe"></Link>
-                    </li>
-                  </ul> */}
-                  <div className="testimonial-block_one-quote flaticon-quote"></div>
-                </div>
-                <div className="testimonial-block_one-lower">
-                  <div className="testimonial-block_one-author">
-                    <img src={authorImg1} alt="" />
+                  <div className="news-block_two-image">
+                    <a href={publish.link}>
+                      <img src={publish.imgURL} alt="" />
+                    </a>
+                    <img src={publish.imgURL} alt="" />
                   </div>
-                  <strong>Name</strong>
-                  <span 
-                        onClick={() => window.open("", "_blank")} 
-                            style={{ cursor: "pointer" }}
-                          >
-                  Publishings
-                  </span>
+                  <div className="news-block_two-content">
+                    <h4 className="news-block_two-title">
+                      <a href={publish.link}>{publish.name}</a>
+                    </h4>
+                    <a className="news-block_two-more" href={publish.link}>
+                      Publishings
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Testimonial Block One */}
-            <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
-              <div className="testimonial-block_one-inner">
-                <div className="testimonial-block_one-content">
-                        <div className="testimonial-block_one-text" 
-                              onClick={() => window.open("", "_blank")}
-                              style={{ cursor: "pointer" }}
-                                  >
-                                    Website Link<br/>
-                                    Booth Number
-                                      </div>
-
-                  <div className="testimonial-block_one-rating">
-                    {/* <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span> */}
-                  </div>
-                  <div className="testimonial-block_one-quote flaticon-quote"></div>
-                </div>
-                <div className="testimonial-block_one-lower">
-                  <div className="testimonial-block_one-author">
-                    <img src={authorImg2} alt="" />
-                  </div>
-                  <strong>Name</strong>
-                  <span 
-                        onClick={() => window.open("", "_blank")} 
-                            style={{ cursor: "pointer" }}
-                          >
-                  Publishings
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial Block One */}
-            <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
-              <div className="testimonial-block_one-inner">
-                <div className="testimonial-block_one-content">
-                <div className="testimonial-block_one-text" 
-                              onClick={() => window.open("", "_blank")}
-                              style={{ cursor: "pointer" }}
-                                  >
-                                    Website Link<br/>
-                                    Booth Number
-                                      </div>
-                  <div className="testimonial-block_one-rating">
-                    {/* <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span> */}
-                  </div>
-                  <div className="testimonial-block_one-quote flaticon-quote"></div>
-                </div>
-                <div className="testimonial-block_one-lower">
-                  <div className="testimonial-block_one-author">
-                    <img src={authorImg1} alt="" />
-                  </div>
-                  <strong>Name</strong>
-                  <span 
-                        onClick={() => window.open("", "_blank")} 
-                            style={{ cursor: "pointer" }}
-                          >
-                  Publishings
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial Block One */}
-            <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
-              <div className="testimonial-block_one-inner">
-                <div className="testimonial-block_one-content">
-                <div className="testimonial-block_one-text" 
-                              onClick={() => window.open("", "_blank")}
-                              style={{ cursor: "pointer" }}
-                                  >
-                                    Website Link<br/>
-                                    Booth Number
-                                      </div>
-                  <div className="testimonial-block_one-rating">
-                    {/* <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span> */}
-                  </div>
-                  <div className="testimonial-block_one-quote flaticon-quote"></div>
-                </div>
-                <div className="testimonial-block_one-lower">
-                  <div className="testimonial-block_one-author">
-                    <img src={authorImg2} alt="" />
-                  </div>
-                  <strong>Name</strong>
-                  <span 
-                        onClick={() => window.open("", "_blank")} 
-                            style={{ cursor: "pointer" }}
-                          >
-                  Publishings
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial Block One */}
-            <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
-              <div className="testimonial-block_one-inner">
-                <div className="testimonial-block_one-content">
-                <div className="testimonial-block_one-text" 
-                              onClick={() => window.open("", "_blank")}
-                              style={{ cursor: "pointer" }}
-                                  >
-                                    Website Link<br/>
-                                    Booth Number
-                                      </div>
-                  <div className="testimonial-block_one-rating">
-                    {/* <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span> */}
-                  </div>
-                  <div className="testimonial-block_one-quote flaticon-quote"></div>
-                </div>
-                <div className="testimonial-block_one-lower">
-                  <div className="testimonial-block_one-author">
-                    <img src={authorImg1} alt="" />
-                  </div>
-                  <strong>Name</strong>
-                  <span 
-                        onClick={() => window.open("", "_blank")} 
-                            style={{ cursor: "pointer" }}
-                          >
-                  Publishings
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial Block One */}
-            <div className="testimonial-block_one col-lg-4 col-md-3 col-sm-12">
-              <div className="testimonial-block_one-inner">
-                <div className="testimonial-block_one-content">
-                <div className="testimonial-block_one-text" 
-                              onClick={() => window.open("", "_blank")}
-                              style={{ cursor: "pointer" }}
-                                  >
-                                    Website Link<br/>
-                                    Booth Number
-                                      </div>
-                  <div className="testimonial-block_one-rating">
-                    {/* <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span>
-                    <span className="fa fa-star"></span> */}
-                  </div>
-                  <div className="testimonial-block_one-quote flaticon-quote"></div>
-                </div>
-                <div className="testimonial-block_one-lower">
-                  <div className="testimonial-block_one-author">
-                    <img src={authorImg2} alt="" />
-                  </div>
-                  <strong>Name</strong>
-                  <span 
-                        onClick={() => window.open("", "_blank")} 
-                            style={{ cursor: "pointer" }}
-                          >
-                  Publishings
-                  </span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Styled Pagination */}
