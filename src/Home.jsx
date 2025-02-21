@@ -51,9 +51,10 @@ export default function Home() {
           {/* Slider Section End */}
 
           {/* About Section Start */}
-          <section id="about">
+          {/* <section id="about">
             <AboutUs />
-          </section>
+          </section> */}
+          <AboutUs />
           {/* About Section End */}
 
           {/* Counter Section Start */}
@@ -65,15 +66,17 @@ export default function Home() {
           {/* Features End */}
 
           {/* Speakers Section Start */}
-          <section id="speakers">
+          {/* <section id="speakers">
             <Speakers />
-          </section>
+          </section> */}
+          <Speakers/>
           {/* Speakers Section End */}
 
           {/* Events Section Start */}
-          <section id="event">
+          {/* <section id="event">
             <Events />
-          </section>
+          </section> */}
+          <Events/>
           {/* Events Section End */}
 
           {/* Gallery Start */}
@@ -93,9 +96,10 @@ export default function Home() {
           {/* Clients End */}
 
           {/* FAQ Section Start */}
-          <section id="faq">
+          {/* <section id="faq">
             <FaqSection />
-          </section>
+          </section> */}
+          <FaqSection/>
           {/* FAQ Section End */}
 
           {/* Blogs Start */}
@@ -114,6 +118,8 @@ export default function Home() {
     </>
   );
 }
+
+
 
 
 
