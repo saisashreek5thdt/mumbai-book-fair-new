@@ -1,0 +1,138 @@
+/* Container for the search input and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin:-70px 0px 30px;
+  }
+
+.search-button{
+
+}
+  
+  /* Search Input */
+  .search-input {
+    width: 300px; /* Adjust as needed */
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0; /* Light gray border */
+    border-radius: 30px; /* Rounded corners */
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .search-input:focus {
+    border-color: #6366f1; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3); /* Add a subtle glow */
+  }
+  
+  /* Search Button */
+  .search-button {
+    height: 45px;
+    padding: 0 20px;
+    margin-left: -50px; /* Overlap with the input for a seamless look */
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6366f1; /* Modern purple-blue color */
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .search-button:hover {
+    background-color: #4f46e5; /* Darker shade on hover */
+  }
+  
+  /* Suggestions Dropdown */
+ 
+  /* No Results Message */
+  .no-results {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #6b7280; /* Gray text */
+    text-align: center;
+  }
+
+
+  /* Clear Search Button */
+.clear-search-button {
+  margin-top:-5px;
+  margin-left:10px;
+  padding:5px 10px;
+  font-size: 14px;
+  color: #454545;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+
+.clear-search-button:hover {
+  color: #d32f2f; /* Darker red on hover */
+}
+
+/* Back to All Publishers Link */
+.clear-search-link {
+  color: #6366f1; /* Blue color for links */
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clear-search-link:hover {
+  color: #4f46e5; /* Darker blue on hover */
+}
+
+
+
+
+  .suggestions-dropdown {
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 150px;
+    width: 350px;
+    z-index: 1000;
+    overflow-y: auto;
+    margin:15px 0px 0px -15px;
+  }
+  
+  .suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .xs-sidebar-group {
+    display: none; /* Hidden by default */
+  }
+  
+  .xs-sidebar-group.open {
+    display: block; /* Visible when open */
+  }
+  
+  .xs-overlay {
+    display: none; /* Hidden by default */
+  }
+  
+  .xs-sidebar-group.open .xs-overlay {
+    display: block; /* Show overlay when sidebar is open */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
