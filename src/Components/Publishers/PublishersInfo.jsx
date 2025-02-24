@@ -9,6 +9,7 @@ export default function PublishersInfo() {
   const [isSearched, setIsSearched] = useState(false);
   const [suggestions, setSuggestions] = useState([]); // State to store suggestions
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPublisher, setSelectedPublisher] = useState(null);
 
   // Function to handle search and filter
   const handleSearch = () => {
@@ -55,6 +56,11 @@ export default function PublishersInfo() {
     );
     setFilteredPublications(filtered);
     setIsSearched(true);
+  };
+
+  const openModalWithPublisher = (publisher) => {
+    setSelectedPublisher(publisher);
+    setIsModalOpen(true);
   };
 
   return (
@@ -129,7 +135,8 @@ export default function PublishersInfo() {
                       <a
                         className="news-block_two-more"
                         href={publish.link}
-                        onClick={() => setIsModalOpen(true)}
+                        // onClick={() => setIsModalOpen(true)}
+                        onClick={() => openModalWithPublisher(publish)}
                       >
                         Publishings
                       </a>
@@ -147,10 +154,20 @@ export default function PublishersInfo() {
             )}
           </div>
 
-          <ModalBox isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          {/* <ModalBox isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
             <h2>Responsive Modal</h2>
             <p>This is a simple modal component.</p>
-          </ModalBox>
+          </ModalBox> */}
+          {isModalOpen && selectedPublisher && (
+            <ModalBox isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+              <h6>{selectedPublisher.name} - Books</h6>
+              <ul>
+                {selectedPublisher.books?.map((book, index) => (
+                  <li key={index}>{book}</li>
+                ))}
+              </ul>
+            </ModalBox>
+          )}
 
           {/* Show Message if No Results Found After Search */}
           {isSearched && filteredPublications.length === 0 && (
