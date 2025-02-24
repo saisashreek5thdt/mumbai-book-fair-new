@@ -5,6 +5,7 @@ import Home from "./Home";
 import PublishersPage from "./PublishersPage";
 import SpeakersPage from "./SpeakersPage";
 import CheckoutPage from "./Pages/CheckoutPage";
+import GalleryMore from "./Pages/GalleryMore";
 
 export default function App() {
   useEffect(() => {
@@ -79,10 +80,9 @@ export default function App() {
           <Route path="/speakers" element={<SpeakersPage />} />
           <Route path="/publishers" element={<PublishersPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/gallery" element={<GalleryMore />} />
         </Routes>
       </BrowserRouter>
     </>
   );
 }
-
-

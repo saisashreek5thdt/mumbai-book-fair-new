@@ -28,3 +28,7 @@ export { default as PublishersInfo } from "./Publishers/PublishersInfo";
 //Checkout Page Imports
 export { default as CheckoutSlide } from "./Checkout/CheckoutSlide";
 export { default as CheckoutInfo } from "./Checkout/CheckoutInfo";
+
+//Gallery More Page Imports
+export { default as GallerySlide } from "./Gallery/GallerySlide";
+export { default as GalleryInfo } from "./Gallery/GalleryInfo";

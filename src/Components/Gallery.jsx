@@ -6,6 +6,7 @@ import galleryImg5 from "../assets/images/gallery/fest5.jpg";
 import galleryImg6 from "../assets/images/gallery/fest6.jpg";
 import galleryImg7 from "../assets/images/gallery/fest1.jpg";
 import galleryImg8 from "../assets/images/gallery/fest5.jpg";
+import { Link } from "react-router-dom";
 
 export default function Gallery() {
   return (
@@ -131,6 +132,16 @@ export default function Gallery() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="col-lg-12 col-md-12 text-center">
+            <div className="about-one_button">
+              <Link to="/gallery" className="theme-btn btn-style-one">
+                <span className="btn-wrap">
+                  <span className="text-one">View More</span>
+                  <span className="text-two">View More</span>
+                </span>
+              </Link>
             </div>
           </div>
         </div>
