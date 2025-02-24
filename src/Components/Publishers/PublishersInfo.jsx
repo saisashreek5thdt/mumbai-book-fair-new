@@ -1,12 +1,14 @@
 import { publications } from "./PublisherData";
 import { useState } from "react";
 import "../../publisher.css";
+import ModalBox from "../ModalBox";
 
 export default function PublishersInfo() {
   const [searchInput, setSearchInput] = useState("");
   const [filteredPublications, setFilteredPublications] = useState([]);
   const [isSearched, setIsSearched] = useState(false);
   const [suggestions, setSuggestions] = useState([]); // State to store suggestions
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Function to handle search and filter
   const handleSearch = () => {
@@ -36,7 +38,9 @@ export default function PublishersInfo() {
     } else {
       // Filter suggestions based on input
       const matchedSuggestions = publications
-        .filter((pub) => pub.name.toLowerCase().includes(inputValue.toLowerCase()))
+        .filter((pub) =>
+          pub.name.toLowerCase().includes(inputValue.toLowerCase())
+        )
         .map((pub) => pub.name); // Extract only names for suggestions
       setSuggestions(matchedSuggestions);
     }
@@ -85,7 +89,10 @@ export default function PublishersInfo() {
               )}
               {/* Clear Search Button */}
               {isSearched && (
-                <button className="clear-search-button" onClick={handleClearSearch}>
+                <button
+                  className="clear-search-button"
+                  onClick={handleClearSearch}
+                >
                   X
                 </button>
               )}
@@ -123,15 +130,31 @@ export default function PublishersInfo() {
                       <h4 className="news-block_two-title">
                         <a href={publish.link}>{publish.name}</a>
                       </h4>
-                      <a className="news-block_two-more" href={publish.link}>
+                      <a
+                        className="news-block_two-more"
+                        href={publish.link}
+                        onClick={() => setIsModalOpen(true)}
+                      >
                         Publishings
                       </a>
+                      {/* <div
+                        className="news-block_two-more"
+                        style={{ cursor: "pointer" }}
+                        onClick={() => setIsModalOpen(true)}
+                      >
+                        Publishings
+                      </div> */}
                     </div>
                   </div>
                 </div>
               )
             )}
           </div>
+
+          <ModalBox isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+            <h2>Responsive Modal</h2>
+            <p>This is a simple modal component.</p>
+          </ModalBox>
 
           {/* Show Message if No Results Found After Search */}
           {isSearched && filteredPublications.length === 0 && (
