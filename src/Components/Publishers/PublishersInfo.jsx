@@ -1,15 +1,14 @@
 import { publications } from "./PublisherData";
 import { useState } from "react";
 import "../../publisher.css";
-import Sidebar from "./Sidebar";
+import ModalBox from "../ModalBox";
 
 export default function PublishersInfo() {
   const [searchInput, setSearchInput] = useState("");
   const [filteredPublications, setFilteredPublications] = useState([]);
   const [isSearched, setIsSearched] = useState(false);
   const [suggestions, setSuggestions] = useState([]); // State to store suggestions
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false); // State for sidebar visibility
-  const [selectedPublisher, setSelectedPublisher] = useState(null); // State for selected publisher
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Function to handle search and filter
   const handleSearch = () => {
@@ -56,13 +55,6 @@ export default function PublishersInfo() {
     );
     setFilteredPublications(filtered);
     setIsSearched(true);
-  };
-
-  // Function to handle publisher link click
-  const handlePublisherClick = (publisher) => {
-    console.log("Publisher clicked:", publisher);
-    setSelectedPublisher(publisher); // Set the selected publisher
-    setIsSidebarVisible(true); // Show the sidebar
   };
 
   return (
@@ -134,20 +126,32 @@ export default function PublishersInfo() {
                       <h4 className="news-block_two-title">
                         <a href="#">{publish.name}</a>
                       </h4>
-                      <div
-                        className="news-block_two-more nav-btn navSidebar-button"
-                        onClick={() => {
-                          handlePublisherClick(publish);
-                        }}
+                      <a
+                        className="news-block_two-more"
+                        href={publish.link}
+                        onClick={() => setIsModalOpen(true)}
                       >
                         Publishings
-                      </div>
+                      </a>
+                      {/* <div
+                        className="news-block_two-more"
+                        style={{ cursor: "pointer" }}
+                        onClick={() => setIsModalOpen(true)}
+                      >
+                        Publishings
+                      </div> */}
                     </div>
                   </div>
                 </div>
               )
             )}
           </div>
+
+          <ModalBox isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+            <h2>Responsive Modal</h2>
+            <p>This is a simple modal component.</p>
+          </ModalBox>
+
           {/* Show Message if No Results Found After Search */}
           {isSearched && filteredPublications.length === 0 && (
             <div className="no-results">
@@ -185,14 +189,6 @@ export default function PublishersInfo() {
         {/* End Styled Pagination */}
       </section>
 
-      {/* Sidebar */}
-      {isSidebarVisible && (
-        <Sidebar
-          isVisible={isSidebarVisible} // Pass visibility state
-          onClose={() => setIsSidebarVisible(false)} // Close sidebar
-          publisher={selectedPublisher} // Pass selected publisher data
-        />
-      )}
     </>
   );
 }

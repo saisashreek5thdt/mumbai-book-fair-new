@@ -9208,7 +9208,7 @@ blockquote{
 .cart-table tbody tr .prod-column .column-box{
 	position:relative;
 	min-height:60px;
-	padding-left:80px;
+	/* padding-left:80px; */
 	padding-top:15px;
 	text-align:left;
 }
@@ -9499,6 +9499,7 @@ blockquote{
 .account-form .form-group input[type="text"],
 .account-form .form-group input[type="email"],
 .account-form .form-group input[type="tel"],
+.account-form .form-group input[type="number"],
 .account-form .form-group input[type="url"],
 .account-form .form-group textarea,
 .account-form .form-group password,

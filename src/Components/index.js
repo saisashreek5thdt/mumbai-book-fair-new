@@ -24,4 +24,7 @@ export { default as SpeakersList } from "./Speaker/SpeakersList";
 // Publishers Page Imports
 export { default as PublishersSlide } from "./Publishers/PublishersSlide";
 export { default as PublishersInfo } from "./Publishers/PublishersInfo";
-// export { default as sidebar} from "./Publishers/Sidebar";
+
+//Checkout Page Imports
+export { default as CheckoutSlide } from "./Checkout/CheckoutSlide";
+export { default as CheckoutInfo } from "./Checkout/CheckoutInfo";

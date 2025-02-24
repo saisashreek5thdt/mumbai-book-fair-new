@@ -1,9 +1,12 @@
 import { useState } from "react";
-import circle2 from "../assets/images/icons/circle-icon-two.png";
+//import circle2 from "../assets/images/icons/circle-icon-two.png";
 import shape1 from "../assets/images/icons/shape-1.png";
 import { BiFilter } from "react-icons/bi";
-import { GiVideoConference } from "react-icons/gi";
-import { GiBackwardTime } from "react-icons/gi";
+import {
+  GiVideoConference,
+  GiSettingsKnobs,
+  GiBackwardTime,
+} from "react-icons/gi";
 
 import { jsPDF } from "jspdf";
 // import html2canvas from "html2canvas";
@@ -345,7 +348,7 @@ export default function LeadershipOne() {
       <section className="event-schedule-section" id="event">
         <div
           className="circle-layer"
-          style={{ backgroundImage: `url(${circle2})` }}
+          // style={{ backgroundImage: `url(${circle2})` }}
         ></div>
         <div
           className="shape-icon"
@@ -554,7 +557,12 @@ export default function LeadershipOne() {
                                   </span>
                                   {item.time}
                                 </li>
-                                <li>{item.filterTitle}</li>
+                                <li>
+                                  <span className="icon">
+                                  <GiSettingsKnobs style={iconPlace} />
+                                  </span>
+                                  {item.filterTitle}
+                                </li>
                               </ul>
                               <div className="btns-box" style={marginBtn50}>
                                 <a

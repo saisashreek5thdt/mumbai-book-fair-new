@@ -92,7 +92,7 @@ export default function Footer() {
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
                   <div
                     className="footer-two-widget links-widget"
-                    style={{ ...sectionStyle, paddingLeft: "50px" }}
+                    style={{ ...sectionStyle, paddingLeft: "20px" }}
                   >
                     <h4 className="footer-two_title" style={titleStyle}>
                       Social

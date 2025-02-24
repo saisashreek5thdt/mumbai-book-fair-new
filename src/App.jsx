@@ -4,6 +4,7 @@ import Home from "./Home";
 //import Speakers from "./Speakers";
 import PublishersPage from "./PublishersPage";
 import SpeakersPage from "./SpeakersPage";
+import CheckoutPage from "./Pages/CheckoutPage";
 
 export default function App() {
   useEffect(() => {
@@ -77,8 +78,11 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/speakers" element={<SpeakersPage />} />
           <Route path="/publishers" element={<PublishersPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </BrowserRouter>
     </>
   );
 }
+
+
