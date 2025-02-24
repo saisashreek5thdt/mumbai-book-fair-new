@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import slideImg1 from "../../assets/images/background/11.jpg";
+import "../../publisher.css";
 
 export default function PublishersSlide() {
   const slideBG1 = {

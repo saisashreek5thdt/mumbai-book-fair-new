@@ -1,12 +1,15 @@
 import { publications } from "./PublisherData";
 import { useState } from "react";
 import "../../publisher.css";
+import Sidebar from "./Sidebar";
 
 export default function PublishersInfo() {
   const [searchInput, setSearchInput] = useState("");
   const [filteredPublications, setFilteredPublications] = useState([]);
   const [isSearched, setIsSearched] = useState(false);
   const [suggestions, setSuggestions] = useState([]); // State to store suggestions
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false); // State for sidebar visibility
+  const [selectedPublisher, setSelectedPublisher] = useState(null); // State for selected publisher
 
   // Function to handle search and filter
   const handleSearch = () => {
@@ -30,13 +33,14 @@ export default function PublishersInfo() {
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
     setSearchInput(inputValue);
-
     if (inputValue.trim() === "") {
       setSuggestions([]); // Clear suggestions if input is empty
     } else {
       // Filter suggestions based on input
       const matchedSuggestions = publications
-        .filter((pub) => pub.name.toLowerCase().includes(inputValue.toLowerCase()))
+        .filter((pub) =>
+          pub.name.toLowerCase().includes(inputValue.toLowerCase())
+        )
         .map((pub) => pub.name); // Extract only names for suggestions
       setSuggestions(matchedSuggestions);
     }
@@ -46,13 +50,19 @@ export default function PublishersInfo() {
   const handleSuggestionClick = (suggestion) => {
     setSearchInput(suggestion); // Set the selected suggestion as the search input
     setSuggestions([]); // Clear suggestions
-
     // Perform search with the selected suggestion
     const filtered = publications.filter((res) =>
       res.name.toLowerCase().includes(suggestion.toLowerCase())
     );
     setFilteredPublications(filtered);
     setIsSearched(true);
+  };
+
+  // Function to handle publisher link click
+  const handlePublisherClick = (publisher) => {
+    console.log("Publisher clicked:", publisher);
+    setSelectedPublisher(publisher); // Set the selected publisher
+    setIsSidebarVisible(true); // Show the sidebar
   };
 
   return (
@@ -85,17 +95,18 @@ export default function PublishersInfo() {
               )}
               {/* Clear Search Button */}
               {isSearched && (
-                <button className="clear-search-button" onClick={handleClearSearch}>
+                <button
+                  className="clear-search-button"
+                  onClick={handleClearSearch}
+                >
                   X
                 </button>
               )}
             </div>
-
             <button className="search-button" onClick={handleSearch}>
               Search
             </button>
           </div>
-
           {/* Display Results or All Publications */}
           <div className="row clearfix">
             {(isSearched ? filteredPublications : publications).map(
@@ -121,18 +132,22 @@ export default function PublishersInfo() {
                     </div>
                     <div className="news-block_two-content">
                       <h4 className="news-block_two-title">
-                        <a href={publish.link}>{publish.name}</a>
+                        <a href="#">{publish.name}</a>
                       </h4>
-                      <a className="news-block_two-more" href={publish.link}>
+                      <div
+                        className="news-block_two-more nav-btn navSidebar-button"
+                        onClick={() => {
+                          handlePublisherClick(publish);
+                        }}
+                      >
                         Publishings
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               )
             )}
           </div>
-
           {/* Show Message if No Results Found After Search */}
           {isSearched && filteredPublications.length === 0 && (
             <div className="no-results">
@@ -142,34 +157,42 @@ export default function PublishersInfo() {
               </button>
             </div>
           )}
-
-          {/* Styled Pagination */}
-          <ul className="styled-pagination text-center">
-            <li className="next">
-              <a href="#">
-                <span className="fa fa-angle-double-left"></span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="active">
-                1
-              </a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li className="next">
-              <a href="#">
-                <span className="fa fa-angle-double-right"></span>
-              </a>
-            </li>
-          </ul>
-          {/* End Styled Pagination */}
         </div>
+        {/* Styled Pagination */}
+        <ul className="styled-pagination text-center">
+          <li className="next">
+            <a href="#">
+              <span className="fa fa-angle-double-left"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" className="active">
+              1
+            </a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li className="next">
+            <a href="#">
+              <span className="fa fa-angle-double-right"></span>
+            </a>
+          </li>
+        </ul>
+        {/* End Styled Pagination */}
       </section>
+
+      {/* Sidebar */}
+      {isSidebarVisible && (
+        <Sidebar
+          isVisible={isSidebarVisible} // Pass visibility state
+          onClose={() => setIsSidebarVisible(false)} // Close sidebar
+          publisher={selectedPublisher} // Pass selected publisher data
+        />
+      )}
     </>
   );
 }

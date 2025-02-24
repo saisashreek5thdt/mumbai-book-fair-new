@@ -13,7 +13,7 @@ import {
   Blogs,
   Newsletter,
   Footer,
-  FaqSection
+  FaqSection,
 } from "./Components/index";
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
           {/* Header Starts */}
           <Header />
           {/* Header Ends */}
+          {/* <Sidebar/> */}
           {/* Slider Section Start */}
           <Slider />
           {/* Slider Section End */}
@@ -62,7 +63,8 @@ export default function Home() {
           {/* FAQ Section End */}
           {/* Blogs Start */}
           <Blogs />
-          {/* Blogs End */}          
+          {/* Blogs End */}  
+                  
           {/* Newletter Start */}
           <Newsletter />
           {/* Newletter End */}
