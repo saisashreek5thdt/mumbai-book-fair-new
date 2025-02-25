@@ -11,7 +11,7 @@ export default function Header() {
               <div className="logo-box">
                 <div className="logo">
                   <Link to="/" target="_parent">
-                    <img src={logo} alt="" title="" />
+                    <img src={logo} alt="" title=""/>
                   </Link>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/#footer" target="_parent">
+                        <Link to="/#faq" target="_parent">
                           Social
                         </Link>
                       </li>
@@ -125,51 +125,51 @@ export default function Header() {
 
         {/* Sticky Header and Mobile Menu code remains the same */}
         <div className="sticky-header">
-          <div className="auto-container">
-            <div className="inner-container d-flex justify-content-between align-items-center flex-wrap ">
-              {/* Logo */}
-              <div className="logo">
-                <Link to="/" title="">
+           <div className="auto-container">
+             <div className="inner-container d-flex justify-content-between align-items-center flex-wrap ">
+               {/* Logo */}
+               <div className="logo">
+                 <Link to="/" title="">
                   <img src={logo} alt="" title="" />
-                </Link>
-              </div>
+                 </Link>
+               </div>
 
-              {/* Right Box */}
+               {/* Right Box */}
               <div className="right-box">
-                {/* Main Menu */}
-                <nav className="main-menu">
+                 {/* Main Menu */}
+                 <nav className="main-menu">
                   {/* Keep This Empty / Menu will come through Javascript */}
-                </nav>
-                {/* Main Menu End */}
-              </div>
+                 </nav>
+                 {/* Main Menu End */}
+               </div>
 
-              {/* Main Menu End */}
-              <div className="outer-box d-flex align-items-center flex-wrap">
-                {/* Mobile Navigation Toggler */}
-                <div className="mobile-nav-toggler">
-                  <span className="icon flaticon-menu"></span>
-                </div>
-              </div>
+               {/* Main Menu End */}
+               <div className="outer-box d-flex align-items-center flex-wrap">
+                 {/* Mobile Navigation Toggler */}
+                 <div className="mobile-nav-toggler">
+                   <span className="icon flaticon-menu"></span>
+                 </div>
+               </div>
             </div>
-          </div>
-          {/* End Sticky Menu */}
-        </div>
+           </div>
+           {/* End Sticky Menu */}
+         </div>
 
         {/* Mobile Menu */}
-        <div className="mobile-menu">
-          <div className="menu-backdrop"></div>
-          <div className="close-btn">
-            <span className="icon flaticon-cancel-1"></span>
-          </div>
+         <div className="mobile-menu">
+           <div className="menu-backdrop"></div>
+           <div className="close-btn">
+             <span className="icon flaticon-cancel-1"></span>
+           </div>
 
-          <nav className="menu-box">
-            <div className="nav-logo">
-              <Link to="/">
-                <img src={logo} alt="" title="" />
-              </Link>
-            </div>
-            <div className="menu-outer">
-              <ul
+           <nav className="menu-box">
+             <div className="nav-logo">
+               <Link to="/">
+                 <img src={logo} alt="" title="" />
+               </Link>
+             </div>
+             <div className="menu-outer">
+               <ul
                 className="mobile-navigation"
                 style={{
                   display: "flex",
@@ -179,45 +179,37 @@ export default function Header() {
                 }}
               >
                 <li>
-                  <Link to="/#about" target="_parent" style={{ color: "black" }}>
+                  <Link to="#about" target="_parent"style={{ color: "black" }}>
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#event" target="_parent" style={{ color: "black" }}>
+                  <Link to="#event" target="_parent"style={{ color: "black" }}>
                     Schedule
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/#speakers"
-                    target="_parent"
-                    style={{ color: "black" }}
-                  >
+                  <Link to="#speakers" target="_parent"style={{ color: "black" }}>
                     Speakers
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#team" target="_parent" style={{ color: "black" }}>
+                  <Link to="#team" target="_parent"style={{ color: "black" }}>
                     Team
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/publishers"
-                    target="_parent"
-                    style={{ color: "black" }}
-                  >
+                  <Link to="/publishers" target="_parent"style={{ color: "black" }}>
                     Publishers
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#faq" target="_parent" style={{ color: "black" }}>
+                  <Link to="#faq" target="_parent"style={{ color: "black" }}>
                     FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#faq" target="_parent" style={{ color: "black" }}>
+                  <Link to="#faq" target="_parent"style={{ color: "black" }}>
                     Social
                   </Link>
                 </li>
@@ -238,11 +230,26 @@ export default function Header() {
 
 
 
+//another one  
 
 // import { Link } from "react-router-dom";
 // import logo from "../assets/images/logo/logo.png";
 
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 // export default function Header() {
+//   // Function to handle smooth scrolling when on the home page
+//   const scrollToSection = (sectionId, e) => {
+//     // Only prevent default if we're already on the home page
+//     if (window.location.pathname === '/') {
+//       e.preventDefault();
+//       const element = document.getElementById(sectionId);
+//       if (element) {
+//         element.scrollIntoView({ behavior: "smooth" });
+//       }
+//     }
+//     // When not on home page, let the link work normally with the hash
+//   };
+
 //   return (
 //     <>
 //       <header className="main-header">
@@ -252,7 +259,7 @@ export default function Header() {
 //               <div className="logo-box">
 //                 <div className="logo">
 //                   <Link to="/" target="_parent">
-//                     <img src={logo} alt="" title=""/>
+//                     <img src={logo} alt="" title="" />
 //                   </Link>
 //                 </div>
 //               </div>
@@ -291,37 +298,38 @@ export default function Header() {
 //                       }}
 //                     >
 //                       <li>
-//                         <Link to="/#about" target="_parent">
+//                         <Link to="/#about" onClick={(e) => scrollToSection("about", e)}>
 //                           About
 //                         </Link>
 //                       </li>
 //                       <li>
-//                         <Link to="/#event" target="_parent">
+//                         <Link to="/#event" onClick={(e) => scrollToSection("event", e)}>
 //                           Schedule
 //                         </Link>
 //                       </li>
 //                       <li>
-//                         <Link to="/#speakers" target="_parent">
+//                         <Link to="/#speakers" onClick={(e) => scrollToSection("speakers", e)}>
 //                           Speakers
 //                         </Link>
 //                       </li>
 //                       <li>
-//                         <Link to="/#team" target="_parent">
+//                         <Link to="/#team" onClick={(e) => scrollToSection("team", e)}>
 //                           Team
 //                         </Link>
 //                       </li>
 //                       <li>
-//                         <Link to="/publishers" target="_parent">
+//                         <Link to="/publishers">
 //                           Publishers
 //                         </Link>
+                       
 //                       </li>
 //                       <li>
-//                         <Link to="/#faq" target="_parent">
+//                         <Link to="/#faq" onClick={(e) => scrollToSection("faq", e)}>
 //                           FAQ
 //                         </Link>
 //                       </li>
 //                       <li>
-//                         <Link to="/#faq" target="_parent">
+//                         <Link to="/#social" onClick={(e) => scrollToSection("footer", e)}>
 //                           Social
 //                         </Link>
 //                       </li>
@@ -366,51 +374,51 @@ export default function Header() {
 
 //         {/* Sticky Header and Mobile Menu code remains the same */}
 //         <div className="sticky-header">
-//            <div className="auto-container">
-//              <div className="inner-container d-flex justify-content-between align-items-center flex-wrap ">
-//                {/* Logo */}
-//                <div className="logo">
-//                  <Link to="/" title="">
+//           <div className="auto-container">
+//             <div className="inner-container d-flex justify-content-between align-items-center flex-wrap">
+//               {/* Logo */}
+//               <div className="logo">
+//                 <Link to="/" title="">
 //                   <img src={logo} alt="" title="" />
-//                  </Link>
-//                </div>
+//                 </Link>
+//               </div>
 
-//                {/* Right Box */}
+//               {/* Right Box */}
 //               <div className="right-box">
-//                  {/* Main Menu */}
-//                  <nav className="main-menu">
+//                 {/* Main Menu */}
+//                 <nav className="main-menu">
 //                   {/* Keep This Empty / Menu will come through Javascript */}
-//                  </nav>
-//                  {/* Main Menu End */}
-//                </div>
+//                 </nav>
+//                 {/* Main Menu End */}
+//               </div>
 
-//                {/* Main Menu End */}
-//                <div className="outer-box d-flex align-items-center flex-wrap">
-//                  {/* Mobile Navigation Toggler */}
-//                  <div className="mobile-nav-toggler">
-//                    <span className="icon flaticon-menu"></span>
-//                  </div>
-//                </div>
+//               {/* Main Menu End */}
+//               <div className="outer-box d-flex align-items-center flex-wrap">
+//                 {/* Mobile Navigation Toggler */}
+//                 <div className="mobile-nav-toggler">
+//                   <span className="icon flaticon-menu"></span>
+//                 </div>
+//               </div>
 //             </div>
-//            </div>
-//            {/* End Sticky Menu */}
-//          </div>
+//           </div>
+//           {/* End Sticky Menu */}
+//         </div>
 
 //         {/* Mobile Menu */}
-//          <div className="mobile-menu">
-//            <div className="menu-backdrop"></div>
-//            <div className="close-btn">
-//              <span className="icon flaticon-cancel-1"></span>
-//            </div>
+//         <div className="mobile-menu">
+//           <div className="menu-backdrop"></div>
+//           <div className="close-btn">
+//             <span className="icon flaticon-cancel-1"></span>
+//           </div>
 
-//            <nav className="menu-box">
-//              <div className="nav-logo">
-//                <Link to="/">
-//                  <img src={logo} alt="" title="" />
-//                </Link>
-//              </div>
-//              <div className="menu-outer">
-//                <ul
+//           <nav className="menu-box">
+//             <div className="nav-logo">
+//               <Link to="/">
+//                 <img src={logo} alt="" title="" />
+//               </Link>
+//             </div>
+//             <div className="menu-outer">
+//               <ul
 //                 className="mobile-navigation"
 //                 style={{
 //                   display: "flex",
@@ -420,37 +428,37 @@ export default function Header() {
 //                 }}
 //               >
 //                 <li>
-//                   <Link to="#about" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/#about" onClick={(e) => scrollToSection("about", e)} style={{ color: "black" }}>
 //                     About
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link to="#event" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/#event" onClick={(e) => scrollToSection("event", e)} style={{ color: "black" }}>
 //                     Schedule
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link to="#speakers" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/#speakers" onClick={(e) => scrollToSection("speakers", e)} style={{ color: "black" }}>
 //                     Speakers
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link to="#team" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/#team" onClick={(e) => scrollToSection("team", e)} style={{ color: "black" }}>
 //                     Team
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link to="/publishers" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/publishers" style={{ color: "black" }}>
 //                     Publishers
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link to="#faq" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/#faq" onClick={(e) => scrollToSection("faq", e)} style={{ color: "black" }}>
 //                     FAQ
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link to="#faq" target="_parent"style={{ color: "black" }}>
+//                   <Link to="/#social" onClick={(e) => scrollToSection("social", e)} style={{ color: "black" }}>
 //                     Social
 //                   </Link>
 //                 </li>

@@ -26,11 +26,12 @@ export default function Home() {
     if (location.hash) {
       // Wait for the DOM to fully load
       setTimeout(() => {
-        const element = document.querySelector(location.hash);
+        const sectionId = location.hash.substring(1); // Remove the # character
+        const element = document.getElementById(sectionId);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
-      }, 100); // Small delay to ensure the DOM is ready
+      }, 300); // Increased delay to ensure the DOM is fully loaded
     }
   }, [location]);
 
@@ -54,7 +55,6 @@ export default function Home() {
           <section id="about">
             <AboutUs />
           </section>
-          <AboutUs />
           {/* About Section End */}
 
           {/* Counter Section Start */}
@@ -69,14 +69,12 @@ export default function Home() {
           <section id="speakers">
             <Speakers />
           </section>
-          <Speakers/>
           {/* Speakers Section End */}
 
           {/* Events Section Start */}
           <section id="event">
             <Events />
           </section>
-          <Events/>
           {/* Events Section End */}
 
           {/* Gallery Start */}
@@ -95,12 +93,29 @@ export default function Home() {
           <Clients />
           {/* Clients End */}
 
+          {/* Team Section Start */}
+          <section id="team">
+            {/* Add your Team component here */}
+            <div className="team-section">
+              {/* Your team content */}
+            </div>
+          </section>
+          {/* Team Section End */}
+
           {/* FAQ Section Start */}
           <section id="faq">
             <FaqSection />
           </section>
-          <FaqSection/>
           {/* FAQ Section End */}
+
+          {/* Social Section Start */}
+          <section id="social">
+            {/* Add your Social component here */}
+            <div className="social-section">
+              {/* Your social content */}
+            </div>
+          </section>
+          {/* Social Section End */}
 
           {/* Blogs Start */}
           <Blogs />
@@ -118,6 +133,12 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
+
+
 
 
 
