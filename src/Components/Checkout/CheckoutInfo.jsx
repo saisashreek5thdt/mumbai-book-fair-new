@@ -1,10 +1,25 @@
 import { FiTrash2 } from "react-icons/fi";
+import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
+import { removeItem, clearCart } from "../../store/cartSlice";
+
 
 export default function CheckoutInfo() {
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items);
+  {console.log(cartItems)};
+  const handleRemoveItem = (item) => {
+    dispatch(removeItem(item));
+  };
 
-    const trashSize = {
-        fontSize: "32px"
-    }
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
+
+  const trashSize = {
+    fontSize: "32px"
+  }
+
 
   return (
     <>
@@ -22,41 +37,51 @@ export default function CheckoutInfo() {
                     <th>Remove</th>
                   </tr>
                 </thead>
-
                 <tbody>
-                  <tr>
-                    <td className="prod-column">
-                      <div className="column-box">
-                        <h6 className="prod-title">Book Name</h6>
-                      </div>
-                    </td>
-                    <td className="price">Publisher Name</td>
-                    <td className="qty item-quantity">
-                      <div className="quantity-spinner">
-                        <button type="button" className="minus">
-                          <span className="fa fa-minus"></span>
-                        </button>
-                        <input
-                          type="text"
-                          name="product"
-                          value="1"
-                          className="prod_qty"
-                        />
-                        <button type="button" className="plus">
-                          <span className="fa fa-plus"></span>
-                        </button>
-                      </div>
-                    </td>
-                    <td className="remove">
-                      <a href="#" className="remove-btn">
-                        {/* <span className="fa fa-regular fa-trash"></span> */}
-                        <FiTrash2 style={trashSize} />
-                      </a>
-                    </td>
-                  </tr>
+
+                  {cartItems.length > 0 ? (
+                    cartItems.map((item, index) => (
+                      <tr key={index}>
+                        <td className="prod-column">
+                          <div className="column-box">
+                            <h6 className="prod-title">{item.name}</h6>
+                          </div>
+                        </td>
+                        <td className="price">{item.publisher}</td>
+                        <td className="qty item-quantity">
+                          <div className="quantity-spinner">
+                            <button type="button" className="minus">
+                              <span className="fa fa-minus"></span>
+                            </button>
+                            <input
+                              type="text"
+                              name="product"
+                              value="1"
+                              className="prod_qty"
+                            />
+                            <button type="button" className="plus">
+                              <span className="fa fa-plus"></span>
+                            </button>
+                          </div>
+                        </td>
+                        <td className="remove">
+                          <a href="#" className="remove-btn">
+                            {/* <span className="fa fa-regular fa-trash"></span> */}
+                            <FiTrash2 style={trashSize} onClick={() => handleRemoveItem(item)} />
+                          </a>
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td colSpan="4">Your cart is empty.</td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>
+            {/* Lower Box */}
+            {/* <button onClick={handleClearCart}>Clear Cart</button> */}
           </div>
           {/* End Cart Outer */}
 
@@ -125,7 +150,7 @@ export default function CheckoutInfo() {
                             <option>USA</option>
                             <option>England</option>
                             <option>Canada</option>
-                            <option>Pakistan</option>                            
+                            <option>Pakistan</option>
                           </select>
                         </div>
 
@@ -163,6 +188,7 @@ export default function CheckoutInfo() {
                         </div>
                       </div>
                     </form>
+                    <button  onClick={handleClearCart}>Clear Cart</button>
                   </div>
                 </div>
               </div>
@@ -173,3 +199,12 @@ export default function CheckoutInfo() {
     </>
   );
 }
+
+
+// PropTypes Validation
+CheckoutInfo.propTypes = {
+  bookDetails: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    publisher: PropTypes.string.isRequired,
+  }),
+};

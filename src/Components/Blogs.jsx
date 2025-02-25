@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import news4 from "../assets/images/resource/news-4.jpg";
-import news5 from "../assets/images/resource/news-5.jpg";
-import news6 from "../assets/images/resource/news-6.jpg";
-// import blogImg1 from "../assets/images/resource/volunteer.png";
-// import blogImg2 from "../assets/images/resource/exhibitor.png";
-// import blogImg3 from "../assets/images/resource/visitor.png";
-// import blogImg4 from "../assets/images/resource/speaker.png";
-// import blogImg5 from "../assets/images/resource/vendor.png";
-// import blogImg6 from "../assets/images/resource/sponsor.png";
-// import blogImg7 from "../assets/images/resource/author.png";
+// import news4 from "../assets/images/resource/news-4.jpg";
+// import news5 from "../assets/images/resource/news-5.jpg";
+// import news6 from "../assets/images/resource/news-6.jpg";
+import blogImg1 from "../assets/images/registration/volunteer.png";
+import blogImg2 from "../assets/images/registration/exhibitor.png";
+import blogImg3 from "../assets/images/registration/visitor.png";
+import blogImg4 from "../assets/images/registration/speaker.png";
+import blogImg5 from "../assets/images/registration/vendor.png";
+import blogImg6 from "../assets/images/registration/sponsor.png";
+import blogImg7 from "../assets/images/registration/author.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,50 +20,50 @@ export default function Blogs() {
       id: 1,
       title: "Volunteer",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform",
-      // imgURL: blogImg1,
-      imgURL: news4,
+      imgURL: blogImg1,
+      //imgURL: news4,
     },
     {
       id: 2,
       title: "Exhibitor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform",
-      // imgURL: blogImg2,
-      imgURL: news5,
+      imgURL: blogImg2,
+      //imgURL: news5,
     },
     {
       id: 3,
       title: "Visitor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSfJ6YcEuTFVIB-wCflitmtfX1minVEGO4KrOPR8Fc26vPM7XA/viewform",
-      // imgURL: blogImg3,
-      imgURL: news6,
+      imgURL: blogImg3,
+      //imgURL: news6,
     },
     {
       id: 4,
       title: "Speaker",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSehWMPA1WSMIC1u54WHSlPRifEf1aP2PF_UBQahAI-SnbqLBw/viewform",
-      // imgURL: blogImg4,
-      imgURL: news4,
+      imgURL: blogImg4,
+      //imgURL: news4,
     },
     {
       id: 5,
       title: "Vendor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSe_CBsGMOh5NU6IgrGabtPLCGwpRhZGZ8erNCpYAcl4Q1TVAg/viewform",
-      // imgURL: blogImg5,
-      imgURL: news5,
+      imgURL: blogImg5,
+      //imgURL: news5,
     },
     {
       id: 6,
       title: "Sponsor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLScIajlb9neewUiqRpH6KrDXYsVKT7QXdc1Ioif8frcyuhsm8Q/viewform",
-      // imgURL: blogImg6,
-      imgURL: news6,
+      imgURL: blogImg6,
+      //imgURL: news6,
     },
     {
       id: 7,
       title: "Author",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSehWMPA1WSMIC1u54WHSlPRifEf1aP2PF_UBQahAI-SnbqLBw/viewform",
-      // imgURL: blogImg7,
-      imgURL: news4,
+      imgURL: blogImg7,
+      //imgURL: news4,
     },
   ];
 

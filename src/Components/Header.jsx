@@ -80,7 +80,7 @@ export default function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/#faq" target="_parent">
+                        <Link to="/#footer" target="_parent">
                           Social
                         </Link>
                       </li>
