@@ -45,14 +45,15 @@ export default function Home() {
           {/* Header Starts */}
           <Header />
           {/* Header Ends */}
+
           {/* Slider Section Start */}
           <Slider />
           {/* Slider Section End */}
 
           {/* About Section Start */}
-          {/* <section id="about">
+          <section id="about">
             <AboutUs />
-          </section> */}
+          </section>
           <AboutUs />
           {/* About Section End */}
 
@@ -65,16 +66,16 @@ export default function Home() {
           {/* Features End */}
 
           {/* Speakers Section Start */}
-          {/* <section id="speakers">
+          <section id="speakers">
             <Speakers />
-          </section> */}
+          </section>
           <Speakers/>
           {/* Speakers Section End */}
 
           {/* Events Section Start */}
-          {/* <section id="event">
+          <section id="event">
             <Events />
-          </section> */}
+          </section>
           <Events/>
           {/* Events Section End */}
 
@@ -95,9 +96,9 @@ export default function Home() {
           {/* Clients End */}
 
           {/* FAQ Section Start */}
-          {/* <section id="faq">
+          <section id="faq">
             <FaqSection />
-          </section> */}
+          </section>
           <FaqSection/>
           {/* FAQ Section End */}
 
