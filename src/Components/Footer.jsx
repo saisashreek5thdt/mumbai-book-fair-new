@@ -26,7 +26,7 @@ export default function Footer() {
   let currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer-two">
+    <footer className="footer-two" id="footer">
       {/* Background icons remain unchanged */}
       <div
         className="footer-two_icon-one"
