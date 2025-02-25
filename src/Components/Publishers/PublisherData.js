@@ -13,14 +13,14 @@ export const publications = [
       imgURL: authorImg1,
       name: "Publisher Two",
       link: "#open-modal",
-      books: ["Book A1", "Book A2", "Book A3"],
+      books: ["Book B1", "Book B2", "Book B3"],
     },
     {
       boothNumber: 3,
       imgURL: authorImg1,
       name: "Publisher Three",
       link: "#open-modal",
-      books: ["Book A1", "Book A2", "Book A3"],
+      books: ["Book C1", "Book C2", "Book C3"],
     },
     {
       boothNumber: 4,

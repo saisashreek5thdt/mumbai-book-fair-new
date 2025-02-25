@@ -12,10 +12,10 @@ export default function CheckoutPage() {
           <Header />
           {/* Header Ends */}
           {/* Checkout Slide Start */}
-          <CheckoutSlide />
+          <CheckoutSlide/>
           {/* Checkout Slide End */}
           {/* Checkout Info Start */}
-          <CheckoutInfo />
+          <CheckoutInfo/>
           {/* Checkout Info End */}
           {/* Footer Start */}
           <Footer />

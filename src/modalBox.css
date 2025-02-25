@@ -1,4 +1,4 @@
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,4 +29,118 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
+} */
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it's on top of other elements */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Maximum width */
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Close Button */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #ff4d4f; /* Red color on hover */
+}
+
+/* Modal Title */
+.modal-content h6 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* List Styling */
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content li {
+  margin-bottom: 12px;
+}
+
+.modal-content label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Checkbox Styling */
+.modal-content input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1890ff; /* Modern blue color */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+  background-color: #1890ff; /* Primary button color */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #40a9ff; /* Lighter blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 16px;
+  }
+
+  .add-to-cart-button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

@@ -2,6 +2,10 @@ import { publications } from "./PublisherData";
 import { useState } from "react";
 import "../../publisher.css";
 import ModalBox from "../ModalBox";
+import { useDispatch} from "react-redux";
+import { addItem } from "../../store/cartSlice";
+import { useNavigate } from "react-router-dom";
+// import CheckoutInfo from "../../Components/Checkout/CheckoutInfo";
 
 export default function PublishersInfo() {
   const [searchInput, setSearchInput] = useState("");
@@ -10,6 +14,11 @@ export default function PublishersInfo() {
   const [suggestions, setSuggestions] = useState([]); // State to store suggestions
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPublisher, setSelectedPublisher] = useState(null);
+  const [selectedBooks, setSelectedBooks] = useState([]);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  // const cartItems = useSelector((state) => state.cart.items);
 
   // Function to handle search and filter
   const handleSearch = () => {
@@ -61,6 +70,30 @@ export default function PublishersInfo() {
   const openModalWithPublisher = (publisher) => {
     setSelectedPublisher(publisher);
     setIsModalOpen(true);
+  };
+
+  // const handleBookSelection = (book) => {
+  //   setSelectedBook({ book });
+  // };
+  // Handle checkbox change for book selection
+  const handleCheckboxChange = (book) => (e) => {
+    if (e.target.checked) {
+      setSelectedBooks((prev) => [...prev, book]);
+    } else {
+      setSelectedBooks((prev) => prev.filter((b) => b !== book));
+    }
+  };
+
+  // Handle "Add to Cart" button click
+  const handleAddToCart = () => {
+    selectedBooks.forEach((book) => {
+      dispatch(addItem({ name: book, publisher: selectedPublisher.name }));
+    });
+    setSelectedBooks([]); // Clear selected books after adding to cart
+    setIsModalOpen(false); // Close the modal
+
+    // Redirect to the checkout page
+    navigate("/checkout");
   };
 
   return (
@@ -159,17 +192,27 @@ export default function PublishersInfo() {
             <p>This is a simple modal component.</p>
           </ModalBox> */}
           {isModalOpen && selectedPublisher && (
-            <ModalBox isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+            <ModalBox isOpen={isModalOpen} onAddToCart={handleAddToCart} onClose={() => setIsModalOpen(false)}>
               <h6>{selectedPublisher.name} - Books</h6>
               <ul>
-                {selectedPublisher.books?.map((book, index) => (
-                  <li key={index}>{book}</li>
-                ))}
+              {selectedPublisher.books?.map((book, index) => (
+              <li key={index}>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={selectedBooks.includes(book)}
+                    onChange={handleCheckboxChange(book)}
+                  />
+                  {book}
+                </label>
+              </li>
+               ))} 
               </ul>
             </ModalBox>
           )}
 
-          {/* Show Message if No Results Found After Search */}
+          {/* Show Message if No Results Fou
+            nd After Search */}
           {isSearched && filteredPublications.length === 0 && (
             <div className="no-results">
               No matching publishers found.{" "}
@@ -180,6 +223,11 @@ export default function PublishersInfo() {
           )}
         </div>
         {/* Styled Pagination */}
+
+        {/* Render CheckoutInfo if a book is selected */}
+      {/* {selectedBook && <CheckoutInfo bookDetails={selectedBook} />} */}
+      
+
         <ul className="styled-pagination text-center">
           <li className="next">
             <a href="#">
