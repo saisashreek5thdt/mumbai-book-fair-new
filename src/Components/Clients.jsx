@@ -1,5 +1,8 @@
 import clientImg1 from "../assets/images/clients/sponsor.png";
 import clientImg2 from "../assets/images/clients/sponsor-2.png";
+import clientImg3 from "../assets/images/clients/sponsor-3.png";
+import clientImg4 from "../assets/images/clients/sponsor-4.png";
+import clientImg5 from "../assets/images/clients/sponsor-5.png";
 
 export default function Client() {
   const clientsImgs = [
@@ -9,15 +12,15 @@ export default function Client() {
     },
     {
       id: 2,
-      imgURL: clientImg1,
+      imgURL: clientImg3,
     },
     {
       id: 3,
-      imgURL: clientImg1,
+      imgURL: clientImg4,
     },
     {
       id: 4,
-      imgURL: clientImg1,
+      imgURL: clientImg5,
     },
     {
       id: 5,
