@@ -3,7 +3,11 @@ import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 // import AboutPattern from "../assets/images/background/about-pattern.png";
 import AboutSpeaker from "../assets/images/Speakers/circle.mp4";
-const backgroundColor={background:"black", width:"570px", height:"550px"};
+const backgroundColor = {
+  background: "black",
+  width: "570px",
+  height: "550px",
+};
 export default function About() {
   return (
     <>
@@ -31,11 +35,14 @@ export default function About() {
                   className="about-one_pattern-four"
                   // style={{ backgroundImage: `url(${AboutPattern})` }}
                 ></div>
-                <div className="about-one_image wow rollIn" style={backgroundColor}>
+                <div
+                  className="about-one_image wow rollIn"
+                  style={backgroundColor}
+                >
                   {/* <img src={AboutPic} alt="" /> */}
-                  <video autoPlay muted loop >
-                        <source src={AboutSpeaker} />
-                    </video>
+                  <video autoPlay muted loop>
+                    <source src={AboutSpeaker} />
+                  </video>
                 </div>
                 {/* <a
                   className="lightbox-video slider-one_play"
@@ -56,20 +63,19 @@ export default function About() {
                 </div>
                 {/* <div className="about-one_bold-text">Grow, scrape their knees, try new things, to be vulnerable, and to have epic adventures together</div> */}
                 <div className="about-one_text">
-                  The Mumbai Book Festival, organized by the National Book
-                  Trust, India (under the Ministry of Education, Government of
-                  India), is making its debut this April at the centrally
-                  located Azad Maidan, Mumbai. It promises to be a landmark
-                  event in the national publishing calendar, bringing together a
-                  diverse array of national as well as international exhibitors.
+                  The Mumbai Book Festival is set to make its debut in October
+                  2025 at the centrally located BKC, Mumbai. It promises to be a
+                  landmark event in the national publishing calendar, bringing
+                  together a diverse array of national and international
+                  exhibitors, publishers, authors, and speakers.
                 </div>
                 <div className="about-one_text">
-                  Featuring the theme &quot;Books for All,&quot; the festival
-                  offers a multifaceted experience with literary discussions,
-                  cultural performances, and activities for all age groups. This
-                  inaugural edition will host over 300 exhibitors and expects to
-                  welcome more than 100,000 visitors, fostering a vibrant
-                  exchange of ideas and stories.
+                  The festival offers a multifaceted experience with literary
+                  discussions, book releases, cultural performances, and
+                  activities for children of all age groups. With 500 +
+                  exhibitors, the festival expects to welcome more than 1
+                  million visitors, fostering a vibrant exchange of ideas and
+                  stories.
                 </div>
                 {/* <div className="about-one_text">
                 Featuring the theme &quot;Books for All,&quot; the festival offers a multifaceted experience with literary discussions, cultural performances, and activities for all age groups.
