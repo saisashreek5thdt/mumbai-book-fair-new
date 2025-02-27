@@ -7,6 +7,7 @@ export { default as Features } from "./Features";
 export { default as Events } from "./Events";
 export { default as Gallery } from "./Gallery";
 export { default as TeamExecutive } from "./TeamExecutive";
+export { default as TeamExecutive2 } from "./TeamExecutive2";
 export { default as Pricing } from "./Pricing";
 export { default as VideoSection } from "./VideoSection";
 export { default as Clients } from "./Clients";
