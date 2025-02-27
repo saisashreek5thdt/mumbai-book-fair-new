@@ -1,5 +1,5 @@
 import priceImg1 from "../assets/images/background/pattern-4.png";
-import TeamExecutive from "./TeamExecutive";
+import TeamExecutive2 from "./TeamExecutive2";
 
 export default function Pricing() {
   const pricePattern1 = {
@@ -14,9 +14,9 @@ export default function Pricing() {
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title">Teams</div>
-            <h2 className="sec-title_heading">Executive Members</h2>
+            <h2 className="sec-title_heading">Organizing Community</h2>
           </div>
-          <TeamExecutive />
+          <TeamExecutive2 />
         </div>
       </section>
     </>
