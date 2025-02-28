@@ -3,14 +3,16 @@ import logo from "../assets/images/logo/logo-footer-1.png";
 
 //import icon1 from "../assets/images/icons/icon-5.png";
 //import icon2 from "../assets/images/icons/icon-5.png";
-import icon3 from "../assets/images/icons/icon-6.png";
-import icon4 from "../assets/images/icons/icon-6.png";
-import icon5 from "../assets/images/icons/icon-7.png";
-import icon6 from "../assets/images/icons/icon-8.png";
-import icon7 from "../assets/images/icons/icon-9.png";
-import icon8 from "../assets/images/icons/icon-10.png";
-
+// import icon3 from "../assets/images/icons/icon-6.png";
+// import icon4 from "../assets/images/icons/icon-6.png";
+// import icon5 from "../assets/images/icons/icon-7.png";
+// import icon6 from "../assets/images/icons/icon-8.png";
+// import icon7 from "../assets/images/icons/icon-9.png";
+// import icon8 from "../assets/images/icons/icon-10.png";
+import footer from "../assets/images/footer.jpg";
+import footer1 from "../assets/images/footer_gradient_4.jpg";
 import insta1 from "../assets/images/mapImage.png";
+
 
 export default function Footer() {
   // Common style for section gaps
@@ -21,12 +23,32 @@ export default function Footer() {
   // Common style for title gaps
   const titleStyle = {
     marginBottom: "15px",
+    width:"90px"
   };
 
   let currentYear = new Date().getFullYear();
 
+  const footerStyle = {
+    paddingTop:"-20px",
+    backgroundImage: `url(${footer1})`, // Set the background image
+    backgroundSize: "cover", // Ensure the image covers the entire footer
+    backgroundPosition: "center", // Center the image
+     backgroundColor: "#ffff", // Semi-transparent black overlay rgba(0, 0, 0, 0.6)
+    backgroundBlendMode: "multiply", // Blend the overlay with the image
+    color: "rgba(0, 0, 0, 0.6)", // Text color
+    //padding: "40px 20px", // Add padding for spacing
+    height: "400px",
+    width: "100%", // Ensure the footer spans the full width
+    minHeight: "300px", // Set a minimum height for the footer
+    display: "flex", // Use flexbox for layout
+    flexDirection: "column", // Arrange content vertically
+    justifyContent: "center", // Center content vertically
+    alignItems: "center",
+    
+  };
+
   return (
-    <footer className="footer-two" id="footer">
+    <footer style={footerStyle} className="footer-two" id="footer">
       {/* Background icons remain unchanged */}
       {/* <div
         className="footer-two_icon-one"
@@ -36,7 +58,7 @@ export default function Footer() {
         className="footer-two_icon-two"
         style={{ backgroundImage: `url(${icon2})` }}
       ></div> */}
-      <div
+      {/* <div
         className="footer-two_icon-three"
         style={{ backgroundImage: `url(${icon3})` }}
       ></div>
@@ -59,12 +81,12 @@ export default function Footer() {
       <div
         className="footer-two_icon-eight"
         style={{ backgroundImage: `url(${icon8})` }}
-      ></div>
+      ></div> */}
 
-      <div className="auto-container">
+      <div  className="auto-container">
         <div className="footer-two-widgets">
-          <div className="row clearfix">
-            <div className="big-column col-lg-6 col-md-12 col-sm-12">
+          <div className="row clearfix" >
+            <div className="big-column col-lg-6 col-md-12 col-sm-12" >
               <div className="row clearfix">
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
                   <div
@@ -203,7 +225,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className="footer-bottom" style={{marginTop:"-80px", width:"100%"}}>
         <div className="auto-container">
           <div className="row clearfix">
             <div className="column col-lg-12 col-md-12 col-sm-12">

@@ -14,7 +14,7 @@ export default function TeamExecutive2() {
             data-wow-duration="1500ms"
           >
             {/* Team Info Start */}
-            <div className="news-block_two-date">CHIEF CONVENOR</div>
+            <div className="news-block_two-date" style={{display:"flex", justifyContent:"center", alignItems:"center",marginTop:"325px" }}>CHIEF CONVENOR</div>
             <div className="news-block_two-image">
               <Link to="/">
                 <img src={speakerImg1} alt="Speaker Image" />
@@ -43,7 +43,7 @@ export default function TeamExecutive2() {
             data-wow-duration="1500ms"
           >
             {/* Team Info Start */}
-            <div className="news-block_two-date">CHIEF PATRON</div>
+            <div className="news-block_two-date" style={{display:"flex", justifyContent:"center", alignItems:"center",marginTop:"325px" }}>CHIEF PATRON</div>
             <div className="news-block_two-image">
               <Link to="/">
                 <img src={speakerImg2} alt="Speaker Image" />

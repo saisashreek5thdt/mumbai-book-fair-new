@@ -65,7 +65,7 @@ export default function Header() {
                     </li>
                     <li>
                       <Link to="/#team" target="_parent">
-                        Teams
+                        Team
                       </Link>
                     </li>
                     <li>

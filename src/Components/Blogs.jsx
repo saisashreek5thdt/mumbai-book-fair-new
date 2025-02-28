@@ -69,7 +69,7 @@ export default function Blogs() {
 
   return (
     <>
-      <section className="event-feature-section" id="register">
+      <section className="event-feature-section" style={{marginTop:"-220px"}} id="register">
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title" style={{ textTransform: "none" }}>

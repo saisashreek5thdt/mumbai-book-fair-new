@@ -10349,39 +10349,39 @@ blockquote{
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 1) .day{
-	background-color: #ff00aa;
+	background-color:#cf288f;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 2) .day{
-	background-color: #40cbb4;
+	background-color:rgb(204, 102, 165);
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 3) .day{
-	background-color: #4c35a9;
+	background-color:#cf288f;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 4) .day{
-	background-color: #e6275a;
+	background-color:rgb(204, 102, 165);
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 1) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 1) .date{
-	color: #ff00aa;
+	color: #cf288f;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 2) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 2) .date{
-	color: #40cbb4;
+	color: rgb(204, 102, 165);
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 3) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 3) .date{
-	color: #4c35a9;
+	color: #cf288f;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 4) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 4) .date{
-	color: #e6275a;
+	color: rgb(204, 102, 165);
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 1).active-btn{
@@ -10390,18 +10390,18 @@ blockquote{
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 2).active-btn{
-	box-shadow: 0 0px 30px rgba(64,203,180,.30);
-	border: 1px solid #40cbb4;
+	box-shadow: 0 0px 30px rgba(198, 17, 155, 0.3);
+	border: 1px solid rgb(204, 102, 165);
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 3).active-btn{
-	box-shadow: 0 0px 30px rgba(76,53,169,.30);
-	border: 1px solid #4c35a9;
+	box-shadow: 0 0px 30px rgba(250,0,170,.30);
+	border: 1px solid #ff00aa;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 4).active-btn{
-	box-shadow: 0 0px 30px rgba(230,39,90,.30);
-	border: 1px solid #e6275a;
+	box-shadow: 0 0px 30px rgba(198, 17, 155, 0.3);
+	border: 1px solid rgb(204, 102, 165);
 }
 
 .schedule-block{
@@ -10432,6 +10432,7 @@ blockquote{
 .schedule-block .inner-box .author-box .box-inner{
 	position:relative;
 	text-align:center;
+	
 }
 
 .schedule-block .inner-box .author-box .author-image{
@@ -10449,19 +10450,20 @@ blockquote{
 	color:#000000;
 	font-weight:700;
 	line-height:1.3em;
+	font-size:22px;
 }
 
 .schedule-block .inner-box .author-box .box-inner .designation{
 	position:relative;
 	color:#000000;
-	font-size:16px;
+	font-size:20px;
 	margin-top:8px;
 }
 
 .schedule-block .inner-box .date{
 	position:relative;
 	color:#a900e5;
-	font-size:16px;
+	font-size:22px;
 }
 
 .schedule-block .inner-box h4{
@@ -10470,12 +10472,13 @@ blockquote{
 	font-weight:700;
 	line-height:1.3em;
 	margin-top:10px;
+	font-size:21px;
 }
 
 .schedule-block .inner-box .text{
 	position:relative;
 	color:#555555;
-	font-size:17px;
+	font-size:19px;
 	line-height:1.9em;
 	margin-top:12px;
 	margin-bottom:15px;

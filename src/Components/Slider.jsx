@@ -90,9 +90,9 @@ export default function Slider() {
               {/* <!-- Content Column --> */}
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
-                  {/* <div className="slider-one_title">
-                    National Book Trust, India
-                  </div> */}
+                  <div className="slider-one_title">
+                    Mumbai Book Festival, BKC
+                  </div>
                   <div className="slider-one_date">
                     <span>08</span> April 2025 <br />
                     BKC, MUMBAI, INDIA
@@ -133,6 +133,9 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
+                  <div className="slider-one_title">
+                    Mumbai Book Festival, BKC
+                  </div>
                   <div className="slider-one_date">
                     <span>09</span> April 2025 <br />
                     BKC, MUMBAI, INDIA
@@ -173,6 +176,9 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
+                  <div className="slider-one_title">
+                    Mumbai Book Festival, BKC
+                  </div>
                   <div className="slider-one_date">
                     <span>10</span> April 2025 <br />
                     BKC, MUMBAI, INDIA
@@ -213,6 +219,9 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
+                  <div className="slider-one_title">
+                    Mumbai Book Festival, BKC
+                  </div>
                   <div className="slider-one_date">
                     <span>11</span> April 2025 <br />
                     BKC, MUMBAI, INDIA
@@ -253,6 +262,9 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
+                  <div className="slider-one_title">
+                    Mumbai Book Festival, BKC
+                  </div>
                   <div className="slider-one_date">
                     <span>12</span> April 2025 <br />
                     BKC, MUMBAI, INDIA

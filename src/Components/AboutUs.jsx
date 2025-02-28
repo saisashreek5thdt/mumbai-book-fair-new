@@ -63,7 +63,7 @@ export default function About() {
                 </div>
                 {/* <div className="about-one_bold-text">Grow, scrape their knees, try new things, to be vulnerable, and to have epic adventures together</div> */}
                 <div className="about-one_text">
-                  The Mumbai Book Festival is set to make its debut in October
+                  The Mumbai Book Festival is set to make its debut in April
                   2025 at the centrally located BKC, Mumbai. It promises to be a
                   landmark event in the national publishing calendar, bringing
                   together a diverse array of national and international

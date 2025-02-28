@@ -213,7 +213,7 @@ export default function FaqSection() {
                     <input type="text" placeholder="Phone Number" required />
                   </div>
                   <div className="form-group">
-                    <textarea placeholder="Enter your Message*"></textarea>
+                    <textarea style={{height:"120px"}} placeholder="Enter your Message*"></textarea>
                   </div>
                   <div className="form-group">
                     {/* <button type="submit" className="submit-btn">
