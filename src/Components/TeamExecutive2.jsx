@@ -14,9 +14,7 @@ export default function TeamExecutive2() {
             data-wow-duration="1500ms"
           >
             {/* Team Info Start */}
-            <div className="news-block_two-date">
-              CHIEF CONVENOR
-            </div>
+            <div className="news-block_two-date">CHIEF CONVENOR</div>
             <div className="news-block_two-image">
               <Link to="/">
                 <img src={speakerImg1} alt="Speaker Image" />
@@ -26,8 +24,11 @@ export default function TeamExecutive2() {
             <div className="news-block_two-content">
               <h4 className="news-block_two-title">Acharya Pawan Tripathi</h4>
               <div className="text">
-                Author, columnist, social worker, and Treasurer of the Sri
-                Siddhi Vinayak Temple Trust (SSVT), Mumbai.
+                Author, Columnist, Social Worker, and Treasurer - {" "}
+                <strong>
+                  <em>Sri Siddhi Vinayak Temple Trust (SSVT), Mumbai</em>
+                </strong>
+                .
               </div>
             </div>
             {/* Team Info End */}
@@ -42,9 +43,7 @@ export default function TeamExecutive2() {
             data-wow-duration="1500ms"
           >
             {/* Team Info Start */}
-            <div className="news-block_two-date">
-            CHIEF PATRON
-            </div>
+            <div className="news-block_two-date">CHIEF PATRON</div>
             <div className="news-block_two-image">
               <Link to="/">
                 <img src={speakerImg2} alt="Speaker Image" />
@@ -52,11 +51,10 @@ export default function TeamExecutive2() {
               <img src={speakerImg2} alt="Speaker Image" />
             </div>
             <div className="news-block_two-content">
-              <h4 className="news-block_two-title">Prof. Milind Sudhakar Marathe</h4>
-              <div className="text">
-                Author, columnist, social worker, and Treasurer of the Sri
-                Siddhi Vinayak Temple Trust (SSVT), Mumbai.
-              </div>
+              <h4 className="news-block_two-title">
+                Prof. Milind Sudhakar Marathe
+              </h4>
+              <div className="text">Chairman of National Book Trust, India</div>
             </div>
             {/* Team Info End */}
           </div>

@@ -106,7 +106,7 @@ export default function CounterOne() {
                 <div className="py-2 count">
                   <span id="count2">{counts.count5}</span>+
                 </div>
-                <div style={{ fontSize: "20px" }}>Booths</div>
+                <div style={{ fontSize: "20px" }}>Book Stalls</div>
               </div>
             </div>
             <div className="col-6 col-lg-3">
@@ -166,7 +166,7 @@ export default function CounterOne() {
                 <div className="py-2 count">
                   <span id="count8">{counts.count8}</span>+
                 </div>
-                <div style={{ fontSize: "20px" }}>Sponsors</div>
+                <div style={{ fontSize: "20px" }}>Countries</div>
               </div>
             </div>
           </div>

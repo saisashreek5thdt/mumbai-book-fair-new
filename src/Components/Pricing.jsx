@@ -14,7 +14,7 @@ export default function Pricing() {
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title">Teams</div>
-            <h2 className="sec-title_heading">Organizing Community</h2>
+            <h2 className="sec-title_heading">Organizers</h2>
           </div>
           <TeamExecutive2 />
         </div>

@@ -176,7 +176,7 @@ export default function Footer() {
                       </li>
                       <li>
                         <span className="icon fa-solid fa-map-marker fa-fw"></span>{" "}
-                        Azad Maidan Fort Mumbai, Maharashtra.
+                        BKC, Mumbai, Maharashtra.
                       </li>
                     </ul>
                   </div>

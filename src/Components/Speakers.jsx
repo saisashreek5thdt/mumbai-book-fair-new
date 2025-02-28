@@ -49,7 +49,7 @@ export default function Speakers() {
                 fontWeight: "700",
               }}
             >
-              Meet Speakers For Events
+              Speakers
             </h2>
           </div>
           <div className="row clearfix">

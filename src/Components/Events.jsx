@@ -376,50 +376,50 @@ export default function LeadershipOne() {
                 <li
                   className="tab-btn active-btn"
                   data-tab="#tab-1"
-                  onClick={() => setSelectedDate("18/04/2025")}
+                  onClick={() => setSelectedDate("08/04/2025")}
                 >
                   <span className="day">Day 01</span>
-                  <span className="date">18</span>
+                  <span className="date">08</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li
                   className="tab-btn"
                   data-tab="#tab-2"
-                  onClick={() => setSelectedDate("19/04/2025")}
+                  onClick={() => setSelectedDate("09/04/2025")}
                 >
                   <span className="day">Day 02</span>
-                  <span className="date">19</span>
+                  <span className="date">09</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li
                   className="tab-btn"
                   data-tab="#tab-3"
-                  onClick={() => setSelectedDate("20/04/2025")}
+                  onClick={() => setSelectedDate("10/04/2025")}
                 >
                   <span className="day">Day 03</span>
-                  <span className="date">20</span>
+                  <span className="date">10</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li
                   className="tab-btn"
                   data-tab="#tab-4"
-                  onClick={() => setSelectedDate("21/04/2025")}
+                  onClick={() => setSelectedDate("11/04/2025")}
                 >
                   <span className="day">Day 04</span>
-                  <span className="date">21</span>
+                  <span className="date">11</span>
                   <span className="month">April</span> 2025
                 </li>
 
                 <li
                   className="tab-btn"
                   data-tab="#tab-5"
-                  onClick={() => setSelectedDate("22/04/2025")}
+                  onClick={() => setSelectedDate("12/04/2025")}
                 >
                   <span className="day">Day 05</span>
-                  <span className="date">22</span>
+                  <span className="date">12</span>
                   <span className="month">April</span> 2025
                 </li>
               </ul>

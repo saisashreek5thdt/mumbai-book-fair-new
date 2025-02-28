@@ -19,7 +19,7 @@ export default function Slider() {
 
   useEffect(() => {
     // Set the event date (April 4, 2025)
-    const eventDate = new Date("2025-04-18T00:00:00").getTime();
+    const eventDate = new Date("2025-04-08T00:00:00").getTime();
 
     // Function to update the countdown
     const updateCountdown = () => {
@@ -90,12 +90,12 @@ export default function Slider() {
               {/* <!-- Content Column --> */}
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
-                  <div className="slider-one_title">
+                  {/* <div className="slider-one_title">
                     National Book Trust, India
-                  </div>
+                  </div> */}
                   <div className="slider-one_date">
-                    <span>18</span> April 2025 <br />
-                    AZAD MAIDAN, MUMBAI, INDIA
+                    <span>08</span> April 2025 <br />
+                    BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
                   <h1 className="slider-one_heading">
@@ -130,12 +130,12 @@ export default function Slider() {
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
                   {/* <div className="slider-one_title">A Journey Through The Books</div> */}
-                  <div className="slider-one_title">
+                  {/* <div className="slider-one_title">
                     National Book Trust, India
-                  </div>
+                  </div> */}
                   <div className="slider-one_date">
-                    <span>19</span> April 2025 <br />
-                    AZAD MAIDAN, MUMBAI, INDIA
+                    <span>09</span> April 2025 <br />
+                    BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
                   <h1 className="slider-one_heading" style={textTransform}>
@@ -170,12 +170,12 @@ export default function Slider() {
               {/* <!-- Content Column --> */}
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
-                  <div className="slider-one_title">
+                  {/* <div className="slider-one_title">
                     National Book Trust, India
-                  </div>
+                  </div> */}
                   <div className="slider-one_date">
-                    <span>20</span> April 2025 <br />
-                    AZAD MAIDAN, MUMBAI, INDIA
+                    <span>10</span> April 2025 <br />
+                    BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
                   <h1 className="slider-one_heading" style={textTransform}>
@@ -210,12 +210,12 @@ export default function Slider() {
               {/* <!-- Content Column --> */}
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
-                  <div className="slider-one_title">
+                  {/* <div className="slider-one_title">
                     National Book Trust, India
-                  </div>
+                  </div> */}
                   <div className="slider-one_date">
-                    <span>21</span> April 2025 <br />
-                    AZAD MAIDAN, MUMBAI, INDIA
+                    <span>11</span> April 2025 <br />
+                    BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
                   <h1 className="slider-one_heading" style={textTransform}>
@@ -250,12 +250,12 @@ export default function Slider() {
               {/* <!-- Content Column --> */}
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
-                  <div className="slider-one_title">
+                  {/* <div className="slider-one_title">
                     National Book Trust, India
-                  </div>
+                  </div> */}
                   <div className="slider-one_date">
-                    <span>22</span> April 2025 <br />
-                    AZAD MAIDAN, MUMBAI, INDIA
+                    <span>12</span> April 2025 <br />
+                    BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
                   <h1 className="slider-one_heading" style={textTransform}>
@@ -274,6 +274,7 @@ export default function Slider() {
             </div>
           </div>
           {/* <!-- End Slide 05 --> */}
+          
         </div>
 
         {/* Timer Divs */}

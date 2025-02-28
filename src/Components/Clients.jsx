@@ -1,15 +1,15 @@
 import clientImg1 from "../assets/images/clients/sponsor.png";
-import clientImg2 from "../assets/images/clients/sponsor-2.png";
+//import clientImg2 from "../assets/images/clients/sponsor-2.png";
 import clientImg3 from "../assets/images/clients/sponsor-3.png";
 import clientImg4 from "../assets/images/clients/sponsor-4.png";
 import clientImg5 from "../assets/images/clients/sponsor-5.png";
 
 export default function Client() {
   const clientsImgs = [
-    {
-      id: 1,
-      imgURL: clientImg2,
-    },
+    // {
+    //   id: 1,
+    //   imgURL: clientImg2,
+    // },
     {
       id: 2,
       imgURL: clientImg3,
@@ -49,7 +49,7 @@ export default function Client() {
       <section className="clients-two">
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <div className="sec-title_title">Sponsors and Exhibitors</div>
+            <div className="sec-title_title">Collaborations</div>
             <h2 className="sec-title_heading">Our Partners</h2>
           </div>
           <div className="clients-two_slide d-flex">

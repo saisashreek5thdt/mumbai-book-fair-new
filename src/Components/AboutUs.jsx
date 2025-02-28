@@ -89,7 +89,7 @@ export default function About() {
                     <div className="about-one_block-inner">
                       <span className="about-one_block-icon flaticon-map"></span>
                       <strong>Venue</strong>
-                      Azad Maidan, Mumbai
+                      BKC, Mumbai
                     </div>
                   </div>
                   {/* <!-- About One Block --> */}
@@ -97,7 +97,7 @@ export default function About() {
                     <div className="about-one_block-inner">
                       <span className="about-one_block-icon flaticon-calendar-2"></span>
                       <strong>Date</strong>
-                      April 18 to 22, 2025
+                      April 08 to 12, 2025
                     </div>
                   </div>
                 </div>

@@ -36,7 +36,7 @@ export default function Features() {
     },
     {
       icon: featureIcon5,
-      title: "Workshop Stage",
+      title: "Workshops",
       text: "Interactive workshops featuring live culinary demonstrations, theatre sessions, handicrafts, and other engaging activities for a hands-on experience.",
     },
     {
@@ -73,7 +73,7 @@ export default function Features() {
           {/* Sec Title */}
           <div className="sec-title centered">
             <div className="sec-title_title">Highlights</div>
-            <h2 className="sec-title_heading">What&apos;s New</h2>
+            <h2 className="sec-title_heading">Activities</h2>
           </div>
 
           {/* Grid Container */}

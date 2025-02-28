@@ -140,7 +140,7 @@ export default function FaqSection() {
                     }`}
                   >
                     <div className="content">
-                      <p>Azad Maidan Fort, Mumbai, Maharashtra</p>
+                      <p>BKC, Mumbai, Maharashtra</p>
                     </div>
                   </div>
                 </li>
@@ -201,7 +201,7 @@ export default function FaqSection() {
             {/* Quick Contact Form Card */}
             <div className="col-lg-5 col-md-12 col-sm-12">
               <div className="faq-two_form-box" style={FAQFormBG}>
-                <h3 className="faq-two_form-title">Quick Contact</h3>
+                <h3 className="faq-two_form-title">Contact Us</h3>
                 <form className="faq-form">
                   <div className="form-group">
                     <input type="text" placeholder="Name" required />

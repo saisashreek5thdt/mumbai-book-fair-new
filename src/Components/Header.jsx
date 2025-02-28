@@ -65,7 +65,7 @@ export default function Header() {
                     </li>
                     <li>
                       <Link to="/#team" target="_parent">
-                        Team
+                        Teams
                       </Link>
                     </li>
                     <li>
@@ -79,10 +79,15 @@ export default function Header() {
                       </Link>
                     </li>
                     <li>
+                      <Link to="/#register" target="_parent">
+                        Registration
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/#social" target="_parent">
                         Social
                       </Link>
-                    </li>
+                    </li>                    
                     <li className="dropdown language-icon">
                       <span>
                         <i
