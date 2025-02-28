@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo/logo-footer.png";
+import logo from "../assets/images/logo/logo-footer-1.png";
 
-import icon1 from "../assets/images/icons/icon-5.png";
-import icon2 from "../assets/images/icons/icon-5.png";
+//import icon1 from "../assets/images/icons/icon-5.png";
+//import icon2 from "../assets/images/icons/icon-5.png";
 import icon3 from "../assets/images/icons/icon-6.png";
 import icon4 from "../assets/images/icons/icon-6.png";
 import icon5 from "../assets/images/icons/icon-7.png";
@@ -28,14 +28,14 @@ export default function Footer() {
   return (
     <footer className="footer-two" id="footer">
       {/* Background icons remain unchanged */}
-      <div
+      {/* <div
         className="footer-two_icon-one"
         style={{ backgroundImage: `url(${icon1})` }}
-      ></div>
-      <div
+      ></div> */}
+      {/* <div
         className="footer-two_icon-two"
         style={{ backgroundImage: `url(${icon2})` }}
-      ></div>
+      ></div> */}
       <div
         className="footer-two_icon-three"
         style={{ backgroundImage: `url(${icon3})` }}
@@ -76,7 +76,7 @@ export default function Footer() {
                         <img src={logo} alt="Mumbai Book Fair Logo" />
                       </Link>
                     </div>
-                    <div
+                    {/* <div
                       className="footer-two_text"
                       style={{ textAlign: "justify" }}
                     >
@@ -84,7 +84,7 @@ export default function Footer() {
                       Trust, India (under the Ministry of Education, Government
                       of India), is making its debut this April at the centrally
                       located Azad Maidan, Mumbai.
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 

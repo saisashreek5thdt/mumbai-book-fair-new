@@ -27,22 +27,22 @@ export default function Features() {
     {
       icon: featureIcon3,
       title: "Cultural Activities",
-      text: "Experience cultural presentations from acclaimed bands and artists representing diverse Indian states and the vibrant city of Mumbai.",
+      text: "Experience captivating cultural performances by acclaimed artists, bands, and singers, showcasing the rich diversity of Indian states and cultures.",
     },
     {
       icon: featureIcon4,
       title: "Film Festival",
-      text: "An open-to-all showcase of educative short films, particularly designed to captivate young audiences.",
+      text: "An open-to-all showcase of educational short films, specially curated to engage and captivate young audiences.",
     },
     {
       icon: featureIcon5,
       title: "Workshop Stage",
-      text: "Hands-on workshops featuring live culinary demonstrations, theatre sessions, and other engaging activities.",
+      text: "Interactive workshops featuring live culinary demonstrations, theatre sessions, handicrafts, and other engaging activities for a hands-on experience.",
     },
     {
       icon: featureIcon6,
-      title: "International Authors Meet",
-      text: "A unique opportunity to interact with celebrated international authors, fostering global literary exchanges.",
+      title: "Business Meet",
+      text: "A unique platform  to meet and interact with fellow trade visitors, fostering global literary exchanges and business opportunities.",
     },
   ];
 
