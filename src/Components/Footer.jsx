@@ -9,7 +9,7 @@ import logo from "../assets/images/logo/logo-footer-1.png";
 // import icon6 from "../assets/images/icons/icon-8.png";
 // import icon7 from "../assets/images/icons/icon-9.png";
 // import icon8 from "../assets/images/icons/icon-10.png";
-import footer from "../assets/images/footer.jpg";
+// import footer from "../assets/images/footer.jpg";
 import footer1 from "../assets/images/footer_gradient_4.jpg";
 import insta1 from "../assets/images/mapImage.png";
 
