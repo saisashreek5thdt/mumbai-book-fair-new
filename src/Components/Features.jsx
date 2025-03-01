@@ -5,11 +5,13 @@ import featureImg2 from "../assets/images/icons/circle-icon-one.png";
 import featureImg3 from "../assets/images/icons/events-bg.png";
 
 import featureIcon1 from "../assets/images/icons/Newicons/childrenActivities.png";
-import featureIcon2 from "../assets/images/icons/Newicons/authorsCorner.png";
-import featureIcon3 from "../assets/images/icons/Newicons/culturalActivities.png";
+// import featureIcon2 from "../assets/images/icons/Newicons/authorsCorner.png";
+// import featureIcon3 from "../assets/images/icons/Newicons/culturalActivities.png";
 import featureIcon4 from "../assets/images/icons/Newicons/workshop.png";
 import featureIcon5 from "../assets/images/icons/event-icon-2.png";
 import featureIcon6 from "../assets/images/icons/Newicons/international.png";
+import featureIcon7 from "../assets/images/featureIcon.png"
+import featureIcon8 from "../assets/images/featureIcon1.png"
 import { Link } from "react-router-dom";
 
 export default function Features() {
@@ -20,12 +22,12 @@ export default function Features() {
       text: "A dedicated space promoting children's literature and the joy of reading through storytelling, workshops, panel discussions, quizzes, and contests.",
     },
     {
-      icon: featureIcon2,
+      icon: featureIcon8,
       title: "Authors Corner",
       text: "A hub for literary enthusiasts with engaging dialogues, panel discussions, book launches, and lively interactions with renowned authors.",
     },
     {
-      icon: featureIcon3,
+      icon: featureIcon7,
       title: "Cultural Activities",
       text: "Experience captivating cultural performances by acclaimed artists, bands, and singers, showcasing the rich diversity of Indian states and cultures.",
     },

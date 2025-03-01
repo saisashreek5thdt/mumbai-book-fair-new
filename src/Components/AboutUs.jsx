@@ -3,6 +3,8 @@ import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 // import AboutPattern from "../assets/images/background/about-pattern.png";
 import AboutSpeaker from "../assets/images/Speakers/circle.mp4";
+import venueIcon from "../assets/images/aboutIcon/venue.png";
+import calenderIcon from "../assets/images/aboutIcon/calender.png";
 const backgroundColor = {
   background: "black",
   width: "570px",
@@ -63,7 +65,7 @@ export default function About() {
                 </div>
                 {/* <div className="about-one_bold-text">Grow, scrape their knees, try new things, to be vulnerable, and to have epic adventures together</div> */}
                 <div className="about-one_text">
-                  The Mumbai Book Festival is set to make its debut in April
+                  The Mumbai Book Festival is set to make its debut in October
                   2025 at the centrally located BKC, Mumbai. It promises to be a
                   landmark event in the national publishing calendar, bringing
                   together a diverse array of national and international
@@ -87,7 +89,7 @@ export default function About() {
                   {/* <!-- About One Block --> */}
                   <div className="about-one_block col-lg-6 col-md-6 col-sm-12">
                     <div className="about-one_block-inner">
-                      <span className="about-one_block-icon flaticon-map"></span>
+                      <span className="about-one_block-icon"><img src={venueIcon} style={{width:"60px", height:"70px", marginTop:"-35px",color:"#cf288f"}} alt="" /></span>
                       <strong>Venue</strong>
                       BKC, Mumbai
                     </div>
@@ -95,9 +97,9 @@ export default function About() {
                   {/* <!-- About One Block --> */}
                   <div className="about-one_block col-lg-6 col-md-6 col-sm-12">
                     <div className="about-one_block-inner">
-                      <span className="about-one_block-icon flaticon-calendar-2"></span>
+                      <span className="about-one_block-icon"><img src={calenderIcon} style={{width:"50px", height:"60px", marginTop:"-25px",color:"#cf288f"}} alt="" /></span>
                       <strong>Date</strong>
-                      April 08 to 12, 2025
+                      October 08 to 12, 2025
                     </div>
                   </div>
                 </div>

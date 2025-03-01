@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import speakersPatternImg1 from "../../assets/images/background/pattern-4.png";
 import speakersPatternImg3 from "../../assets/images/background/pattern-6.png";
 
@@ -10,11 +10,11 @@ import speakerImg5 from "../../assets/images/Speakers/Shiv_Khera.png";
 import speakerImg6 from "../../assets/images/Speakers/Upendra_Rai.png";
 import speakerImg7 from "../../assets/images/Speakers/VP_Speaker.png";
 import speakerImg8 from "../../assets/images/Speakers/Ankur_Warikoo.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function SpeakersList() {
   // State to track selected year and speakers list
-  const [selectedYear, setSelectedYear] = useState('2023');
+  // const [selectedYear, setSelectedYear] = useState('2023');
   const [displayedSpeakers, setDisplayedSpeakers] = useState([]);
 
   // Create base speakers list with year-specific IDs
@@ -143,11 +143,11 @@ export default function SpeakersList() {
   };
 
   // Handle year selection
-  const handleYearClick = (year) => {
-    setSelectedYear(year);
-    // Create fresh list of speakers for the selected year
-    setDisplayedSpeakers(createSpeakersForYear(year));
-  };
+  // const handleYearClick = (year) => {
+  //   setSelectedYear(year);
+  //   // Create fresh list of speakers for the selected year
+  //   setDisplayedSpeakers(createSpeakersForYear(year));
+  // };
 
   return (
     <>
@@ -157,15 +157,15 @@ export default function SpeakersList() {
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title" style={textNone}>
-              Speakers Experts
+              INVITED SPEAKERS
             </div>
             <h2 className="sec-title_heading" style={titleHeading}>
-              Meet Speakers For Events {selectedYear}
+              Speakers Invited for Mumbai Book Festival 2025
             </h2>
           </div>
           
           {/* Year selection buttons */}
-          <div className="row d-flex justify-content-center align-items-center gap-0 mt-4"
+          {/* <div className="row d-flex justify-content-center align-items-center gap-0 mt-4"
             style={{ gap: "25px", flexWrap: "nowrap", margin: "30px" }}>
             {["2023", "2024", "2025"].map((year) => (
               <div key={year} className="col-auto m-0 p-0">
@@ -182,7 +182,7 @@ export default function SpeakersList() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Speakers Grid */}
           <div className="row clearfix">

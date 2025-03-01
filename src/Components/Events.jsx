@@ -359,8 +359,8 @@ export default function LeadershipOne() {
           <div className="sec-title centered">
             <div className="sec-title_title">Schedule of Events</div>
             <h2 className="sec-title_heading">
-              Explore a wide range of literary, cultural <br /> and children
-              activities
+              Explore a Wide Range of Literary, Cultural <br /> and Children
+              Activities
             </h2>
             {/* <div className="sec-title_text">
               Lorem ipsum gravida nibh vel velit auctor aliquetnean

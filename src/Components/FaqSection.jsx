@@ -29,8 +29,8 @@ export default function FaqSection() {
         <div className="price-one_pattern" style={pricePattern1}></div>
         <div className="auto-container">
           <div className="sec-title title-anim centered">
-            <div className="sec-title_title">Solutions for Your Curiosities</div>
-            <h2 className="sec-title_heading">FAQ&apos;S</h2>
+            <div className="sec-title_title">Queries</div>
+            <h2 className="sec-title_heading">FAQs</h2>
           </div>
           <div className="row clearfix">
             {/* FAQ Section */}
@@ -47,8 +47,24 @@ export default function FaqSection() {
                   <div className="acc-content current">
                     <div className="content">
                       <p>
-                        Yes, you may participate in the festival as an author,
-                        speaker, exhibitor or as a guest.
+                        Yes, you may participate in the festival as an author, Entry to the book festival is Free.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                 {/* Block 1 - Always Open by Default */}
+                 <li className="accordion block active-block">
+                  <div className="acc-btn active">
+                    <div className="icon-outer">
+                      <span className="icon fa-solid fa-angle-down fa-fw"></span>
+                    </div>
+                    If the parking is Free?
+                  </div>
+                  <div className="acc-content current">
+                    <div className="content">
+                      <p>
+                      Yes, the parking is free at the venue. 
                       </p>
                     </div>
                   </div>
@@ -118,6 +134,7 @@ export default function FaqSection() {
                       <p>
                         One may apply for the same at. Upon selection the
                         interns would be notified and assigned their roles.
+                        Email us: mumbaibookfestival@gmail.com
                       </p>
                     </div>
                   </div>
@@ -163,7 +180,7 @@ export default function FaqSection() {
                   >
                     <div className="content">
                       <p>
-                        Volunteering is available and a training would be given
+                        Volunteering is available and training would be given
                         to the selected volunteers for participating in the
                         festival.
                       </p>

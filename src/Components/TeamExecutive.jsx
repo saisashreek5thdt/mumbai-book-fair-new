@@ -9,8 +9,9 @@ export default function TeamExecutive() {
         
       </section> */}
 
-      <div className="auto-container">
-        <div className="row">
+      <div className="auto-container" >
+        <div className="row" style={{display:"flex",alignContent:"center"}}>
+          <div className="" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
           {/* Feature Block */}
           <div className="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
             <div className="inner-box">
@@ -40,10 +41,7 @@ export default function TeamExecutive() {
           </div>
 
           {/* Feature Block */}
-          <div
-            className="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="400ms"
-          >
+          <div className="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
             <div className="inner-box">
               {/* <div className="icon-box">
                   <span className="icon flaticon-arrows"></span>
@@ -72,7 +70,7 @@ export default function TeamExecutive() {
               </div> */}
             </div>
           </div>
-
+         </div>
         </div>
       </div>
     </>

@@ -10,20 +10,22 @@ import logo from "../assets/images/logo/logo-footer-1.png";
 // import icon7 from "../assets/images/icons/icon-9.png";
 // import icon8 from "../assets/images/icons/icon-10.png";
 // import footer from "../assets/images/footer.jpg";
-import footer1 from "../assets/images/footer_gradient_4.jpg";
-import insta1 from "../assets/images/mapImage.png";
+import footer1 from "../assets/images/footer_gradient_8.png";
+// import footer2 from "../assets/images/background/counterBG.png";
+// import insta1 from "../assets/images/mapImage2.png";
 
 
 export default function Footer() {
   // Common style for section gaps
   const sectionStyle = {
     marginBottom: "20px",
+    paddingLeft:"60px"
   };
 
   // Common style for title gaps
   const titleStyle = {
-    marginBottom: "15px",
-    width:"90px"
+    marginBottom: "10px",
+    width:"150px"
   };
 
   let currentYear = new Date().getFullYear();
@@ -85,9 +87,9 @@ export default function Footer() {
 
       <div  className="auto-container">
         <div className="footer-two-widgets">
-          <div className="row clearfix" >
+          <div className="row clearfix" style={{marginTop:"-60px",marginLeft:"-200px"}} >
             <div className="big-column col-lg-6 col-md-12 col-sm-12" >
-              <div className="row clearfix">
+              <div className="row clearfix" style={{marginLeft:"-80px"}}>
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
                   <div
                     className="footer-two-widget logo-widget"
@@ -129,11 +131,12 @@ export default function Footer() {
                         style={{
                           display: "flex",
                           gap: "6px",
+                          marginTop:"0px"
                         }}
                       >
                         <li>
                           <a
-                            href="https://x.com/nbt_india"
+                            href="https://x.com/bookfestmumbai"
                             className="fa-brands fa-x-twitter"
                           ></a>
                         </li>
@@ -145,7 +148,7 @@ export default function Footer() {
                         </li>
                         <li>
                           <a
-                            href="https://www.instagram.com/nbtindia/"
+                            href="https://www.instagram.com/mumbaibookfestival"
                             className="fa-brands fa-instagram"
                           ></a>
                         </li>
@@ -175,7 +178,7 @@ export default function Footer() {
                     className="footer-widget news-widget"
                     style={sectionStyle}
                   >
-                    <h4 className="footer-two_title" style={titleStyle}>
+                    <h4 className="footer-two_title">
                       Contacts
                     </h4>
                     <ul
@@ -184,10 +187,12 @@ export default function Footer() {
                         gap: "8px",
                         display: "flex",
                         flexDirection: "column",
+                        width:"300px",
+                        marginTop:"5px"
                       }}
                     >
                       <li>
-                        <span className="icon fa-solid fa-phone fa-fw"></span>{" "}
+                        <span className="icon fa-solid fa-phone fa-fw" ></span>{" "}
                         1800-NBT-1800
                       </li>
                       <li>
@@ -197,8 +202,8 @@ export default function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <span className="icon fa-solid fa-map-marker fa-fw"></span>{" "}
-                        BKC, Mumbai, Maharashtra.
+                        {/* <span className="icon fa-solid fa-map-marker fa-fw"></span>{" "}
+                        BKC, Mumbai, Maharashtra. */}
                       </li>
                     </ul>
                   </div>
@@ -209,12 +214,12 @@ export default function Footer() {
                     className="footer-widget instagram-widget"
                     style={sectionStyle}
                   >
-                    <h4 className="footer-two_title" style={titleStyle}>
+                    {/* <h4 className="footer-two_title" style={titleStyle}>
                       Directions
-                    </h4>
+                    </h4> */}
                     <div className="images-outer clearfix">
                       <Link to="https://maps.app.goo.gl/gPdTDs534rdT1aoP8" target="_blank">
-                        <img src={insta1} alt="Instagram 1" />
+                      {/* <img src={insta1} alt="Instagram 1" style={{height:"180px",width:"400px"}}/> */}
                       </Link>
                     </div>
                   </div>
@@ -225,11 +230,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom" style={{marginTop:"-80px", width:"100%"}}>
+      <div className="footer-bottom" style={{backgroundColor:"rgb(239, 221, 232)",marginTop:"60px", width:"100%"}}>
         <div className="auto-container">
           <div className="row clearfix">
             <div className="column col-lg-12 col-md-12 col-sm-12">
-              <div className="copyright text-center">
+              <div className="copyright text-center" style={{color:"black"}}>
                 &copy; Copyright {currentYear}{" "}
                 <Link to="https://5thdt.com/" target="_blank">
                   5thDT

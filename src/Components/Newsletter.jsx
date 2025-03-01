@@ -1,6 +1,6 @@
 // import newsImg1 from "../assets/images/background/pattern-12.png";
 // import newsImg2 from "../assets/images/background/pattern-13.png";
-import newsImg3 from "../assets/images/background/pattern-14.png";
+// import newsImg3 from "../assets/images/background/pattern-14.png";
 
 export default function Newsletter() {
   // const newsBG1 = {

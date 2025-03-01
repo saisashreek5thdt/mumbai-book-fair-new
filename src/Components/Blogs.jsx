@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 // import news5 from "../assets/images/resource/news-5.jpg";
 // import news6 from "../assets/images/resource/news-6.jpg";
 import blogImg1 from "../assets/images/registration/volunteer.png";
-import blogImg2 from "../assets/images/registration/exhibitor.png";
+// import blogImg2 from "../assets/images/registration/exhibitor.png";
 import blogImg3 from "../assets/images/registration/visitor.png";
 import blogImg4 from "../assets/images/registration/speaker.png";
 //import blogImg5 from "../assets/images/registration/vendor.png";
 import blogImg6 from "../assets/images/registration/sponsor.png";
 import blogImg7 from "../assets/images/registration/author.png";
+import blogImg8 from "../assets/images/exhibitor.png";
+import blogImg9 from "../assets/images/school.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,7 +29,7 @@ export default function Blogs() {
       id: 2,
       title: "Exhibitor",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSePmHdusFo3-doXpJRmMxpmT9aqVweuzQhqn_OGJGcTdV-mLQ/viewform",
-      imgURL: blogImg2,
+      imgURL: blogImg8,
       //imgURL: news5,
     },
     {
@@ -65,6 +67,13 @@ export default function Blogs() {
       imgURL: blogImg7,
       //imgURL: news4,
     },
+    {
+      id: 8,
+      title: "Institutes / Schools",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSehWMPA1WSMIC1u54WHSlPRifEf1aP2PF_UBQahAI-SnbqLBw/viewform",
+      imgURL: blogImg9,
+      //imgURL: news4,
+    },
   ];
 
   return (
@@ -73,7 +82,7 @@ export default function Blogs() {
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title" style={{ textTransform: "none" }}>
-              Registration
+              REGISTRATION
             </div>
             <h2
               className="sec-title_heading"
@@ -83,7 +92,7 @@ export default function Blogs() {
                 fontWeight: "700",
               }}
             >
-              Get Your
+              Be a Part of The Festival
             </h2>
             {/* <div className="d-flex justify-content-between align-items-end flex-wrap">
               <div className="title-box title-anim">

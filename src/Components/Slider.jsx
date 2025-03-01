@@ -19,7 +19,7 @@ export default function Slider() {
 
   useEffect(() => {
     // Set the event date (April 4, 2025)
-    const eventDate = new Date("2025-04-08T00:00:00").getTime();
+    const eventDate = new Date("2025-10-08T00:00:00").getTime();
 
     // Function to update the countdown
     const updateCountdown = () => {
@@ -90,11 +90,11 @@ export default function Slider() {
               {/* <!-- Content Column --> */}
               <div className="slider-one_content">
                 <div className="slider-one_content-inner">
-                  <div className="slider-one_title">
-                    Mumbai Book Festival, BKC
+                  <div className="slider-one_title" style={{marginLeft:"40px"}}>
+                    Mumbai Book Festival
                   </div>
                   <div className="slider-one_date">
-                    <span>08</span> April 2025 <br />
+                    <span>08</span> October 2025 <br />
                     BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -133,11 +133,11 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
-                  <div className="slider-one_title">
-                    Mumbai Book Festival, BKC
+                  <div className="slider-one_title" style={{marginLeft:"40px"}}>
+                    Mumbai Book Festival
                   </div>
                   <div className="slider-one_date">
-                    <span>09</span> April 2025 <br />
+                    <span>09</span> October 2025 <br />
                     BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -176,11 +176,11 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
-                  <div className="slider-one_title">
-                    Mumbai Book Festival, BKC
+                  <div className="slider-one_title" style={{marginLeft:"40px"}}>
+                    Mumbai Book Festival
                   </div>
                   <div className="slider-one_date">
-                    <span>10</span> April 2025 <br />
+                    <span>10</span> October 2025 <br />
                     BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -219,11 +219,11 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
-                  <div className="slider-one_title">
-                    Mumbai Book Festival, BKC
+                  <div className="slider-one_title" style={{marginLeft:"40px"}}>
+                    Mumbai Book Festival
                   </div>
                   <div className="slider-one_date">
-                    <span>11</span> April 2025 <br />
+                    <span>11</span> October 2025 <br />
                     BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}
@@ -262,11 +262,11 @@ export default function Slider() {
                   {/* <div className="slider-one_title">
                     National Book Trust, India
                   </div> */}
-                  <div className="slider-one_title">
-                    Mumbai Book Festival, BKC
+                  <div className="slider-one_title" style={{marginLeft:"40px"}}>
+                    Mumbai Book Festival
                   </div>
                   <div className="slider-one_date">
-                    <span>12</span> April 2025 <br />
+                    <span>12</span> October 2025 <br />
                     BKC, MUMBAI, INDIA
                   </div>
                   {/* <h1 className="slider-one_heading">Patna <br/> Book Fair</h1> */}

@@ -39,7 +39,7 @@ export default function Speakers() {
         <div className="auto-container">
           <div className="sec-title title-anim centered">
             <div className="sec-title_title" style={{ textTransform: "none" }}>
-              Speakers Experts
+              INVITED SPEAKERS
             </div>
             <h2
               className="sec-title_heading"
@@ -49,7 +49,7 @@ export default function Speakers() {
                 fontWeight: "700",
               }}
             >
-              Speakers
+              Invited Guests
             </h2>
           </div>
           <div className="row clearfix">
@@ -398,8 +398,8 @@ export default function Speakers() {
                   target="_parent"
                 >
                   <span className="btn-wrap">
-                    <span className="text-one">More Speakers</span>
-                    <span className="text-two">More Speakers</span>
+                    <span className="text-one">See More</span>
+                    <span className="text-two">See More</span>
                   </span>
                 </Link>
               </div>
