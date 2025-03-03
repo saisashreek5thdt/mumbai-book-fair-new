@@ -135,31 +135,36 @@ export default function Footer() {
                         }}
                       >
                         <li>
-                          <a
+                          <a 
+                           target="_blank"
                             href="https://x.com/bookfestmumbai"
                             className="fa-brands fa-x-twitter"
                           ></a>
                         </li>
                         <li>
                           <a
+                            target="_blank"
                             href="https://www.facebook.com/nationalbooktrustindia"
                             className="fa-brands fa-facebook-f"
                           ></a>
                         </li>
                         <li>
                           <a
+                            target="_blank"
                             href="https://www.instagram.com/mumbaibookfestival"
                             className="fa-brands fa-instagram"
                           ></a>
                         </li>
                         <li>
                           <a
+                            target="_blank"
                             href="https://in.linkedin.com/company/nationalbooktrustindia"
                             className="fa-brands fa-linkedin"
                           ></a>
                         </li>
                         <li>
                           <a
+                            target="_blank"
                             href="https://www.youtube.com/user/NBTIndia"
                             className="fa-brands fa-youtube"
                           ></a>
