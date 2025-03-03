@@ -136,7 +136,7 @@ export default function FaqSection() {
                   >
                     <div className="content">
                       <p>
-                        One may apply for the same at. Upon selection the
+                        One may apply for the same. Upon selection the
                         interns would be notified and assigned their roles.
                         Email us: mumbaibookfestival@gmail.com
                       </p>

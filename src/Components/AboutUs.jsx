@@ -2,13 +2,13 @@ import pattern3 from "../assets/images/background/pattern-3.png";
 import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 // import AboutPattern from "../assets/images/background/about-pattern.png";
-import AboutSpeaker from "../assets/images/Speakers/circle.mp4";
+import AboutSpeaker from "../assets/images/Speakers/event1.mp4";
 import venueIcon from "../assets/images/aboutIcon/venue.png";
 import calenderIcon from "../assets/images/aboutIcon/calender.png";
 const backgroundColor = {
   background: "black",
-  width: "570px",
-  height: "550px",
+  width: "600px",
+  height: "600px",
 };
 export default function About() {
   return (
