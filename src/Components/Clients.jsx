@@ -1,9 +1,9 @@
 import clientImg1 from "../assets/images/clients/sponsor.png";
-//import clientImg2 from "../assets/images/clients/sponsor-2.png";
+import clientImg2 from "../assets/images/clients/sponsor-8.jpeg";
 import clientImg3 from "../assets/images/clients/sponsor-3.png";
 import clientImg4 from "../assets/images/clients/sponsor-4.png";
-// import clientImg5 from "../assets/images/clients/sponsor-5.png";
-import clientImg6 from "../assets/images/clients/sponsor-6.jpg";
+ import clientImg5 from "../assets/images/clients/sponsor-9.png";
+import clientImg6 from "../assets/images/clients/sponsor-7.jpeg";
 export default function Client() {
   const clientsImgs = [
     // {
@@ -24,11 +24,11 @@ export default function Client() {
     },
     {
       id: 5,
-      imgURL: clientImg1,
+      imgURL: clientImg5,
     },
     {
       id: 6,
-      imgURL: clientImg1,
+      imgURL: clientImg2,
     },
     {
       id: 7,
