@@ -47,7 +47,7 @@ export default function FaqSection() {
                   <div className="acc-content current">
                     <div className="content">
                       <p>
-                        Yes, you may participate in the festival as an author, Entry to the book festival is Free.
+                        Yes, you may participate in the festival as an author. Entry to the book festival is free.
                       </p>
                     </div>
                   </div>
@@ -210,7 +210,7 @@ export default function FaqSection() {
                   >
                     <div className="content">
                       <p>
-                        One may apply for the same, upon selection the book
+                        One may apply for the same. Upon selection the book
                         stall would be allocated.
                       </p>
                     </div>

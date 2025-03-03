@@ -601,9 +601,10 @@ export default function LeadershipOne() {
                         <a
                           className="theme-btn btn-style-two"
                           onClick={() => toggleExpandedDate(date)}
+                          style={{backgroundColor:"#ffc107"}}
                         >
                           <span className="btn-wrap">
-                            <span className="text-one">
+                            <span className="text-one" style={{color:"black"}}>
                               {expandedDates[date]
                                 ? "Show Less"
                                 : "More Schedules"}
