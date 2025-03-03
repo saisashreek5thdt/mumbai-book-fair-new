@@ -61,7 +61,7 @@ export default function FaqSection() {
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
                     </div>
-                    Is the parking is Free?
+                    Is the parking free?
                   </div>
                   <div className={`acc-content ${
                       openIndex === 1 ? "current" : ""
