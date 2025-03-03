@@ -54,14 +54,18 @@ export default function FaqSection() {
                 </li>
 
                  {/* Block 1 - Always Open by Default */}
-                 <li className="accordion block active-block">
-                  <div className="acc-btn active">
+                 <li className="accordion block">
+                  <div className={`acc-btn ${openIndex === 1 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(1)}
+                    >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
                     </div>
                     If the parking is Free?
                   </div>
-                  <div className="acc-content current">
+                  <div className={`acc-content ${
+                      openIndex === 1 ? "current" : ""
+                    }`}>
                     <div className="content">
                       <p>
                       Yes, the parking is free at the venue. 
@@ -73,8 +77,8 @@ export default function FaqSection() {
                 {/* Block 2 */}
                 <li className="accordion block">
                   <div
-                    className={`acc-btn ${openIndex === 1 ? "active" : ""}`}
-                    onClick={() => toggleAccordion(1)}
+                    className={`acc-btn ${openIndex === 2 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(2)}
                   >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -83,7 +87,7 @@ export default function FaqSection() {
                   </div>
                   <div
                     className={`acc-content ${
-                      openIndex === 1 ? "current" : ""
+                      openIndex === 2 ? "current" : ""
                     }`}
                   >
                     <div className="content">
@@ -95,8 +99,8 @@ export default function FaqSection() {
                 {/* Block 3 */}
                 <li className="accordion block">
                   <div
-                    className={`acc-btn ${openIndex === 2 ? "active" : ""}`}
-                    onClick={() => toggleAccordion(2)}
+                    className={`acc-btn ${openIndex === 3 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(3)}
                   >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -105,7 +109,7 @@ export default function FaqSection() {
                   </div>
                   <div
                     className={`acc-content ${
-                      openIndex === 2 ? "current" : ""
+                      openIndex === 3 ? "current" : ""
                     }`}
                   >
                     <div className="content">
@@ -117,8 +121,8 @@ export default function FaqSection() {
                 {/* Block 4 */}
                 <li className="accordion block">
                   <div
-                    className={`acc-btn ${openIndex === 3 ? "active" : ""}`}
-                    onClick={() => toggleAccordion(3)}
+                    className={`acc-btn ${openIndex === 4 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(4)}
                   >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -127,7 +131,7 @@ export default function FaqSection() {
                   </div>
                   <div
                     className={`acc-content ${
-                      openIndex === 3 ? "current" : ""
+                      openIndex === 4 ? "current" : ""
                     }`}
                   >
                     <div className="content">
@@ -143,8 +147,8 @@ export default function FaqSection() {
                 {/* Block 5 */}
                 <li className="accordion block">
                   <div
-                    className={`acc-btn ${openIndex === 4 ? "active" : ""}`}
-                    onClick={() => toggleAccordion(4)}
+                    className={`acc-btn ${openIndex === 5 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(5)}
                   >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -153,7 +157,7 @@ export default function FaqSection() {
                   </div>
                   <div
                     className={`acc-content ${
-                      openIndex === 4 ? "current" : ""
+                      openIndex === 5 ? "current" : ""
                     }`}
                   >
                     <div className="content">
@@ -165,8 +169,8 @@ export default function FaqSection() {
                 {/* Block 6 */}
                 <li className="accordion block">
                   <div
-                    className={`acc-btn ${openIndex === 5 ? "active" : ""}`}
-                    onClick={() => toggleAccordion(5)}
+                    className={`acc-btn ${openIndex === 6 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(6)}
                   >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -175,7 +179,7 @@ export default function FaqSection() {
                   </div>
                   <div
                     className={`acc-content ${
-                      openIndex === 5 ? "current" : ""
+                      openIndex === 6 ? "current" : ""
                     }`}
                   >
                     <div className="content">
@@ -191,8 +195,8 @@ export default function FaqSection() {
                 {/* Block 7 */}
                 <li className="accordion block">
                   <div
-                    className={`acc-btn ${openIndex === 6 ? "active" : ""}`}
-                    onClick={() => toggleAccordion(6)}
+                    className={`acc-btn ${openIndex === 7 ? "active" : ""}`}
+                    onClick={() => toggleAccordion(7)}
                   >
                     <div className="icon-outer">
                       <span className="icon fa-solid fa-angle-down fa-fw"></span>
@@ -201,7 +205,7 @@ export default function FaqSection() {
                   </div>
                   <div
                     className={`acc-content ${
-                      openIndex === 6 ? "current" : ""
+                      openIndex === 7 ? "current" : ""
                     }`}
                   >
                     <div className="content">
@@ -230,7 +234,7 @@ export default function FaqSection() {
                     <input type="text" placeholder="Phone Number" required />
                   </div>
                   <div className="form-group">
-                    <textarea style={{height:"120px"}} placeholder="Enter your Message*"></textarea>
+                    <textarea style={{height:"182px"}} placeholder="Enter your Message*"></textarea>
                   </div>
                   <div className="form-group">
                     {/* <button type="submit" className="submit-btn">
