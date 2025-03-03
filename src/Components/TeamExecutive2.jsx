@@ -5,7 +5,7 @@ import speakerImg2 from "../assets/images/team/Milin.png";
 export default function TeamExecutive2() {
   return (
     <>
-      <div className="row clearfix" style={{display:"flex", alignItems:"center",justifyContent:"center"}}>
+      <div className="row clearfix" style={{display:"flex", alignItems:"center",justifyContent:"center", gap:"20px"}}>
         {/* Team Block Start */}
         <div className="news-block_two col-lg-4 col-md-6 col-sm-12" style={{width:"500px",}}>
           <div
@@ -14,7 +14,7 @@ export default function TeamExecutive2() {
             data-wow-duration="1500ms"
           >
             {/* Team Info Start */}
-            <div className="news-block_two-date" style={{display:"flex", justifyContent:"center", alignItems:"center",marginTop:"325px", backgroundColor:"gold" }}>CHIEF CONVENOR</div>
+            <div className="news-block_two-date" style={{display:"flex", justifyContent:"center", alignItems:"center",marginTop:"325px", backgroundColor:" #cf288f" }}>CHIEF CONVENOR</div>
             <div className="news-block_two-image">
               <Link to="/">
                 <img src={speakerImg1} alt="Speaker Image" />
@@ -36,14 +36,14 @@ export default function TeamExecutive2() {
         </div>
         {/* Team Block End */}
         {/* Team Block Start */}
-        <div className="news-block_two col-lg-4 col-md-6 col-sm-12" style={{marginTop:"-45px"}}>
+        <div className="news-block_two col-lg-4 col-md-6 col-sm-12">
           <div
             className="news-block_two-inner wow fadeInLeft"
             data-wow-delay="0ms"
             data-wow-duration="1500ms"
           >
             {/* Team Info Start */}
-            <div className="news-block_two-date" style={{display:"flex", justifyContent:"center", alignItems:"center",marginTop:"325px" ,backgroundColor:"gold"}}>CHIEF PATRON</div>
+            <div className="news-block_two-date" style={{display:"flex", justifyContent:"center", alignItems:"center",marginTop:"325px" ,backgroundColor:" #cf288f"}}>CHIEF PATRON</div>
             <div className="news-block_two-image">
               <Link to="/">
                 <img src={speakerImg2} alt="Speaker Image" />
@@ -55,6 +55,8 @@ export default function TeamExecutive2() {
                 Prof. Milind Sudhakar Marathe
               </h4>
               <div className="text">Chairman - National Book Trust, India</div>
+              <p style={{color:"white"}}>.</p>
+              
             </div>
             {/* Team Info End */}
           </div>
