@@ -16,6 +16,7 @@ export { default as FaqSection } from "./FaqSection";
 export { default as Blogs } from "./Blogs";
 export { default as Newsletter } from "./Newsletter";
 export { default as Footer } from "./Footer";
+export { default as Footer2 } from "./Footer2";
 
 // Speaker Page Imports
 export { default as SpeakerSlide } from "./Speaker/SpeakerSlide";

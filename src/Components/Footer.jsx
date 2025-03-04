@@ -49,8 +49,53 @@ export default function Footer() {
     
   };
 
+  const responsiveFooterStyle = `
+  @media (max-width: 768px) {
+    .footer-two {
+      padding: 20px;
+    }
+
+    .footer-two-widgets .row {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .big-column {
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-two_column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer-two_logo img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .footer-two_socials {
+      justify-content: center;
+    }
+
+    .footer-two_contact-list {
+      width: auto;
+      text-align: center;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+`;
+
   return (
-    <footer style={footerStyle} className="footer-two" id="footer">
+    <>
+      <style>{responsiveFooterStyle}</style>
+      <footer style={footerStyle} className="footer-two" id="footer">
       {/* Background icons remain unchanged */}
       {/* <div
         className="footer-two_icon-one"
@@ -251,6 +296,7 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>    
   );
 }
 

@@ -1,4 +1,4 @@
-import { Header, Footer } from "./Components/index";
+import { Header, Footer2 } from "./Components/index";
 import SpeakersInfo from "./Pages/SpeakersInfo";
 
 export default function Speakers() {
@@ -16,7 +16,7 @@ export default function Speakers() {
           <SpeakersInfo />
           {/* Speakers Info Ends */}
           {/* Footer Start */}
-          <Footer />
+          <Footer2 />
           {/* Footer End */}
         </div>
       </div>
