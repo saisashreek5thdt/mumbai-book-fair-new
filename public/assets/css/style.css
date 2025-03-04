@@ -640,13 +640,13 @@
 	width: 270px;
 	height: 280px;
 	padding: 5px 5px;
-	border-radius: 0px 50% 50% 50%;
+	border-radius: 20px;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 }
 
 .speaker-block_one-image img{
 	position: relative;
-	border-radius: 0px 50% 50% 50%;
+	border-radius: 20px;
 }
 
 .speaker-block_one-image::before{
@@ -656,8 +656,7 @@
 	top: 10px;
 	right: 5px;
 	bottom: -15px;
-	border-radius: 0px 50% 50% 50%;
-	border: 2px dashed var(--color-two);
+	border-radius: 20px;
 }
 
 .speaker-block_one-social{

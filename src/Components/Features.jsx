@@ -4,14 +4,13 @@ import featureImg1 from "../assets/images/icons/circle-pink.png";
 import featureImg2 from "../assets/images/icons/circle-icon-one.png";
 import featureImg3 from "../assets/images/icons/events-bg.png";
 
-import featureIcon1 from "../assets/images/icons/Newicons/childrenActivities.png";
-// import featureIcon2 from "../assets/images/icons/Newicons/authorsCorner.png";
-// import featureIcon3 from "../assets/images/icons/Newicons/culturalActivities.png";
-import featureIcon4 from "../assets/images/icons/Newicons/workshop.png";
-import featureIcon5 from "../assets/images/icons/event-icon-2.png";
-import featureIcon6 from "../assets/images/icons/Newicons/international.png";
-import featureIcon7 from "../assets/images/featureIcon.png"
-import featureIcon8 from "../assets/images/featureIcon1.png"
+import featureIcon1 from "../assets/images/icons/original/children.png";
+import featureIcon2 from "../assets/images/icons/original/author.png";
+import featureIcon3 from "../assets/images/icons/original/cultural.png";
+import featureIcon4 from "../assets/images/icons/original/film.png";
+import featureIcon5 from "../assets/images/icons/original/workshops.png";
+import featureIcon6 from "../assets/images/icons/original/business.png";
+// import featureIcon7 from "../assets/images/featureIcon.png"
 import { Link } from "react-router-dom";
 
 export default function Features() {
@@ -22,12 +21,12 @@ export default function Features() {
       text: "A dedicated space promoting children's literature and the joy of reading through storytelling, workshops, panel discussions, quizzes, and contests.",
     },
     {
-      icon: featureIcon8,
+      icon: featureIcon2,
       title: "Authors Corner",
       text: "A hub for literary enthusiasts with engaging dialogues, panel discussions, book launches, and lively interactions with renowned authors.",
     },
     {
-      icon: featureIcon7,
+      icon: featureIcon3,
       title: "Cultural Activities",
       text: "Experience captivating cultural performances by acclaimed artists, bands, and singers, showcasing the rich diversity of Indian states and cultures.",
     },

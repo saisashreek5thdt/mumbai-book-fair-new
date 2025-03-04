@@ -1,16 +1,8 @@
 import speakersPatternImg1 from "../assets/images/background/pattern-4.png";
 //import speakersPatternImg2 from "../assets/images/background/pattern-5.png";
 import speakersPatternImg3 from "../assets/images/background/pattern-6.png";
-
-import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
-import speakerImg2 from "../assets/images/Speakers/Chandraprakash_Dwivedi.png";
-import speakerImg3 from "../assets/images/Speakers/Govind_Dolakiya.png";
-import speakerImg4 from "../assets/images/Speakers/kailash-kher-680x680.png";
-import speakerImg5 from "../assets/images/Speakers/Shiv_Khera.png";
-import speakerImg6 from "../assets/images/Speakers/Upendra_Rai.png";
-import speakerImg7 from "../assets/images/Speakers/VP_Speaker.png";
-import speakerImg8 from "../assets/images/Speakers/Ankur_Warikoo.png";
 import { Link } from "react-router-dom";
+import { speakers } from "../utils/speakerData";
 
 export default function Speakers() {
    const speakersPattern1 = {
@@ -27,6 +19,8 @@ export default function Speakers() {
     backgroundImage: `url(${speakersPatternImg3})`,
     backgroundSize: "cover",
   };
+
+  const imgAndSpeakerGap={marginTop:"-30px"}
 
   return (
     <>
@@ -53,342 +47,35 @@ export default function Speakers() {
             </h2>
           </div>
           <div className="row clearfix">
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
+
+
+        {speakers.map(speaker =>{
+          return (
+            <>
+            <div key={speaker.id} className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
               <div
                 className="speaker-block_one-inner wow fadeInLeft"
                 data-wow-delay="0ms"
                 data-wow-duration="1500ms"
               >
                 <div className="speaker-block_one-image">
-                  <img src={speakerImg1} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div>} */}
+                  <img src={speaker.imgUrl} alt="" />
                 </div>
-                <div className="speaker-block_one-content">
+                <div className="speaker-block_one-content" style={imgAndSpeakerGap}>
                   <h4 className="speaker-one_title">
-                    <a href="/">Ankur Warikoo</a>
+                    <a href="/">{speaker.name}</a>
                   </h4>
 
                   <div className="speaker-one_detail">
-                    Entrepreneur, Author and Public Speaker
+                    {speaker.designation}
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInLeft"
-                data-wow-delay="150ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg2} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Dr.Chandraprakash Dwivedi</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Indian Film Director and Screenwriter
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInLeft"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg3} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Govind Dholakia</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Member of Parliment
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInLeft"
-                data-wow-delay="450ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg4} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Kailash Kher</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Indian Playback Singer and Music Composer
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInRight"
-                data-wow-delay="0ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg5} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Shiv Khera</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Author, Professional Speaker and Motivational Trainer
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInRight"
-                data-wow-delay="150ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg6} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Upendra Rai</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Senior Journalist and Author
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInRight"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg7} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Vaibhav Purandare</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Author and Journalist
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Speaker Block One */}
-            <div className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="speaker-block_one-inner wow fadeInRight"
-                data-wow-delay="450ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="speaker-block_one-image">
-                  <img src={speakerImg8} alt="" />
-                  {/* <div
-                    className="speaker-block_one-pattern"
-                    style={speakersPattern2}
-                  ></div> */}
-                  {/* <div className="speaker-block_one-social">
-                    <span className="speaker-block_one-share fa-solid fa-share-nodes fa-fw"></span>
-                    <div className="speaker-block_one-social-list">
-                      <a
-                        href="https://facebook.com/"
-                        className="facebook fa-brands fa-facebook-f"
-                      ></a>
-                      <a
-                        href="https://youtube.com/"
-                        className="youtube fa-brands fa-youtube"
-                      ></a>
-                      <a
-                        href="https://twitter.com/"
-                        className="twitter fa-brands fa-twitter"
-                      ></a>
-                    </div>
-                  </div> */}
-                </div>
-                <div className="speaker-block_one-content">
-                  <h4 className="speaker-one_title">
-                    <a href="/">Ankur Warikoo</a>
-                  </h4>
-                  <div className="speaker-one_detail">
-                    Entrepreneur, Author, and Public Speaker
-                  </div>
-                </div>
-              </div>
-            </div>
+            </> 
+          )
+        })}
+        
 
             <div className="col-lg-12 col-md-12 col-sm-12 text-center">
               <div className="about-one_button">

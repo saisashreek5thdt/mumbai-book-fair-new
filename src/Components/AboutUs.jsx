@@ -4,7 +4,7 @@ import pattern1 from "../assets/images/background/pattern-1.png";
 // import AboutPattern from "../assets/images/background/about-pattern.png";
 import AboutSpeaker from "../assets/images/Speakers/event1.mp4";
 import venueIcon from "../assets/images/aboutIcon/venue.png";
-import calenderIcon from "../assets/images/aboutIcon/calender.png";
+import calenderIcon from "../assets/images/aboutIcon/calendar.png";
 const backgroundColor = {
   background: "black",
   width: "600px",
@@ -89,7 +89,7 @@ export default function About() {
                   {/* <!-- About One Block --> */}
                   <div className="about-one_block col-lg-6 col-md-6 col-sm-12">
                     <div className="about-one_block-inner">
-                      <span className="about-one_block-icon"><img src={venueIcon} style={{width:"60px", height:"70px", marginTop:"-35px",color:"#cf288f"}} alt="" /></span>
+                      <span className="about-one_block-icon"><img src={venueIcon} style={{width:"65px", height:"65px", marginTop:"-25px",marginLeft:"-5px"}} alt="" /></span>
                       <strong>Venue</strong>
                       BKC, Mumbai
                     </div>
@@ -97,7 +97,7 @@ export default function About() {
                   {/* <!-- About One Block --> */}
                   <div className="about-one_block col-lg-6 col-md-6 col-sm-12">
                     <div className="about-one_block-inner">
-                      <span className="about-one_block-icon"><img src={calenderIcon} style={{width:"50px", height:"60px", marginTop:"-25px",color:"#cf288f"}} alt="" /></span>
+                      <span className="about-one_block-icon"><img src={calenderIcon} style={{width:"65px", height:"65px", marginTop:"-25px",marginLeft:"-5px"}} alt="" /></span>
                       <strong>Date</strong>
                       October 08 to 12, 2025
                     </div>
