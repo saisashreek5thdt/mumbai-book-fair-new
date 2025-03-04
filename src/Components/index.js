@@ -3,6 +3,7 @@ export { default as Slider } from "./Slider";
 export { default as AboutUs } from "./AboutUs";
 export { default as Counter } from "./Counter";
 export { default as Speakers } from "./Speakers";
+export { default as Speakers2 } from "./Speakers2";
 export { default as Features } from "./Features";
 export { default as Events } from "./Events";
 export { default as Gallery } from "./Gallery";

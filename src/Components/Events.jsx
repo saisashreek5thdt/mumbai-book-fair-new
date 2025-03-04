@@ -1,5 +1,4 @@
 import { useState } from "react";
-//import circle2 from "../assets/images/icons/circle-icon-two.png";
 import shape1 from "../assets/images/icons/shape-1.png";
 import { BiFilter } from "react-icons/bi";
 import {
@@ -7,17 +6,9 @@ import {
   GiSettingsKnobs,
   GiBackwardTime,
 } from "react-icons/gi";
-
 import { jsPDF } from "jspdf";
-// import html2canvas from "html2canvas";
-import speakerImg1 from "../assets/images/Speakers/Ankur_Warikoo.png";
-import speakerImg2 from "../assets/images/Speakers/Chandraprakash_Dwivedi.png";
-import speakerImg3 from "../assets/images/Speakers/Govind_Dolakiya.png";
-import speakerImg4 from "../assets/images/Speakers/kailash-kher-680x680.png";
-import speakerImg5 from "../assets/images/Speakers/Shiv_Khera.png";
-import speakerImg6 from "../assets/images/Speakers/Upendra_Rai.png";
-import speakerImg7 from "../assets/images/Speakers/VP_Speaker.png";
-// import speakerImg8 from "../assets/images/Speakers/Ankur_Warikoo.png";
+import logo from "../assets/images/logo/logo.png";
+import { scheduleData } from "../utils/eventsData";
 export default function LeadershipOne() {
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [selectedTitleFilter, setSelectedTitleFilter] = useState("All");
@@ -49,190 +40,7 @@ export default function LeadershipOne() {
   const marginTop10 = { marginTop: "10px" };
   const agendaBtn = { height: "50px", backgroundColor: " #cf288f" };
   // New schedule data
-  const scheduleData = [
-    {
-      time: "10:00 AM - 11:00 AM",
-      name: " Vaibhav Purandare",
-      designation: "Senior Editor at The Times Of India",
-      day: "08 October",
-      title: "Young Picassos: Drawing Competition",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "08/10/2025",
-      imgURL: speakerImg7,
-      place: "Conference Hall 1",
-      filterTitle: "Children Activities",
-    },
-    {
-      time: "11:15 AM - 12:15 PM",
-      name: "Dr.Chandraprakash",
-      designation: "Indian Author",
-      day: "08 October",
-      title: "Spin-a-Tale: Let's Write a Story",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "08/10/2025",
-      imgURL: speakerImg2,
-      place: "Conference Hall 2",
-      filterTitle: "Authors Corner",
-    },
-    {
-      time: "10:00 AM - 10:45 AM",
-      name: "Shiv Khera",
-      designation: "Indian Author, Motivational Speaker, and Educator",
-      day: "08 October",
-      title: "Open Mic Express",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "08/10/2025",
-      imgURL: speakerImg5,
-      place: "Conference Hall 3",
-      filterTitle: "Cultural Activities",
-    },
-    {
-      time: "11:00 AM - 11:45 AM",
-      name: "Govind Dholakia",
-      designation: "Indian Author",
-      day: "08 October",
-      title: "Art Attack! Drawing Competition",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "08/10/2025",
-      imgURL: speakerImg3,
-      place: "Conference Hall 4",
-      filterTitle: "Film Festival",
-    },
-    {
-      time: "12:00 PM - 12:45 PM",
-      name: "Kailash Kher",
-      designation: "Indian Playback Singer and Composer",
-      day: "09 October",
-      title: "Power of Words: Slogan Writing Competition",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "09/10/2025",
-      imgURL: speakerImg4,
-      place: "Conference Hall 5",
-      filterTitle: "Exhibition",
-    },
-    {
-      time: "10:00 AM - 10:45 AM",
-      name: "Ankur Warikoo",
-      designation: "Indian Author",
-      day: "09 October",
-      title: "Once Upon a Story",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "09/10/2025",
-      imgURL: speakerImg1,
-      place: "Conference Hall 6",
-      filterTitle: "Children Activities",
-    },
-    {
-      time: "11:00 AM - 11:45 AM",
-      name: " Upendra Rai",
-      designation: "Indian Author",
-      day: "10 October",
-      title: "Mini Sculptors Clay Workshop",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "10/10/2025",
-      imgURL: speakerImg6,
-      place: "Conference Hall 7",
-      filterTitle: "Authors Corner",
-    },
-    {
-      time: "12:00 PM - 12:45 PM",
-      name: "Shiv Khera",
-      title: "Theatre-Improv Fusion",
-      designation: "Indian Author",
-      day: "10 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,  lorem quis Bibendum auci elit.",
-      date: "10/10/2025",
-      imgURL: speakerImg5,
-      place: "Conference Hall 8",
-      filterTitle: "Cultural Activities",
-    },
-    {
-      time: "10:00 AM - 10:45 AM",
-      name: "Govind Dholakia",
-      title: "कहानी का जादू: Puppets के साथ एक आकर्षक स",
-      designation: "Indian Author",
-      day: "11 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "11/10/2025",
-      imgURL: speakerImg3,
-      place: "Conference Hall 9",
-      filterTitle: "Film Festival",
-    },
-    {
-      time: "11:00 AM - 11:45 AM",
-      name: "Dr.Chandraprakash",
-      title: "Mastering the Art of Calligraphy",
-      designation: "Indian Author",
-      day: "11 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "11/10/2025",
-      imgURL: speakerImg2,
-      place: "Conference Hall 10",
-      filterTitle: "Exhibition",
-    },
-    {
-      time: "12:00 PM - 12:45 PM",
-      name: " Vaibhav Purandare",
-      title: "Fun with Science!",
-      designation: "Indian Author",
-      day: "12 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "12/10/2025",
-      imgURL: speakerImg7,
-      place: "Conference Hall 11",
-      filterTitle: "Children Activities",
-    },
-    {
-      time: "10:00 AM - 10:45 AM",
-      name: "Dr.Chandraprakash",
-      title: "Theatre of Tales",
-      designation: "Indian Author",
-      day: "12 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "12/10/2025",
-      imgURL: speakerImg2,
-      place: "Conference Hall 12",
-      filterTitle: "Authors Corner",
-    },
-    {
-      time: "11:00 AM - 11:45 AM",
-      title: "Meet the Little Author",
-      name: "Govind Dholakia",
-      designation: "Indian Author",
-      day: "12 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "12/10/2025",
-      imgURL: speakerImg3,
-      place: "Conference Hall 13",
-      filterTitle: "Cultural Activities",
-    },
-    {
-      time: "12:00 PM - 12:45 PM",
-      name: " Vaibhav Purandare",
-      title: "Fearless & Ready: Self-Defence Workshop",
-      designation: "Indian Author",
-      day: "12 October",
-      description:
-        "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis Bibendum auci elit.",
-      date: "12/10/2025",
-      imgURL: speakerImg7,
-      place: "Conference Hall 14",
-      filterTitle: "Film Festival",
-    },
-  ];
+  
 
   const uniqueFilterTitles = [
     "Children Activities",
@@ -284,64 +92,87 @@ export default function LeadershipOne() {
     }));
   };
 
-  // Function to generate and download PDF
-  const downloadAgenda = (event) => {
-    event.preventDefault();
-    const doc = new jsPDF();
+ // Function to generate and download PDF
+const downloadAgenda = (event) => {
+  event.preventDefault();
+  const doc = new jsPDF();
 
-    // Title of the PDF
-    doc.setFontSize(18);
-    doc.text("Event Schedule", 10, 10);
+  // Add Logo
+  const logoImg = new Image();
+  logoImg.src = logo;
+  doc.addImage(logoImg, 'PNG', 15, 10, 20, 20);
 
-    let yOffset = 20; // Vertical position for content
+  // Title with Center Alignment and Color
+  doc.setFontSize(26);
+  doc.setTextColor('#cf288f');
+  doc.setFont('helvetica', 'bold');
+  doc.text("Mumbai Book Festival", doc.internal.pageSize.width / 2, 20, { align: 'center' });
 
-    // Determine which data to include in the PDF
-    const dataToInclude =
-      selectedDate !== null
-        ? { [selectedDate]: filteredScheduleData[selectedDate] } // Only selected date
-        : filteredScheduleData; // All dates
+  // Subtitle
+  doc.setFontSize(16);
+  doc.setTextColor('#333333');
+  doc.text("Event Schedule", doc.internal.pageSize.width / 2, 30, { align: 'center' });
 
-    // Loop through filteredScheduleData to add content to the PDF
-    Object.keys(dataToInclude).forEach((date) => {
-      // Add date header
-      doc.setFontSize(14);
-      doc.setTextColor("#cf288f");
-      doc.text(`Date: ${date}`, 10, yOffset);
-      yOffset += 10;
+  let yOffset = 40;
+  const dataToInclude = selectedDate !== null ? { [selectedDate]: filteredScheduleData[selectedDate] } : filteredScheduleData;
 
-      // Add schedule items for the date
-      dataToInclude[date].forEach((item) => {
+  Object.keys(dataToInclude).forEach((date) => {
+    // Add Date Header with Background Highlight
+    doc.setFillColor('#f3f3f3');
+    doc.rect(10, yOffset, 190, 10, 'F');
+    doc.setFontSize(14);
+    doc.setTextColor('#cf288f');
+    doc.text(`Date: ${date}`, 12, yOffset + 7);
+    yOffset += 15;
+
+    dataToInclude[date].forEach((item, index) => {
+      doc.setFontSize(12);
+      doc.setTextColor('#000000');
+
+      doc.setFont('helvetica', 'bold');
+      doc.text(`${index + 1}. ${item.title}`, 10, yOffset);
+      doc.setFont('helvetica', 'normal');
+      yOffset += 6;
+
+      doc.text(`Time: ${item.time}`, 10, yOffset);
+      yOffset += 5;
+      doc.text(`Name: ${item.name}`, 10, yOffset);
+      yOffset += 5;
+      doc.text(`Place: ${item.place}`, 10, yOffset);
+      yOffset += 6;
+
+      if (expandedDates[date]) {
+        doc.setFontSize(10);
+        doc.setTextColor('#555555');
+        doc.text(`Description: ${item.description}`, 10, yOffset, { maxWidth: 180 });
         doc.setFontSize(12);
-        doc.setTextColor("#000000");
-
-        doc.text(`Time: ${item.time}`, 10, yOffset);
-        yOffset += 5;
-        doc.text(`Name: ${item.name}`, 10, yOffset);
-        yOffset += 5;
-        doc.text(`Title: ${item.title}`, 10, yOffset);
-        yOffset += 5;
-        doc.text(`Place: ${item.place}`, 10, yOffset);
+        doc.setTextColor('#000000');
         yOffset += 10;
+      }
 
-        // Check if the date is expanded to include the description
-        if (expandedDates[date]) {
-          doc.text(`Description: ${item.description}`, 10, yOffset);
-          yOffset += 10;
-        }
-
-        // Ensure content doesn't overflow the page
-        if (yOffset >= 280) {
-          doc.addPage();
-          yOffset = 20;
-        }
-      });
-      // Add spacing between dates
+      // Add a line separator between events
+      doc.setDrawColor(200, 200, 200);
+      doc.line(10, yOffset, 200, yOffset);
       yOffset += 10;
+
+      if (yOffset >= 270) {
+        doc.addPage();
+        yOffset = 20;
+      }
     });
 
-    // Save the PDF
-    doc.save("Event_Schedule.pdf");
-  };
+    yOffset += 10;
+  });
+
+  // Footer
+  doc.setFontSize(10);
+  doc.setTextColor('#888888');
+  doc.text("Thank you for being a part of the Mumbai Book Festival!", 10, doc.internal.pageSize.height - 10);
+
+  // Save the PDF
+  doc.save("Mumbai_Book_Festival_Schedule.pdf");
+};
+
 
   return (
     <>

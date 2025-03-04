@@ -89,7 +89,7 @@ export default function Features() {
                   <div className="bottom-border"></div>
                   <div className="icon-box">
                     <span className="icon">
-                      <img src={feature.icon} alt="" />
+                      <img src={feature.icon} alt="" style={{width:"100px",height:"100px"}}/>
                     </span>
                   </div>
                   <h4>

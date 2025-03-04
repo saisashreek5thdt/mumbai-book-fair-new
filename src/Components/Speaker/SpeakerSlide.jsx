@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import slideImg1 from "../../assets/images/background/11.jpg";
 
 export default function SpeakerSlide() {
@@ -17,10 +17,10 @@ export default function SpeakerSlide() {
               <h2 className="page-title_heading">Meet The Speakers</h2>
             </div>
             <ul className="bread-crumb clearfix">
-              <li>
+              {/* <li>
                 <Link to="/" target="_parent">Home</Link>
-              </li>
-              <li>Meet The Speakers</li>
+              </li> */}
+              {/* <li>Meet The Speakers</li> */}
             </ul>
           </div>
         </div>

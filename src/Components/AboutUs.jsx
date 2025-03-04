@@ -2,7 +2,7 @@ import pattern3 from "../assets/images/background/pattern-3.png";
 import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 // import AboutPattern from "../assets/images/background/about-pattern.png";
-import AboutSpeaker from "../assets/images/Speakers/event1.mp4";
+import AboutSpeaker from "../assets/images/Speakers/about3.mp4";
 import venueIcon from "../assets/images/aboutIcon/venue.png";
 import calenderIcon from "../assets/images/aboutIcon/calendar.png";
 const backgroundColor = {
@@ -61,7 +61,7 @@ export default function About() {
               <div className="about-one_content-inner">
                 <div className="sec-title title-anim">
                   <div className="sec-title_title">About The Event</div>
-                  <h2 className="sec-title_heading">Mumbai Book Fair</h2>
+                  <h2 className="sec-title_heading">Mumbai Book Festival</h2>
                 </div>
                 {/* <div className="about-one_bold-text">Grow, scrape their knees, try new things, to be vulnerable, and to have epic adventures together</div> */}
                 <div className="about-one_text">

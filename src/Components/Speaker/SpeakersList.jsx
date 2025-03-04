@@ -2,125 +2,146 @@ import  { useState, useEffect } from 'react';
 import speakersPatternImg1 from "../../assets/images/background/pattern-4.png";
 import speakersPatternImg3 from "../../assets/images/background/pattern-6.png";
 
-import speakerImg1 from "../../assets/images/Speakers/Ankur_Warikoo.png";
-import speakerImg2 from "../../assets/images/Speakers/Chandraprakash_Dwivedi.png";
-import speakerImg3 from "../../assets/images/Speakers/Govind_Dolakiya.png";
-import speakerImg4 from "../../assets/images/Speakers/kailash-kher-680x680.png";
-import speakerImg5 from "../../assets/images/Speakers/Shiv_Khera.png";
-import speakerImg6 from "../../assets/images/Speakers/Upendra_Rai.png";
-import speakerImg7 from "../../assets/images/Speakers/VP_Speaker.png";
-import speakerImg8 from "../../assets/images/Speakers/Ankur_Warikoo.png";
+// import speakerImg1 from "../../assets/images/Speakers/Ankur_Warikoo.png";
+// import speakerImg2 from "../../assets/images/Speakers/Chandraprakash_Dwivedi.png";
+// import speakerImg3 from "../../assets/images/Speakers/Govind_Dolakiya.png";
+// import speakerImg4 from "../../assets/images/Speakers/kailash-kher-680x680.png";
+// import speakerImg5 from "../../assets/images/Speakers/Shiv_Khera.png";
+// import speakerImg6 from "../../assets/images/Speakers/Upendra_Rai.png";
+// import speakerImg7 from "../../assets/images/Speakers/VP_Speaker.png";
+// import speakerImg8 from "../../assets/images/Speakers/Ankur_Warikoo.png";
 // import { Link } from "react-router-dom";
 
+import { speakers } from '../../utils/speakerData';
 export default function SpeakersList() {
   // State to track selected year and speakers list
   // const [selectedYear, setSelectedYear] = useState('2023');
   const [displayedSpeakers, setDisplayedSpeakers] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const speakersPerPage = 12;
 
   // Create base speakers list with year-specific IDs
-  const createSpeakersForYear = (year) => [
-    {
-      id: `${year}-1`,
-      name: "Ankur Warikoo",
-      role: "Entrepreneur, Author, and Public Speaker",
-      image: speakerImg1
-    },
-    {
-      id: `${year}-2`,
-      name: "Dr.Chandraprakash Dwivedi",
-      role: "Indian Film Director and Screenwriter",
-      image: speakerImg2
-    },
-    {
-      id: `${year}-3`,
-      name: "Govind Dholakia",
-      role: "Founder and Chairman of Shree Ramkrishna Exports Pvt. Ltd",
-      image: speakerImg3
-    },
-    {
-      id: `${year}-4`,
-      name: "Kailash Kher",
-      role: "Indian Playback Singer and Music Composer",
-      image: speakerImg4
-    },
-    {
-      id: `${year}-5`,
-      name: "Shiv Khera",
-      role: "Author, Professional Speaker, and Motivational Trainer",
-      image: speakerImg5
-    },
-    {
-      id: `${year}-6`,
-      name: "Upendra Rai",
-      role: "Senior Journalist and Author",
-      image: speakerImg6
-    },
-    {
-      id: `${year}-7`,
-      name: "Vaibhav Purandare",
-      role: "Author and Journalist",
-      image: speakerImg7
-    },
-    {
-      id: `${year}-8`,
-      name: "Ankur Warikoo",
-      role: "Entrepreneur, Author, and Public Speaker",
-      image: speakerImg8
-    },
-    {
-      id: `${year}-9`,
-      name: "Ankur Warikoo",
-      role: "Entrepreneur, Author, and Public Speaker",
-      image: speakerImg1
-    },
-    {
-      id: `${year}-10`,
-      name: "Dr.Chandraprakash Dwivedi",
-      role: "Indian Film Director and Screenwriter",
-      image: speakerImg2
-    },
-    {
-      id: `${year}-11`,
-      name: "Govind Dholakia",
-      role: "Founder and Chairman of Shree Ramkrishna Exports Pvt. Ltd",
-      image: speakerImg3
-    },
-    {
-      id: `${year}-12`,
-      name: "Kailash Kher",
-      role: "Indian Playback Singer and Music Composer",
-      image: speakerImg4
-    },
-    {
-      id: `${year}-13`,
-      name: "Shiv Khera",
-      role: "Author, Professional Speaker, and Motivational Trainer",
-      image: speakerImg5
-    },
-    {
-      id: `${year}-14`,
-      name: "Upendra Rai",
-      role: "Senior Journalist and Author",
-      image: speakerImg6
-    },
-    {
-      id: `${year}-15`,
-      name: "Vaibhav Purandare",
-      role: "Author and Journalist",
-      image: speakerImg7
-    },
-    {
-      id: `${year}-16`,
-      name: "Ankur Warikoo",
-      role: "Entrepreneur, Author, and Public Speaker",
-      image: speakerImg8
-    }
-  ];
+  // const createSpeakersForYear = (year) => [
+  //   {
+  //     id: `${year}-1`,
+  //     name: "Ankur Warikoo",
+  //     role: "Entrepreneur, Author, and Public Speaker",
+  //     image: speakerImg1
+  //   },
+  //   {
+  //     id: `${year}-2`,
+  //     name: "Dr.Chandraprakash Dwivedi",
+  //     role: "Indian Film Director and Screenwriter",
+  //     image: speakerImg2
+  //   },
+  //   {
+  //     id: `${year}-3`,
+  //     name: "Govind Dholakia",
+  //     role: "Founder and Chairman of Shree Ramkrishna Exports Pvt. Ltd",
+  //     image: speakerImg3
+  //   },
+  //   {
+  //     id: `${year}-4`,
+  //     name: "Kailash Kher",
+  //     role: "Indian Playback Singer and Music Composer",
+  //     image: speakerImg4
+  //   },
+  //   {
+  //     id: `${year}-5`,
+  //     name: "Shiv Khera",
+  //     role: "Author, Professional Speaker, and Motivational Trainer",
+  //     image: speakerImg5
+  //   },
+  //   {
+  //     id: `${year}-6`,
+  //     name: "Upendra Rai",
+  //     role: "Senior Journalist and Author",
+  //     image: speakerImg6
+  //   },
+  //   {
+  //     id: `${year}-7`,
+  //     name: "Vaibhav Purandare",
+  //     role: "Author and Journalist",
+  //     image: speakerImg7
+  //   },
+  //   {
+  //     id: `${year}-8`,
+  //     name: "Ankur Warikoo",
+  //     role: "Entrepreneur, Author, and Public Speaker",
+  //     image: speakerImg8
+  //   },
+  //   {
+  //     id: `${year}-9`,
+  //     name: "Ankur Warikoo",
+  //     role: "Entrepreneur, Author, and Public Speaker",
+  //     image: speakerImg1
+  //   },
+  //   {
+  //     id: `${year}-10`,
+  //     name: "Dr.Chandraprakash Dwivedi",
+  //     role: "Indian Film Director and Screenwriter",
+  //     image: speakerImg2
+  //   },
+  //   {
+  //     id: `${year}-11`,
+  //     name: "Govind Dholakia",
+  //     role: "Founder and Chairman of Shree Ramkrishna Exports Pvt. Ltd",
+  //     image: speakerImg3
+  //   },
+  //   {
+  //     id: `${year}-12`,
+  //     name: "Kailash Kher",
+  //     role: "Indian Playback Singer and Music Composer",
+  //     image: speakerImg4
+  //   },
+  //   {
+  //     id: `${year}-13`,
+  //     name: "Shiv Khera",
+  //     role: "Author, Professional Speaker, and Motivational Trainer",
+  //     image: speakerImg5
+  //   },
+  //   {
+  //     id: `${year}-14`,
+  //     name: "Upendra Rai",
+  //     role: "Senior Journalist and Author",
+  //     image: speakerImg6
+  //   },
+  //   {
+  //     id: `${year}-15`,
+  //     name: "Vaibhav Purandare",
+  //     role: "Author and Journalist",
+  //     image: speakerImg7
+  //   },
+  //   {
+  //     id: `${year}-16`,
+  //     name: "Ankur Warikoo",
+  //     role: "Entrepreneur, Author, and Public Speaker",
+  //     image: speakerImg8
+  //   }
+  // ];
 
   // Initialize speakers for 2023 on component mount
   useEffect(() => {
-    setDisplayedSpeakers(createSpeakersForYear('2023'));
+    setDisplayedSpeakers(speakers);
   }, []);
+
+    // Calculate total pages
+    const totalPages = Math.ceil(displayedSpeakers.length / speakersPerPage);
+
+    // Get current speakers for the page
+  const getCurrentSpeakers = () => {
+    const startIndex = (currentPage - 1) * speakersPerPage;
+    const endIndex = startIndex + speakersPerPage;
+    return displayedSpeakers.slice(startIndex, endIndex);
+  };
+
+  // Handle page change
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
 
   const speakersPattern1 = {
     backgroundImage: `url(${speakersPatternImg1})`,
@@ -186,7 +207,7 @@ export default function SpeakersList() {
 
           {/* Speakers Grid */}
           <div className="row clearfix">
-            {displayedSpeakers.map((speaker) => (
+            {getCurrentSpeakers().map((speaker) => (
               <div key={speaker.id} className="speaker-block_one col-lg-3 col-md-6 col-sm-12">
                 <div 
                   className="speaker-block_one-inner wow fadeInLeft"
@@ -194,14 +215,14 @@ export default function SpeakersList() {
                   data-wow-duration="1500ms"
                 >
                   <div className="speaker-block_one-image">
-                    <img src={speaker.image} alt={speaker.name} />
+                    <img src={speaker.imgUrl} alt={speaker.name} />
                   </div>
                   <div className="speaker-block_one-content">
                     <h4 className="speaker-one_title">
                       <a href="speaker-detail.html">{speaker.name}</a>
                     </h4>
                     <div className="speaker-one_detail">
-                      {speaker.role}
+                      {speaker.designation}
                     </div>
                   </div>
                 </div>
@@ -211,12 +232,12 @@ export default function SpeakersList() {
 
           {/* Pagination */}
           <ul className="styled-pagination text-center">
-            <li className="next">
-              <a href="#">
+            <li className="next" onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+              <a >
                 <span className="fa fa-angle-double-left"></span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="active">
                 1
               </a>
@@ -226,9 +247,23 @@ export default function SpeakersList() {
             </li>
             <li>
               <a href="#">3</a>
+            </li> */}
+            {/* Dynamically Generated Page Numbers */}
+        {[...Array(totalPages)].map((_, index) => {
+          const pageNumber = index + 1;
+          return (
+            <li key={pageNumber} className={currentPage === pageNumber ? "active" : ""}>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                handlePageChange(pageNumber);
+              }}>
+                {pageNumber}
+              </a>
             </li>
-            <li className="next">
-              <a href="#">
+          );
+        })}
+            <li className="next" onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+              <a>
                 <span className="fa fa-angle-double-right"></span>
               </a>
             </li>

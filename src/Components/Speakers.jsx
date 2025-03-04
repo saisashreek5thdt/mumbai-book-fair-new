@@ -49,7 +49,7 @@ export default function Speakers() {
           <div className="row clearfix">
 
 
-        {speakers.map(speaker =>{
+        {speakers.filter((speaker, index) => index < 8).map(speaker =>{
           return (
             <>
             <div key={speaker.id} className="speaker-block_one col-lg-3 col-md-6 col-sm-12">

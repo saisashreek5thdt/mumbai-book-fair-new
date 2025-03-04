@@ -24,7 +24,7 @@ export default function Home() {
       <section id="about"><AboutUs /></section>
       <Counter />
       <Features />
-      <section id="speakers"><Speakers /></section>
+      <section id="speakers"><Speakers/></section>
       <section id="event"><Events /></section>
       <Gallery />
       <Pricing />
