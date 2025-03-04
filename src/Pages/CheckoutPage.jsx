@@ -1,4 +1,4 @@
-import { Header, Footer, CheckoutSlide, CheckoutInfo } from "../Components";
+import { Header, Footer2, CheckoutSlide, CheckoutInfo } from "../Components";
 
 export default function CheckoutPage() {
   return (
@@ -18,7 +18,7 @@ export default function CheckoutPage() {
           <CheckoutInfo/>
           {/* Checkout Info End */}
           {/* Footer Start */}
-          <Footer />
+          <Footer2 />
           {/* Footer End */}
         </div>
       </div>
