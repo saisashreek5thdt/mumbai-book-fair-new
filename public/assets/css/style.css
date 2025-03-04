@@ -10348,59 +10348,59 @@ blockquote{
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 1) .day{
-	background-color:#cf288f;
+	background-color:#EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 2) .day{
-	background-color:rgb(204, 102, 165);
+	background-color:#EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 3) .day{
-	background-color:#cf288f;
+	background-color:#EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 4) .day{
-	background-color:rgb(204, 102, 165);
+	background-color:#EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 1) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 1) .date{
-	color: #cf288f;
+	color: #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 2) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 2) .date{
-	color: rgb(204, 102, 165);
+	color: #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 3) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 3) .date{
-	color: #cf288f;
+	color: #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 4) .month,
 .schedule-tabs .tab-buttons li:nth-child(4n + 4) .date{
-	color: rgb(204, 102, 165);
+	color: #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 1).active-btn{
-	box-shadow: 0 0px 30px rgba(250,0,170,.30);
-	border: 1px solid #ff00aa;
+	box-shadow: 0 0px 30px ##ea9790;
+	border: 1px solid #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 2).active-btn{
-	box-shadow: 0 0px 30px rgba(198, 17, 155, 0.3);
-	border: 1px solid rgb(204, 102, 165);
+	box-shadow: 0 0px 30px ##ea9790;
+	border: 1px solid #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 3).active-btn{
-	box-shadow: 0 0px 30px rgba(250,0,170,.30);
-	border: 1px solid #ff00aa;
+	box-shadow: 0 0px 30px ##ea9790;
+	border: 1px solid #EAA690;
 }
 
 .schedule-tabs .tab-buttons li:nth-child(4n + 4).active-btn{
-	box-shadow: 0 0px 30px rgba(198, 17, 155, 0.3);
-	border: 1px solid rgb(204, 102, 165);
+	box-shadow: 0 0px 30px ##ea9790;
+	border: 1px solid #EAA690;
 }
 
 .schedule-block{

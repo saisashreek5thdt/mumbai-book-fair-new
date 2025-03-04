@@ -133,7 +133,7 @@ export default function Footer() {
       <div  className="auto-container">
         <div className="footer-two-widgets">
           <div className="row clearfix" style={{marginTop:"-60px",marginLeft:"-200px"}} >
-            <div className="big-column col-lg-6 col-md-12 col-sm-12" >
+            <div className="big-column col-lg-6 col-md-6 col-sm-" >
               <div className="row clearfix" style={{marginLeft:"-80px"}}>
                 <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
                   <div
@@ -158,7 +158,7 @@ export default function Footer() {
                 </div>
 
                 {/* Updated Social Section */}
-                <div className="footer-two_column col-lg-6 col-md-6 col-sm-12">
+                <div className="footer-two_column col-lg-6 col-md-8 col-sm-12">
                   <div
                     className="footer-two-widget links-widget"
                     style={{ ...sectionStyle, paddingLeft: "20px" }}

@@ -9,6 +9,7 @@ import {
 import { jsPDF } from "jspdf";
 import logo from "../assets/images/logo/logo.png";
 import { scheduleData } from "../utils/eventsData";
+import circle2 from "../assets/images/icons/circle-icon-two1.png";
 export default function LeadershipOne() {
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [selectedTitleFilter, setSelectedTitleFilter] = useState("All");
@@ -24,7 +25,7 @@ export default function LeadershipOne() {
   };
 
   const filterMain = { display: "flex" };
-  const iconFilterSection = { background: " #cf288f", color: "white" };
+  const iconFilterSection = { background: " #EAA690", color: "white" };
   const height50 = { height: "50px" };
   const biFilterFont = { fontSize: "25px" };
   const blockContentSection = {
@@ -38,7 +39,7 @@ export default function LeadershipOne() {
   const iconPlace = { color: " #cf288f", fontSize: "20px" };
   const marginBtn50 = { margin: "50px" };
   const marginTop10 = { marginTop: "10px" };
-  const agendaBtn = { height: "50px", backgroundColor: " #cf288f" };
+  const agendaBtn = { height: "50px", backgroundColor: " #EAA690" };
   // New schedule data
   
 
@@ -179,7 +180,7 @@ const downloadAgenda = (event) => {
       <section className="event-schedule-section" id="event">
         <div
           className="circle-layer"
-          // style={{ backgroundImage: `url(${circle2})` }}
+          style={{ backgroundImage: `url(${circle2})` }}
         ></div>
         <div
           className="shape-icon"
