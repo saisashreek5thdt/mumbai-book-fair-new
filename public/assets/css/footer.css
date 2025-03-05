@@ -38,8 +38,8 @@
 
 .footer-social_list a{
 	position: relative;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50px;
 	line-height: 38px;
 	text-align: center;
@@ -47,6 +47,7 @@
 	color: var(--white-color);
 	margin-left: var(--margin-left-10);
 	border:1px solid var(--white-color);
+	padding-top: 5px;
 }
 
 .footer-social_list a:hover{
@@ -86,7 +87,8 @@
 .footer-bottom{
 	position: relative;
 	padding: 20px 0px;
-	background-color: var(--color-eight);
+	/* background-color: var(--color-eight); */
+	background-color: #fcfcfc32;
 }
 
 .copyright{
@@ -437,7 +439,8 @@
 	left: 0px;
 	top: 5px;
 	line-height: 1em;
-	font-size: var(--font-40);
+	/* font-size: var(--font-40); */
+	font-size: 30px;
 	color: var(--white-color);
 	font-family: "Flaticon";
 }
