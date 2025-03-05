@@ -99,7 +99,7 @@ export default function Header() {
                           }}
                         ></i>
                       </span> */}
-                      <Link to="/">Change Language</Link>
+                      <Link to="/">Language</Link>
                       <ul>
                         <li>
                           <a href="">English</a>
