@@ -1,4 +1,4 @@
-import { Header, Footer, GallerySlide, GalleryInfo } from "../Components";
+import { Header, Footer2, GallerySlide, GalleryInfo } from "../Components";
 
 export default function GalleryMore() {
   return (
@@ -18,7 +18,7 @@ export default function GalleryMore() {
           <GalleryInfo />
           {/* Gallery Info End */}
           {/* Footer Start */}
-          <Footer />
+          <Footer2 />
           {/* Footer End */}
         </div>
       </div>

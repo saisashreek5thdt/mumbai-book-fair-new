@@ -1,6 +1,22 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Header, Slider, AboutUs, Counter, Speakers, Features, Events, Gallery, Pricing, VideoSection, Clients, Blogs, Newsletter, Footer, FaqSection } from "./Components/index";
+import {
+  Header,
+  Slider,
+  AboutUs,
+  Counter,
+  Speakers,
+  Features,
+  Events,
+  Gallery,
+  Pricing,
+  VideoSection,
+  Clients,
+  Blogs,
+  Newsletter,
+  Footer2,
+  FaqSection,
+} from "./Components/index";
 
 export default function Home() {
   const location = useLocation();
@@ -21,46 +37,36 @@ export default function Home() {
     <div className="page-wrapper">
       <Header />
       <Slider />
-      <section id="about"><AboutUs /></section>
+      <section id="about">
+        <AboutUs />
+      </section>
       <Counter />
       <Features />
-      <section id="speakers"><Speakers/></section>
-      <section id="event"><Events /></section>
+      <section id="speakers">
+        <Speakers />
+      </section>
+      <section id="event">
+        <Events />
+      </section>
       <Gallery />
       <Pricing />
       <VideoSection />
       <Clients />
-      <section id="team"><div className="team-section">{/* Team content here */}</div></section>
-      <section id="faq"><FaqSection /></section>
-      <section id="social"><div className="social-section">{/* Social content here */}</div></section>
+      <section id="team">
+        <div className="team-section">{/* Team content here */}</div>
+      </section>
+      <section id="faq">
+        <FaqSection />
+      </section>
+      <section id="social">
+        <div className="social-section">{/* Social content here */}</div>
+      </section>
       <Blogs />
       <Newsletter />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useEffect } from "react";
 // import { useLocation } from "react-router-dom";
@@ -198,18 +204,7 @@ export default function Home() {
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
-//original code 
-
+//original code
 
 // import {
 //   Header,
@@ -245,7 +240,7 @@ export default function Home() {
 //           {/* Slider Section End */}
 //           {/* About Section Start */}
 //           <AboutUs />
-//           {/* About Section End */}          
+//           {/* About Section End */}
 //           {/* Counter Section Start */}
 //           <Counter />
 //           {/* Counter Section End */}
@@ -254,7 +249,7 @@ export default function Home() {
 //           {/* Features End */}
 //           {/* Speakers Section Start */}
 //           <Speakers />
-//           {/* Speakers Section End */}          
+//           {/* Speakers Section End */}
 //           {/* Events Section Start */}
 //           <Events />
 //           {/* Events Section End */}
@@ -275,7 +270,7 @@ export default function Home() {
 //           {/* FAQ Section End */}
 //           {/* Blogs Start */}
 //           <Blogs />
-//           {/* Blogs End */}          
+//           {/* Blogs End */}
 //           {/* Newletter Start */}
 //           <Newsletter />
 //           {/* Newletter End */}

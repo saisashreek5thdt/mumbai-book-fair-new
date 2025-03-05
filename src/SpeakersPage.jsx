@@ -1,4 +1,4 @@
-import { Header, Footer } from "./Components/index";
+import { Header, Footer2 } from "./Components/index";
 import SpeakersMore from "./Pages/SpeakersMore";
 
 export default function SpeakersPage() {
@@ -16,7 +16,7 @@ export default function SpeakersPage() {
           <SpeakersMore />
           {/* Speakers Page Ends */}
           {/* Footer Start */}
-          <Footer />
+          <Footer2 />
           {/* Footer End */}
         </div>
       </div>

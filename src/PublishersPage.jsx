@@ -1,4 +1,4 @@
-import { Header, Footer } from "./Components/index";
+import { Header, Footer2 } from "./Components/index";
 import Publishers from "./Pages/Publishers";
 
 export default function PublishersPage() {
@@ -16,7 +16,7 @@ export default function PublishersPage() {
           <Publishers />
           {/* Publisher Page End */}
           {/* Footer Start */}
-          <Footer />
+          <Footer2 />
           {/* Footer End */}
         </div>
       </div>
