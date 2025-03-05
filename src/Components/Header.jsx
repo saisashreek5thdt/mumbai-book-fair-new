@@ -87,8 +87,8 @@ export default function Header() {
                       <Link to="/#social" target="_parent">
                         Social
                       </Link>
-                    </li>                    
-                    <li className="dropdown language-icon">
+                    </li>
+                    <li className="dropdown">
                       {/* <span>
                         <i
                           className="fa fa-language fa-2xl"
@@ -226,6 +226,20 @@ export default function Header() {
                   Social
                 </Link>
               </li>
+              {/* <li className="dropdown">
+                <Link to="/">Change Language</Link>
+                <ul>
+                  <li>
+                    <a href="">English</a>
+                  </li>
+                  <li>
+                    <a href="">हिंदी</a>
+                  </li>
+                  <li>
+                    <a href="">मराठी</a>
+                  </li>
+                </ul>
+              </li> */}
             </ul>
           </div>
         </nav>
@@ -233,38 +247,6 @@ export default function Header() {
     </header>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { Link } from "react-router-dom";
 // import logo from "../assets/images/logo/logo.png";
@@ -490,15 +472,7 @@ export default function Header() {
 //   );
 // }
 
-
-
-
-
-
-
-
-
-//another one  
+//another one
 
 // import { Link } from "react-router-dom";
 // import logo from "../assets/images/logo/logo.png";
@@ -589,7 +563,7 @@ export default function Header() {
 //                         <Link to="/publishers">
 //                           Publishers
 //                         </Link>
-                       
+
 //                       </li>
 //                       <li>
 //                         <Link to="/#faq" onClick={(e) => scrollToSection("faq", e)}>
@@ -739,11 +713,6 @@ export default function Header() {
 //   );
 // }
 
-
-
-
-
-
 //original header
 
 // import { Link } from "react-router-dom";
@@ -800,7 +769,7 @@ export default function Header() {
 //                     >
 //                       <li>
 //                         <Link to="#about" target="_parent">
-//                           About    
+//                           About
 //                         </Link>
 //                       </li>
 //                       <li>
@@ -970,4 +939,3 @@ export default function Header() {
 //     </>
 //   );
 // }
-
