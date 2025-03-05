@@ -3,8 +3,8 @@ import pattern2 from "../assets/images/background/pattern-2.png";
 import pattern1 from "../assets/images/background/pattern-1.png";
 // import AboutPattern from "../assets/images/background/about-pattern.png";
 import AboutSpeaker from "../assets/images/Speakers/about3.mp4";
-import venueIcon from "../assets/images/aboutIcon/venue.png";
-import calenderIcon from "../assets/images/aboutIcon/calendar.png";
+import venueIcon from "../assets/images/aboutIcon/venue1.svg";
+import calenderIcon from "../assets/images/aboutIcon/calender1.svg";
 const backgroundColor = {
   background: "black",
   width: "600px",
