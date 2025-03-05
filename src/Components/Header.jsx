@@ -89,7 +89,7 @@ export default function Header() {
                       </Link>
                     </li>                    
                     <li className="dropdown language-icon">
-                      <span>
+                      {/* <span>
                         <i
                           className="fa fa-language fa-2xl"
                           style={{
@@ -98,7 +98,8 @@ export default function Header() {
                             color: "#FFB22C",
                           }}
                         ></i>
-                      </span>
+                      </span> */}
+                      <Link to="/">Change Language</Link>
                       <ul>
                         <li>
                           <a href="">English</a>
