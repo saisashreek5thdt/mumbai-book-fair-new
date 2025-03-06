@@ -1,4 +1,4 @@
-import authorImg1 from "../../assets/images/publishers/publisher.png";
+import authorImg1 from "../assets/images/publishers/publisher.png";
 
 export const publications = [
     {
@@ -82,6 +82,34 @@ export const publications = [
       boothNumber: 12,
       imgURL: authorImg1,
       name: "Publisher Twelve",
+      link: "#open-modal",
+      books: ["Book A1", "Book A2", "Book A3"],
+    },
+    {
+      boothNumber: 13,
+      imgURL: authorImg1,
+      name: "Publisher Thirteen",
+      link: "#open-modal",
+      books: ["Book A1", "Book A2", "Book A3"],
+    },
+    {
+      boothNumber: 14,
+      imgURL: authorImg1,
+      name: "Publisher Fourteen",
+      link: "#open-modal",
+      books: ["Book A1", "Book A2", "Book A3"],
+    },
+    {
+      boothNumber: 15,
+      imgURL: authorImg1,
+      name: "Publisher Fifteen",
+      link: "#open-modal",
+      books: ["Book A1", "Book A2", "Book A3"],
+    },
+    {
+      boothNumber: 16,
+      imgURL: authorImg1,
+      name: "Publisher Sixteen",
       link: "#open-modal",
       books: ["Book A1", "Book A2", "Book A3"],
     },

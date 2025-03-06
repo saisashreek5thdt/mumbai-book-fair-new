@@ -1,4 +1,4 @@
-import { publications } from "./PublisherData";
+import { publications } from "../../utils/PublisherData";
 import { useState } from "react";
 import "../../publisher.css";
 import ModalBox from "../ModalBox";
@@ -15,11 +15,24 @@ export default function PublishersInfo() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPublisher, setSelectedPublisher] = useState(null);
   const [selectedBooks, setSelectedBooks] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const publicationsPerPage = 12; 
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
   // const cartItems = useSelector((state) => state.cart.items);
+ // Calculate total pages
+ const totalPages = Math.ceil(
+  (isSearched ? filteredPublications : publications).length / publicationsPerPage
+);
 
+
+const getCurrentPublications = () => {
+  const publicationsToShow = isSearched ? filteredPublications : publications;
+  const startIndex = (currentPage - 1) * publicationsPerPage;
+  const endIndex = startIndex + publicationsPerPage;
+  return publicationsToShow.slice(startIndex, endIndex);
+};
   // Function to handle search and filter
   const handleSearch = () => {
     const filtered = publications.filter((res) =>
@@ -36,6 +49,7 @@ export default function PublishersInfo() {
     setFilteredPublications([]);
     setIsSearched(false);
     setSuggestions([]); // Clear suggestions
+    setCurrentPage(1);
   };
 
   // Function to update suggestions dynamically
@@ -81,6 +95,14 @@ export default function PublishersInfo() {
       setSelectedBooks((prev) => [...prev, book]);
     } else {
       setSelectedBooks((prev) => prev.filter((b) => b !== book));
+    }
+  };
+
+
+   const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -132,7 +154,7 @@ export default function PublishersInfo() {
                 >
                   X
                 </button>
-              )}
+                )}
             </div>
             <button className="search-button" onClick={handleSearch}>
               Search
@@ -140,10 +162,10 @@ export default function PublishersInfo() {
           </div>
           {/* Display Results or All Publications */}
           <div className="row clearfix">
-            {(isSearched ? filteredPublications : publications).map(
-              (publish, index) => (
+            {getCurrentPublications().map(
+              (publish) => (
                 <div
-                  key={index}
+                  key={publish.id}
                   className="news-block_two col-lg-3 col-md-6 col-sm-12"
                 >
                   <div
@@ -228,29 +250,41 @@ export default function PublishersInfo() {
       {/* {selectedBook && <CheckoutInfo bookDetails={selectedBook} />} */}
       
 
-        <ul className="styled-pagination text-center">
-          <li className="next">
-            <a href="#">
-              <span className="fa fa-angle-double-left"></span>
-            </a>
-          </li>
-          <li>
-            <a href="#" className="active">
-              1
-            </a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li className="next">
-            <a href="#">
-              <span className="fa fa-angle-double-right"></span>
-            </a>
-          </li>
-        </ul>
+      <ul className="styled-pagination text-center">
+        <li
+          className={`prev ${currentPage === 1 ? "disabled" : ""}`}
+          onClick={() => handlePageChange(currentPage - 1)}
+        >
+          <a>
+            <span className="fa fa-angle-double-left"></span>
+          </a>
+        </li>
+
+        {[...Array(totalPages)].map((_, index) => {
+          const pageNumber = index + 1;
+          return (
+            <li
+              key={pageNumber}
+              className={currentPage === pageNumber ? "active" : ""}
+              onClick={() => handlePageChange(pageNumber)}
+            >
+              <a href="#">{pageNumber}</a>
+            </li>
+          );
+        })}
+
+        <li
+          className={`next ${currentPage === totalPages ? "disabled" : ""}`}
+          onClick={() => handlePageChange(currentPage + 1)}
+        >
+          <a>
+            <span className="fa fa-angle-double-right"></span>
+          </a>
+        </li>
+      </ul>
+
+      {/* Modal and other components */}
+      {/* ... keep your existing modal implementation ... */}
         {/* End Styled Pagination */}
       </section>
 

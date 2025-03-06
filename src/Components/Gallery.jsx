@@ -1,11 +1,11 @@
-import galleryImg1 from "../assets/images/gallery/fest1.jpg";
-import galleryImg2 from "../assets/images/gallery/fest2.jpg";
-import galleryImg3 from "../assets/images/gallery/fest3.jpg";
-import galleryImg4 from "../assets/images/gallery/fest4.jpg";
-import galleryImg5 from "../assets/images/gallery/fest5.jpg";
-import galleryImg6 from "../assets/images/gallery/fest6.jpg";
-import galleryImg7 from "../assets/images/gallery/fest1.jpg";
-import galleryImg8 from "../assets/images/gallery/fest5.jpg";
+import galleryImg1 from "../assets/images/gallery/authors/fest21.png";
+import galleryImg2 from "../assets/images/gallery/authors/fest29.png";
+import galleryImg3 from "../assets/images/gallery/business/fest33.png";
+import galleryImg4 from "../assets/images/gallery/business/fest39.png";
+import galleryImg5 from "../assets/images/gallery/vip/fest2.png";
+import galleryImg6 from "../assets/images/gallery/vip/fest7.png";
+import galleryImg7 from "../assets/images/gallery/vip/fest17.png";
+import galleryImg8 from "../assets/images/gallery/vip/fest20.png";
 import { Link } from "react-router-dom";
 
 export default function Gallery() {
@@ -136,7 +136,7 @@ export default function Gallery() {
           </div>
           <div className="col-lg-12 col-md-12 text-center">
             <div className="about-one_button">
-              <Link to="/gallery" className="theme-btn btn-style-one">
+              <Link to="/gallery" target="_blank" className="theme-btn btn-style-one">
                 <span className="btn-wrap">
                   <span className="text-one">View More</span>
                   <span className="text-two">View More</span>
