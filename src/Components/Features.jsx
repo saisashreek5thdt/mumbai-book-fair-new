@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "../Feature.css";
 
 import featureImg1 from "../assets/images/icons/circle-pink.png";
@@ -12,6 +13,7 @@ import featureIcon5 from "../assets/images/icons/original/workshops.png";
 import featureIcon6 from "../assets/images/icons/original/business.png";
 // import featureIcon7 from "../assets/images/featureIcon.png"
 import { Link } from "react-router-dom";
+//import Feature from "./Features/Feature";
 
 export default function Features() {
   const featureData = [
@@ -62,6 +64,14 @@ export default function Features() {
     backgroundSize: "cover",
   };
 
+  useEffect(() => {
+    // Trigger animations by adding a class to the feature grid
+    const featureGrid = document.querySelector(".feature-grid");
+    if (featureGrid) {
+      featureGrid.classList.add("animate");
+    }
+  }, []);
+
   return (
     <>
       <section className="event-feature-section">
@@ -99,6 +109,14 @@ export default function Features() {
                 </div>
               </div>
             ))}
+            {/* {featureData.map((feature, index) => (
+              <Feature
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                text={feature.text}
+              />
+            ))} */}
           </div>
         </div>
       </section>
