@@ -7,8 +7,6 @@ import venueIcon from "../assets/images/aboutIcon/venue1.svg";
 import calenderIcon from "../assets/images/aboutIcon/calender1.svg";
 const backgroundColor = {
   background: "black",
-  width: "600px",
-  height: "600px",
 };
 export default function About() {
   return (
@@ -42,7 +40,7 @@ export default function About() {
                   style={backgroundColor}
                 >
                   {/* <img src={AboutPic} alt="" /> */}
-                  <video autoPlay muted loop>
+                  <video className="about-video" autoPlay muted loop>
                     <source src={AboutSpeaker} />
                   </video>
                 </div>

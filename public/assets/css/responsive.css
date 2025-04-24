@@ -1028,6 +1028,12 @@
 		font-size: var(--font-22);
 	}
 
+    .about-one_image{
+		margin-left:5px;
+		height:370px;
+		width:370px;
+	}
+
 	.business-one_image-two,
 	.about-one_pattern-three,
 	.testimonial-block_one-lower::before,
