@@ -20,7 +20,7 @@ export default function Highlights({ icon, title, text }) {
           >
             <div>
               <h1>
-                <img src={icon} alt="icon" />
+                <img className="icon-image" src={icon} alt="icon" />
               </h1>
               <div className="separator"></div>
               <h2>{title}</h2>

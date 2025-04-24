@@ -3,7 +3,7 @@
 
 .highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Use auto-fit for better responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit for better responsiveness */
   row-gap: 5px;
   justify-content: center;
   padding: 20px;
@@ -167,26 +167,38 @@
 
 @media (max-width: 480px) {
   .highlights {
-    grid-template-columns: 1fr; /* Stack books vertically on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Stack books vertically on mobile */
   }
 
   .book {
-    --book-height: 80vh; /* Increase height for better visibility on mobile */
+    --book-height: 50vh; /* Increase height for better visibility on mobile */
   }
+
 
   .book > div {
-    width: calc(var(--book-height) / 1.1); /* Adjust aspect ratio */
+    height: var(--book-height);
+    width: calc(var(--book-height) / 1.1);
+    overflow: hidden;
   }
 
+  /* .book > div {
+    width: calc(var(--book-height) / 0.9); 
+  } */
+
   .highlights h1 {
-    font-size: clamp(28px, 4vw, 48px); /* Even smaller font size */
+    font-size: clamp(35px, 5vw, 48px); /* Even smaller font size */
   }
 
   .highlights h2 {
-    font-size: clamp(10px, 1.5vw, 12px); /* Even smaller font size */
+    font-size: clamp(18px, 1.8vw, 12px); /* Even smaller font size */
   }
 
-  .highlightsp {
-    font-size: clamp(8px, 1vw, 10px); /* Even smaller font size */
+  .highlights h3 {
+    font-size: clamp(22px, 1.8vw, 12px); /* Even smaller font size */
+  }
+
+  .highlights p{
+    font-size: clamp(15px, 1dvw, 10px);
+    /* Even smaller font size */
   }
 }
