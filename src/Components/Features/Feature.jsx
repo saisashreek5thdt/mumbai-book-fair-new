@@ -1,13 +1,28 @@
 /* eslint-disable react/prop-types */
 import "./Features.css";
 
-export default function Feature({ icon, title, text }) {
+export default function Feature({ icon, title, text, imagePosition }) {
+  // Determine the grid layout based on imagePosition
+  const featureSectionClass =
+    imagePosition === "left" ? "feature-section flip" : "feature-section";
 
   return (
-    <div className="feature-item">
-      <img src={icon} alt={title} className="feature-icon" />
-      <h3 className="feature-title">{title}</h3>
-      <p className="feature-text">{text}</p>
+    <div className={featureSectionClass}>
+      {/* Content (Title and Description) */}
+      <div className="content">
+        <div className="icon-container">
+          <div className="icon"></div>
+        </div>
+        <div className="text">
+          <h2>{title}</h2>
+          <p>{text}</p>
+        </div>
+      </div>
+
+      {/* Image */}
+      <div className="image">
+        <img src={icon} alt={title} />
+      </div>
     </div>
   );
 }
