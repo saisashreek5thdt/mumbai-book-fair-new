@@ -62,6 +62,12 @@
   color: #dbd75d;
 }
 
+.highlights h1 img {
+  width: 120px !important;
+  height: 180px !important;
+  object-fit: cover !important;
+}
+
 .highlights h2 {
   font-size: clamp(14px, 2vw, 16px); /* Responsive font size */
 }
@@ -163,6 +169,12 @@
   .highlights p {
     font-size: clamp(10px, 1.2vw, 12px); /* Smaller font size */
   }
+
+  .highlights h1 img {
+    width: 100px !important;
+    height: 140px !important;
+    object-fit: cover !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -200,5 +212,11 @@
   .highlights p{
     font-size: clamp(15px, 1dvw, 10px);
     /* Even smaller font size */
+  }
+
+  .highlights h1 img {
+    width: 100px !important;
+    height: 140px !important;
+    object-fit: cover !important;
   }
 }
