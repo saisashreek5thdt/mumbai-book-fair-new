@@ -6,8 +6,8 @@ import featureIcon1 from "../../assets/images/icons/original/children-activities
 import featureIcon2 from "../../assets/images/icons/original/authors-corner-activities.png";
 import featureIcon3 from "../../assets/images/icons/original/cultural-activities.png";
 import featureIcon4 from "../../assets/images/icons/original/film-festival-activities.png";
-import featureIcon5 from "../../assets/images/icons/original/workshop-activities.png";
-import featureIcon6 from "../../assets/images/icons/original/business-meet-activities.png";
+import featureIcon5 from "../../assets/images/gallery/business/fest31.png";
+import featureIcon6 from "../../assets/images/gallery/business/fest33.png";
 
 const sliderData = [
   {
