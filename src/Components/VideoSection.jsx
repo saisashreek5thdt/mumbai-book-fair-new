@@ -17,7 +17,7 @@ export default function VideoOne() {
                 <div className="video-one_pattern-four"  style={{ backgroundImage: `url(${Icon1})` }}></div> */}
         <div className="video-background">
           <video autoPlay muted loop style={height500}>
-            <source src="https://res.cloudinary.com/dydh2rfnk/video/upload/v1739610483/aboutEvent1_anpehq.mp4" />
+            <source src="/assets/images/aboutEvent1.MP4" />
           </video>
         </div>
         <div className="auto-container">
