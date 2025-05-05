@@ -2,9 +2,9 @@ import "./FeatureNew.css";
 import { useState, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-import featureIcon1 from "../../assets/images/icons/original/children-activities.png";
-import featureIcon2 from "../../assets/images/icons/original/authors-corner-activities.png";
-import featureIcon3 from "../../assets/images/icons/original/cultural-activities.png";
+import featureIcon1 from "../../assets/images/gallery/children/fest41.jpg";
+import featureIcon2 from "../../assets/images/gallery/authors/fest24.png";
+import featureIcon3 from "../../assets/images/gallery/children/fest42.jpg";
 import featureIcon4 from "../../assets/images/icons/original/film-festival-activities.png";
 import featureIcon5 from "../../assets/images/gallery/business/fest31.png";
 import featureIcon6 from "../../assets/images/gallery/business/fest33.png";
